@@ -156,6 +156,25 @@
   transform: translateY(0);
 }
 
+.errorsOnlyBtn {
+  margin-top: 12px;
+  background: transparent;
+  color: #fb923c;
+  border: 1.5px solid #fb923c55;
+  border-radius: 10px;
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.errorsOnlyBtn:hover {
+  background: #fb923c18;
+  border-color: #fb923c;
+}
+
 /* ── Question ───────────────────────────────────────────────────────────────── */
 .questionWrap {
   padding: 8px 0;

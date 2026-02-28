@@ -8,8 +8,17 @@ import styles from './QuizPage.module.css'
 
 // ─── Intro screen ─────────────────────────────────────────────────────────────
 
-function IntroScreen({ moduleData, prevResult, onStart }) {
+function wordForm(n) {
+  if (n % 100 >= 11 && n % 100 <= 19) return 'слов'
+  const r = n % 10
+  if (r === 1) return 'слово'
+  if (r >= 2 && r <= 4) return 'слова'
+  return 'слов'
+}
+
+function IntroScreen({ moduleData, prevResult, onStart, onStartErrors }) {
   const words = moduleData.blocks.find((b) => b.type === 'word-list')?.words || []
+  const errorCount = prevResult?.errorWordNums?.length || 0
   return (
     <div className={styles.intro}>
       <div className={styles.introIcon}>🎯</div>
@@ -60,8 +69,13 @@ function IntroScreen({ moduleData, prevResult, onStart }) {
       )}
 
       <button className={styles.startBtn} onClick={onStart}>
-        {prevResult ? 'Пройти ещё раз' : 'Начать тест'}
+        {prevResult ? 'Пройти весь тест заново' : 'Начать тест'}
       </button>
+      {prevResult && errorCount > 0 && (
+        <button className={styles.errorsOnlyBtn} onClick={onStartErrors}>
+          ⚠️ Пройти только ошибки · {errorCount} {wordForm(errorCount)}
+        </button>
+      )}
     </div>
   )
 }
@@ -170,7 +184,7 @@ function pctColor(pct) {
   return '#f87171'
 }
 
-function ResultsScreen({ words, answers, moduleData, onRetake, onBack }) {
+function ResultsScreen({ words, answers, moduleData, onRetake, onRetakeErrors, onBack }) {
   const { masteredCount, totalWords, percent } = calcMastery(words, answers)
   const correctAnswers = Object.values(answers).filter(Boolean).length
   const totalAnswers = Object.keys(answers).length
@@ -181,6 +195,8 @@ function ResultsScreen({ words, answers, moduleData, onRetake, onBack }) {
     ctx: answers[`${w.num}-context`],
     mastered: answers[`${w.num}-en-ru`] === true && answers[`${w.num}-context`] === true,
   }))
+
+  const errorWordsList = wordResults.filter(({ mastered }) => !mastered)
 
   return (
     <div className={styles.results}>
@@ -213,8 +229,13 @@ function ResultsScreen({ words, answers, moduleData, onRetake, onBack }) {
       </div>
 
       <div className={styles.resActions}>
+        {errorWordsList.length > 0 && (
+          <button className={styles.errorsOnlyBtn} onClick={onRetakeErrors}>
+            ⚠️ Повторить ошибки · {errorWordsList.length} {wordForm(errorWordsList.length)}
+          </button>
+        )}
         <button className={styles.retakeBtn} onClick={onRetake}>
-          🔄 Пройти ещё раз
+          🔄 Пройти весь тест
         </button>
         <button className={styles.backBtn} onClick={onBack}>
           ← К модулю
@@ -236,11 +257,23 @@ function QuizPage({ moduleData, backPath }) {
 
   const [phase, setPhase] = useState('intro')       // 'intro' | 'quiz' | 'results'
   const [questions, setQuestions] = useState([])
+  const [quizWords, setQuizWords] = useState(words)  // words being tested this session
   const [currentIdx, setCurrentIdx] = useState(0)
   const [answers, setAnswers] = useState({})         // { questionId: boolean }
 
   const startQuiz = useCallback(() => {
+    setQuizWords(words)
     setQuestions(generateQuiz(words))
+    setCurrentIdx(0)
+    setAnswers({})
+    setPhase('quiz')
+  }, [words])
+
+  const startQuizErrors = useCallback((errorWordNums) => {
+    const filtered = words.filter((w) => errorWordNums.includes(w.num))
+    if (filtered.length === 0) return
+    setQuizWords(filtered)
+    setQuestions(generateQuiz(filtered))
     setCurrentIdx(0)
     setAnswers({})
     setPhase('quiz')
@@ -258,21 +291,31 @@ function QuizPage({ moduleData, backPath }) {
       setPhase('results')
       setAnswers((prev) => {
         // Add words that were NOT mastered to personal vocabulary
-        const unmasteredWords = words.filter(
+        const unmasteredWords = quizWords.filter(
           (w) => prev[`${w.num}-en-ru`] !== true || prev[`${w.num}-context`] !== true
         )
         if (unmasteredWords.length > 0) {
           addWordsToVocab(unmasteredWords)
         }
-        const { masteredCount, totalWords, percent } = calcMastery(words, prev)
+        // Compute new errorWordNums: merge untested prev errors + new failures
+        const testedNums = quizWords.map((w) => w.num)
+        const failedNums = quizWords
+          .filter((w) => prev[`${w.num}-en-ru`] !== true || prev[`${w.num}-context`] !== true)
+          .map((w) => w.num)
+        const prevErrorNums = results[moduleData.id]?.errorWordNums || []
+        const unchangedErrors = prevErrorNums.filter((n) => !testedNums.includes(n))
+        const errorWordNums = [...unchangedErrors, ...failedNums]
+
+        const { masteredCount, totalWords, percent } = calcMastery(quizWords, prev)
         const correctAnswers = Object.values(prev).filter(Boolean).length
         saveResult(moduleData.id, {
           masteredCount,
           learnedCount: masteredCount,
-          totalWords,
-          percent,
+          totalWords: words.length,
+          percent: Math.round(((words.length - errorWordNums.length) / words.length) * 100),
           score: correctAnswers,
           total: questions.length,
+          errorWordNums,
         })
         return prev
       })
@@ -281,8 +324,17 @@ function QuizPage({ moduleData, backPath }) {
 
   const handleRetake = useCallback(() => {
     startQuiz()
-    setPhase('quiz')
   }, [startQuiz])
+
+  const handleRetakeErrors = useCallback(() => {
+    const errorNums = answers
+      ? Object.keys(answers)
+          .filter((qId) => answers[qId] === false)
+          .map((qId) => parseInt(qId.split('-')[0], 10))
+      : []
+    // get unique nums for words that failed at least one question
+    startQuizErrors([...new Set(errorNums)])
+  }, [answers, startQuizErrors])
 
   return (
     <PageLayout backLabel="← К модулю" backTo={backPath || '/level-1'}>
@@ -293,6 +345,7 @@ function QuizPage({ moduleData, backPath }) {
             moduleData={moduleData}
             prevResult={prevResult}
             onStart={startQuiz}
+            onStartErrors={() => startQuizErrors(prevResult?.errorWordNums || [])}
           />
         )}
 
@@ -309,10 +362,11 @@ function QuizPage({ moduleData, backPath }) {
 
         {phase === 'results' && (
           <ResultsScreen
-            words={words}
+            words={quizWords}
             answers={answers}
             moduleData={moduleData}
-            onRetake={() => { startQuiz(); setPhase('quiz') }}
+            onRetake={handleRetake}
+            onRetakeErrors={handleRetakeErrors}
             onBack={() => navigate(backPath || '/level-1')}
           />
         )}
