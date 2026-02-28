@@ -1,0 +1,241 @@
+.levelHeader {
+  margin-bottom: 16px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: clamp(28px, 7vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px 12px 0 0;
+  padding: 14px 20px;
+  justify-content: space-evenly;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.metaNum {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.metaLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metaDivider {
+  width: 1px;
+  height: 32px;
+  background: var(--border);
+}
+
+/* Progress row */
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.progressLabel {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Module list */
+.moduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.moduleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.12s;
+}
+
+.moduleRow:last-child {
+  border-bottom: none;
+}
+
+.rowReady:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.rowSoon {
+  opacity: 0.5;
+}
+
+.modNum {
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 26px;
+  flex-shrink: 0;
+}
+
+.modInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.modWords {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.comingSoon {
+  font-size: 11px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.quizPct {
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  letter-spacing: 0.01em;
+}
+
+.readBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition: transform 0.1s;
+  flex-shrink: 0;
+}
+
+.readBtn:hover {
+  transform: scale(1.2);
+}
+
+.readBtnOn {
+  color: #4ade80;
+}
+
+.rowReady {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.rowReady:hover .modTitle {
+  color: var(--accent);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .metaRow {
+    padding: 12px 10px;
+  }
+
+  .metaItem {
+    padding: 0 10px;
+  }
+
+  .metaNum {
+    font-size: 18px;
+  }
+
+  .moduleRow {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .modInfo {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .modTitle {
+    font-size: 13px;
+  }
+}
