@@ -11,7 +11,9 @@ function WordListBlock({ block }) {
   return (
     <div className={styles.block}>
       <h2 className={styles.blockTitle}>{block.title}</h2>
-      <div className={styles.tableOuter}>
+
+      {/* Desktop: таблица */}
+      <div className={`${styles.tableOuter} ${styles.wordTableOuter}`}>
         <table className={styles.wordTable}>
           <thead>
             <tr>
@@ -37,6 +39,25 @@ function WordListBlock({ block }) {
           </tbody>
         </table>
       </div>
+
+      {/* Mobile: карточки */}
+      <div className={styles.wordCards}>
+        {block.words.map((w) => (
+          <div key={w.num} className={styles.wordCard}>
+            <div className={styles.wordCardTop}>
+              <span className={styles.wordCardNum}>{w.num}</span>
+              <span className={styles.wordCardWord}>{w.word}</span>
+              <span className={styles.wordCardTr}>{w.tr}</span>
+            </div>
+            <div className={styles.wordCardRu}>{w.ru}</div>
+            <div className={styles.wordCardEx}>
+              <span>{w.ex}</span>
+              <span className={styles.wordCardExRu}>{w.exRu}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
       {block.note && (
         <div className={styles.note}>
           <strong>{block.note.title}:</strong>
