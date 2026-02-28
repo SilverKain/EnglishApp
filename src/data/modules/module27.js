@@ -1,0 +1,260 @@
+export const module27 = {
+  id: 27,
+  levelId: 'level-1',
+  title: 'Вечер дома',
+  words: '517–536',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 517–536 — вечер, отдых, переход от работы ко сну.',
+      words: [
+        { num: 517, word: 'evening',  tr: '[ˈiːvnɪŋ]',   ru: 'вечер; вечерний',              ex: 'She spends most evenings at home — a book, a cup of tea, the sofa.',           exRu: 'Большинство вечеров она проводит дома — книга, чашка чая, диван.' },
+        { num: 518, word: 'dinner',   tr: '[ˈdɪnə]',      ru: 'ужин; обед (основная еда)',     ex: 'He cooks dinner on Tuesdays and Thursdays — she does the rest.',               exRu: 'По вторникам и четвергам он готовит ужин — в остальные дни она.' },
+        { num: 519, word: 'finish',   tr: '[ˈfɪnɪʃ]',    ru: 'заканчивать; заканчиваться',   ex: 'She finishes work at six and is home by seven.',                               exRu: 'Она заканчивает работу в шесть и приходит домой к семи.' },
+        { num: 520, word: 'tired',    tr: '[ˈtaɪəd]',     ru: 'уставший; усталый',            ex: 'He was tired after the long day — he sat down and didn\'t move for an hour.', exRu: 'После долгого дня он устал — сел и час не двигался.' },
+        { num: 521, word: 'sofa',     tr: '[ˈsəʊfə]',     ru: 'диван',                        ex: 'She sat on the sofa, pulled a blanket over herself and started a film.',       exRu: 'Она села на диван, накрылась пледом и включила фильм.' },
+        { num: 522, word: 'rest',     tr: '[rest]',        ru: 'отдыхать; отдых; остаток',     ex: 'He needs at least an hour of rest after work before he can talk to anyone.',   exRu: 'Ему нужен хотя бы час отдыха после работы, прежде чем он сможет с кем-то разговаривать.' },
+        { num: 523, word: 'tidy',     tr: '[ˈtaɪdɪ]',     ru: 'убирать; аккуратный',          ex: 'She tidies the kitchen every evening before she goes to bed.',                  exRu: 'Она убирает кухню каждый вечер перед сном.' },
+        { num: 524, word: 'bath',     tr: '[bɑːθ]',        ru: 'ванна; принимать ванну',       ex: 'A bath in the evening helps her switch off after a difficult day.',             exRu: 'Вечерняя ванна помогает ей отключиться после трудного дня.' },
+        { num: 525, word: 'tomorrow', tr: '[təˈmɒrəʊ]',   ru: 'завтра',                       ex: 'He thinks about what he needs to do tomorrow — only for five minutes, then stops.', exRu: 'Он думает о том, что надо сделать завтра, — всего пять минут, потом останавливается.' },
+        { num: 526, word: 'bed',      tr: '[bed]',         ru: 'кровать; постель; ложиться спать', ex: 'She goes to bed at ten-thirty — earlier than most of her friends.',        exRu: 'Она ложится спать в десять тридцать — раньше большинства своих друзей.' },
+        { num: 527, word: 'quiet',    tr: '[ˈkwaɪət]',    ru: 'тихий; тишина; спокойный',     ex: 'The flat is quiet after eight — that is when he does his best thinking.',       exRu: 'После восьми в квартире тихо — именно тогда ему лучше всего думается.' },
+        { num: 528, word: 'plan',     tr: '[plæn]',        ru: 'планировать; план',            ex: 'She plans the next day in the evening — a short list, nothing complicated.',   exRu: 'Вечером она планирует следующий день — короткий список, ничего сложного.' },
+        { num: 529, word: 'sleep',    tr: '[sliːp]',       ru: 'спать; сон',                   ex: 'He sleeps well when he has a quiet evening — no screens after nine.',          exRu: 'Он хорошо спит, если вечер был спокойным — никаких экранов после девяти.' },
+        { num: 530, word: 'lamp',     tr: '[læmp]',        ru: 'лампа; светильник',            ex: 'She turns on the small lamp by the sofa — it is softer than the main light.',  exRu: 'Она включает маленькую лампу у дивана — её свет мягче, чем основной.' },
+        { num: 531, word: 'switch',   tr: '[swɪtʃ]',      ru: 'выключатель; переключать; менять', ex: 'He switches off the TV and just sits for a while — silence is good.',      exRu: 'Он выключает телевизор и просто сидит некоторое время — тишина — это хорошо.' },
+        { num: 532, word: 'window',   tr: '[ˈwɪndəʊ]',    ru: 'окно',                         ex: 'She sits by the window in the evenings and watches the street below.',         exRu: 'Вечерами она сидит у окна и смотрит на улицу внизу.' },
+        { num: 533, word: 'warm',     tr: '[wɔːm]',        ru: 'тёплый; согревать',            ex: 'He makes a warm drink before bed — it helps him slow down.',                   exRu: 'Перед сном он делает тёплый напиток — это помогает ему замедлиться.' },
+        { num: 534, word: 'already',  tr: '[ɔːlˈredɪ]',   ru: 'уже',                          ex: 'She was already in bed by the time he got home.',                             exRu: 'Когда он пришёл домой, она уже была в постели.' },
+        { num: 535, word: 'night',    tr: '[naɪt]',        ru: 'ночь; вечер (в приветствиях)', ex: 'Good night — sleep well. / He works late into the night sometimes.',           exRu: 'Спокойной ночи — сладких снов. / Иногда он работает до глубокой ночи.' },
+        { num: 536, word: 'outside',  tr: '[ˌaʊtˈsaɪd]', ru: 'снаружи; на улице; за окном',  ex: 'It is cold outside — she is glad to be inside with the lamp on.',             exRu: 'На улице холодно — она рада, что дома, с включённой лампой.' },
+      ],
+      note: {
+        title: 'dinner; rest — многозначность; go to bed vs fall asleep',
+        lines: [
+          'dinner в британском английском — основной приём пищи, обычно вечерний. В некоторых регионах dinner = обед, а ужин — supper. Безопасный вариант: dinner = вечерняя еда.',
+          'rest — глагол (I need to rest.), существительное (Have a rest.), и «the rest» — остаток: I\'ll do the rest tomorrow.',
+          'go to bed — лечь спать (физически оказаться в постели). fall asleep / go to sleep — заснуть (момент, когда сон пришёл). sleep — спать (состояние): She slept for eight hours.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'She gets home in the evening and immediately changes into comfortable clothes.',              ru: 'Она приходит домой вечером и сразу переодевается в удобную одежду.', note: 'changes into — переодевается в' },
+        { num: 2,  en: 'He makes dinner while listening to music — the kitchen is his quiet time.',                   ru: 'Он готовит ужин, слушая музыку, — кухня — его время тишины.', note: '' },
+        { num: 3,  en: 'She finishes work at six, but it takes her an hour to mentally switch off.',                  ru: 'Она заканчивает работу в шесть, но ей нужен час, чтобы мысленно отключиться.', note: 'mentally — мысленно, в голове' },
+        { num: 4,  en: 'He is tired but not sleepy — too many thoughts, not enough silence.',                         ru: 'Он устал, но не хочет спать — слишком много мыслей, недостаточно тишины.', note: 'sleepy — сонный' },
+        { num: 5,  en: 'She dropped onto the sofa and didn\'t move for forty minutes.',                               ru: 'Она упала на диван и сорок минут не двигалась.', note: 'dropped onto — упала / плюхнулась на' },
+        { num: 6,  en: 'He leaves work at the same time every day — rest is not negotiable.',                         ru: 'Он уходит с работы в одно и то же время каждый день — отдых не обсуждается.', note: 'not negotiable — не обсуждается, обязательно' },
+        { num: 7,  en: 'She tidied the kitchen, wiped the table and felt instantly better.',                          ru: 'Она убрала кухню, вытерла стол — и сразу почувствовала себя лучше.', note: 'wiped — вытерла' },
+        { num: 8,  en: 'He runs a bath every Friday evening — it is the marker that the week is over.',               ru: 'Каждую пятницу вечером он набирает ванну — это знак, что неделя закончилась.', note: 'the marker — знак, отметка' },
+        { num: 9,  en: 'She is already thinking about tomorrow while trying to enjoy tonight.',                       ru: 'Она уже думает о завтра, пытаясь наслаждаться сегодняшним вечером.', note: '' },
+        { num: 10, en: 'He went to bed early — he had an important meeting in the morning.',                          ru: 'Он лёг спать рано — утром у него была важная встреча.', note: '' },
+        { num: 11, en: 'The flat is quiet at this hour — she can hear herself think.',                                ru: 'В этот час в квартире тихо — она слышит собственные мысли.', note: 'hear herself think — слышать собственные мысли' },
+        { num: 12, en: 'He writes a short plan for the next day — it takes five minutes and saves an hour.',          ru: 'Он пишет короткий план на следующий день — пять минут работы, один час экономии.', note: '' },
+        { num: 13, en: 'She sleeps better when she reads before bed — not screens, a real book.',                     ru: 'Она лучше спит, если читает перед сном — не экраны, а настоящую книгу.', note: '' },
+        { num: 14, en: 'He turned off the lamp, pulled up the blanket and stared at the ceiling for a while.',        ru: 'Он выключил лампу, натянул одеяло и некоторое время смотрел в потолок.', note: 'stared at — смотрел, уставился в; ceiling — потолок' },
+        { num: 15, en: 'Outside it was raining — inside, the lamp was on and the tea was warm.',                      ru: 'На улице шёл дождь — внутри горела лампа и был тёплый чай.', note: '' },
+      ],
+      note: {
+        title: 'already vs still',
+        lines: [
+          'already (уже) — обычно стоит перед основным глаголом или после be: She is already in bed. / He has already eaten.',
+          'still (всё ещё) — когда что-то продолжается дольше, чем ожидалось: She is still at work at eight.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'Maria finished work at six and walked home. Twenty minutes in the cold, which she didn\'t mind. The movement helped her brain stop.',
+        'By the time she opened her front door, she was already quieter inside.',
+        'She changed her clothes first — always. Shoes off, coat on the hook, work clothes off. Something soft, something loose. That was the signal: the working day is over.',
+        'Then dinner. Nothing complicated — she had prepared something the day before. She ate at the kitchen table, slowly, without looking at her phone. The window was dark. It was warm inside.',
+        'After dinner she tidied the kitchen — ten minutes, not more. She didn\'t like going to bed with a messy kitchen. It was a small thing, but it mattered.',
+        'She sat on the sofa. Read a little. Thought about tomorrow for exactly five minutes — she had a rule about this — then stopped.',
+        'At ten she turned off the lamp, lay down and listened to the quiet outside.',
+        'She was asleep before ten-thirty.',
+      ],
+      translation: [
+        'Мария закончила работу в шесть и пошла домой пешком. Двадцать минут на холоде — она не возражала. Движение помогало мозгу остановиться.',
+        'К тому моменту, когда она открыла входную дверь, в голове уже стало тише.',
+        'Сначала — переодеться. Всегда. Снять обувь, повесить пальто, снять рабочую одежду. Что-то мягкое, что-то свободное. Это был сигнал: рабочий день окончен.',
+        'Потом ужин. Ничего сложного — она приготовила кое-что накануне. Ела за кухонным столом, не торопясь, не глядя в телефон. За окном было темно. В доме тепло.',
+        'После ужина убрала кухню — десять минут, не больше. Ей не нравилось ложиться спать с беспорядком на кухне. Мелочь, но это имело значение.',
+        'Она села на диван. Немного почитала. Ровно пять минут думала о завтра — у неё было правило — потом остановилась.',
+        'В десять выключила лампу, легла и прислушалась к тишине снаружи.',
+        'Она спала до половины одиннадцатого.',
+      ],
+      vocab: [
+        { word: 'hook',    tr: '[hʊk]',      ru: 'крючок' },
+        { word: 'loose',   tr: '[luːs]',     ru: 'свободный (об одежде)' },
+        { word: 'signal',  tr: '[ˈsɪɡnəl]', ru: 'сигнал' },
+        { word: 'messy',   tr: '[ˈmesɪ]',   ru: 'беспорядочный, в беспорядке' },
+        { word: 'mattered',tr: '[ˈmætəd]',  ru: 'имело значение' },
+        { word: 'asleep',  tr: '[əˈsliːp]', ru: 'спящий; заснул(-а)' },
+        { word: 'lie down',tr: '—',          ru: 'лечь' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Ключевые паттерны модуля.',
+      items: [
+        {
+          sentence:    'get home, change into, tidy up, wind down, go to bed, fall asleep',
+          schema:      'Глагольные конструкции для описания вечернего распорядка.',
+          explanation: 'get home — прийти домой. change into — переодеться в. have dinner — поужинать. tidy up — убрать, навести порядок. wash up — помыть посуду. switch off — выключить (также: мысленно отключиться). wind down — успокоиться, замедлиться. go to bed — лечь спать. fall asleep — заснуть.',
+          pattern:     'Устойчивые конструкции с глаголами.',
+          examples:    ['As soon as I get home, I change into comfortable clothes.', 'She winds down by reading before bed.', 'He fell asleep on the sofa.'],
+        },
+        {
+          sentence:    'as soon as I get home… / by the time I finish dinner… / before bed',
+          schema:      'Выражения времени для описания вечера.',
+          explanation: 'as soon as I get home — как только я прихожу домой. by the time I finish dinner — к тому времени, как я заканчиваю ужин. before bed — перед сном. after dinner — после ужина. in the evening — вечером. at night — ночью, поздно вечером.',
+          pattern:     'Временные союзы и предлоги.',
+          examples:    ['As soon as she gets home, she changes clothes.', 'By the time dinner was ready, he was already tired.', 'She reads before bed every night.'],
+        },
+        {
+          sentence:    'She was already in bed. / He was still working.',
+          schema:      'already vs still.',
+          explanation: 'already (уже) — стоит перед основным глаголом или после be/have: She is already tired. / He has already eaten. still (всё ещё) — что-то продолжается дольше ожидаемого: She is still at work at nine.',
+          pattern:     'already + [действие] / be + already + [прил.]',
+          examples:    ['She was already asleep when I called.', 'He had already eaten dinner.', 'She is still not home at ten.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'When I get home in the evening, the first thing I do is…',
+            'In the evening I usually feel… because…',
+            'I go to bed at about… On weekends it is different because…',
+            'My favourite way to wind down in the evening is…',
+            'I sleep better when…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'How does Maria get home and why does she like the walk?',    hint: 'Как Мария добирается домой и почему ей нравится эта прогулка?' },
+            { q: 'What is the first thing she does when she gets inside? Why?', hint: 'Что она делает первым делом дома? Почему?' },
+            { q: 'Why does she tidy the kitchen every evening?',               hint: 'Почему она убирает кухню каждый вечер?' },
+            { q: 'What is her rule about tomorrow?',                           hint: 'Каково её правило насчёт завтра?' },
+            { q: 'What time does she fall asleep?',                            hint: 'Во сколько она засыпает?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Я прихожу домой, переодеваюсь и сразу чувствую себя лучше.',         en: 'I get home, change into comfortable clothes and immediately feel better.' },
+            { ru: 'Он уже лежал в постели, когда я позвонил.',                           en: 'He was already in bed when I called.' },
+            { ru: 'Ей нравится тишина вечером — никаких звонков, никаких новостей.',     en: 'She likes the quiet in the evening — no calls, no news.' },
+            { ru: 'Перед сном она пишет короткий список на завтра.',                     en: 'Before bed she writes a short list for tomorrow.' },
+            { ru: 'На улице темно и холодно, но дома тепло и горит лампа.',              en: 'Outside it is dark and cold, but inside it is warm and the lamp is on.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'She ___ work at six and walks home — the fresh air helps her.',         answer: 'finishes' },
+            { sentence: 'He was ___ — he sat on the sofa and fell asleep in ten minutes.',       answer: 'tired' },
+            { sentence: 'She tidies the kitchen every ___ — it is part of her routine.',         answer: 'evening' },
+            { sentence: 'He went to ___ early because he had an important meeting.',             answer: 'bed' },
+            { sentence: 'The flat was ___ — just the sound of rain outside.',                   answer: 'quiet' },
+            { sentence: 'She runs a ___ on Friday evenings — it is her way of ending the week.', answer: 'bath' },
+            { sentence: 'He ___ off his phone at nine — no screens before sleep.',              answer: 'switches' },
+            { sentence: 'She was ___ thinking about tomorrow while trying to enjoy the evening.', answer: 'already' },
+            { sentence: 'It was cold ___ — she was glad to be inside.',                         answer: 'outside' },
+            { sentence: 'He makes a ___ drink before bed — it helps him slow down.',            answer: 'warm' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'She went to sleep at ten-thirty.',             rephrased: 'She went to bed at ten-thirty.' },
+            { original: 'He turned off the television.',                rephrased: 'He switched the TV off.' },
+            { original: 'The kitchen was not clean after dinner.',      rephrased: 'The kitchen was messy after dinner.' },
+            { original: 'She made the kitchen neat before going to bed.', rephrased: 'She tidied the kitchen before bed.' },
+            { original: 'He felt very tired after work.',               rephrased: 'He was exhausted after a long day.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'Dan called it "the quiet hour" — that space between eight and nine in the evening when the day was done but sleep was still far away.',
+            'He finished dinner, washed up and tidied the kitchen. This took about fifteen minutes. He was already feeling better by the time the kitchen was clean.',
+            'Then he made tea — always the same kind, always the same mug — and went to the sofa. He turned off the main light and switched on the small lamp in the corner. The room changed immediately. Softer, smaller, calmer.',
+            'He didn\'t watch anything during the quiet hour. No news, no films, no phone. He just sat. Sometimes he read. Sometimes he just looked out of the window at the dark street and the lights of the building opposite.',
+            'Outside the world was still moving. Somewhere people were rushing, working, worrying. In here, for one hour, none of that existed.',
+            'At nine he would plan tomorrow — a short list, five things at most. Then he put the list away and stopped thinking about work.',
+            'By ten he was in bed.',
+            'He slept well most nights. He thought the quiet hour had something to do with it.',
+          ],
+          translation: [
+            'Дэн называл это «тихим часом» — тем промежутком между восемью и девятью вечера, когда день уже закончился, а до сна ещё далеко.',
+            'Он заканчивал ужин, мыл посуду и убирал кухню. На это уходило минут пятнадцать. К тому моменту, как кухня была чистой, он уже чувствовал себя лучше.',
+            'Потом заваривал чай — всегда один и тот же, всегда в той же кружке — и шёл на диван. Выключал основной свет и включал маленькую лампу в углу. Комната сразу менялась. Мягче, меньше, спокойнее.',
+            'Во время тихого часа он ничего не смотрел. Ни новостей, ни фильмов, ни телефона. Просто сидел. Иногда читал. Иногда просто смотрел в окно на тёмную улицу и огни дома напротив.',
+            'Снаружи мир всё ещё двигался. Где-то люди спешили, работали, беспокоились. Здесь, в течение одного часа, ничего этого не существовало.',
+            'В девять он планировал завтра — короткий список, максимум пять пунктов. Потом убирал список и переставал думать о работе.',
+            'К десяти он был в постели.',
+            'Большинство ночей он спал хорошо. Он думал, что тихий час имел к этому какое-то отношение.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      28,
+    title:   'Глаголы движения',
+    preview: ['walk, run, drive, fly, jump, climb', 'turn, cross, stop, pass, follow, reach', 'direction, step, move, approach, enter, rush'],
+    tip:     'Попробуй описать свой вечер вчера — пять предложений по-английски. Используй слова finish, tired, sofa, dinner, bed и связки then, after that, finally.',
+  },
+}

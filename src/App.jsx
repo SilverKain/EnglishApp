@@ -25,6 +25,16 @@ import { module17 } from './data/modules/module17'
 import { module18 } from './data/modules/module18'
 import { module19 } from './data/modules/module19'
 import { module20 } from './data/modules/module20'
+import { module21 } from './data/modules/module21'
+import { module22 } from './data/modules/module22'
+import { module23 } from './data/modules/module23'
+import { module24 } from './data/modules/module24'
+import { module25 } from './data/modules/module25'
+import { module26 } from './data/modules/module26'
+import { module27 } from './data/modules/module27'
+import { module28 } from './data/modules/module28'
+import { module29 } from './data/modules/module29'
+import { module30 } from './data/modules/module30'
 
 const M1_PATH = '/level-1/module/1'
 const M1_QUIZ = '/level-1/module/1/quiz'
@@ -66,6 +76,26 @@ const M19_PATH = '/level-1/module/19'
 const M19_QUIZ = '/level-1/module/19/quiz'
 const M20_PATH = '/level-1/module/20'
 const M20_QUIZ = '/level-1/module/20/quiz'
+const M21_PATH = '/level-1/module/21'
+const M21_QUIZ = '/level-1/module/21/quiz'
+const M22_PATH = '/level-1/module/22'
+const M22_QUIZ = '/level-1/module/22/quiz'
+const M23_PATH = '/level-1/module/23'
+const M23_QUIZ = '/level-1/module/23/quiz'
+const M24_PATH = '/level-1/module/24'
+const M24_QUIZ = '/level-1/module/24/quiz'
+const M25_PATH = '/level-1/module/25'
+const M25_QUIZ = '/level-1/module/25/quiz'
+const M26_PATH = '/level-1/module/26'
+const M26_QUIZ = '/level-1/module/26/quiz'
+const M27_PATH = '/level-1/module/27'
+const M27_QUIZ = '/level-1/module/27/quiz'
+const M28_PATH = '/level-1/module/28'
+const M28_QUIZ = '/level-1/module/28/quiz'
+const M29_PATH = '/level-1/module/29'
+const M29_QUIZ = '/level-1/module/29/quiz'
+const M30_PATH = '/level-1/module/30'
+const M30_QUIZ = '/level-1/module/30/quiz'
 
 function App() {
   return (
@@ -117,6 +147,26 @@ function App() {
         <Route path={M19_QUIZ} element={<QuizPage   moduleData={module19} backPath={M19_PATH} />} />
         <Route path={M20_PATH} element={<ModulePage moduleData={module20} backPath="/level-1" quizPath={M20_QUIZ} />} />
         <Route path={M20_QUIZ} element={<QuizPage   moduleData={module20} backPath={M20_PATH} />} />
+        <Route path={M21_PATH} element={<ModulePage moduleData={module21} backPath="/level-1" quizPath={M21_QUIZ} />} />
+        <Route path={M21_QUIZ} element={<QuizPage   moduleData={module21} backPath={M21_PATH} />} />
+        <Route path={M22_PATH} element={<ModulePage moduleData={module22} backPath="/level-1" quizPath={M22_QUIZ} />} />
+        <Route path={M22_QUIZ} element={<QuizPage   moduleData={module22} backPath={M22_PATH} />} />
+        <Route path={M23_PATH} element={<ModulePage moduleData={module23} backPath="/level-1" quizPath={M23_QUIZ} />} />
+        <Route path={M23_QUIZ} element={<QuizPage   moduleData={module23} backPath={M23_PATH} />} />
+        <Route path={M24_PATH} element={<ModulePage moduleData={module24} backPath="/level-1" quizPath={M24_QUIZ} />} />
+        <Route path={M24_QUIZ} element={<QuizPage   moduleData={module24} backPath={M24_PATH} />} />
+        <Route path={M25_PATH} element={<ModulePage moduleData={module25} backPath="/level-1" quizPath={M25_QUIZ} />} />
+        <Route path={M25_QUIZ} element={<QuizPage   moduleData={module25} backPath={M25_PATH} />} />
+        <Route path={M26_PATH} element={<ModulePage moduleData={module26} backPath="/level-1" quizPath={M26_QUIZ} />} />
+        <Route path={M26_QUIZ} element={<QuizPage   moduleData={module26} backPath={M26_PATH} />} />
+        <Route path={M27_PATH} element={<ModulePage moduleData={module27} backPath="/level-1" quizPath={M27_QUIZ} />} />
+        <Route path={M27_QUIZ} element={<QuizPage   moduleData={module27} backPath={M27_PATH} />} />
+        <Route path={M28_PATH} element={<ModulePage moduleData={module28} backPath="/level-1" quizPath={M28_QUIZ} />} />
+        <Route path={M28_QUIZ} element={<QuizPage   moduleData={module28} backPath={M28_PATH} />} />
+        <Route path={M29_PATH} element={<ModulePage moduleData={module29} backPath="/level-1" quizPath={M29_QUIZ} />} />
+        <Route path={M29_QUIZ} element={<QuizPage   moduleData={module29} backPath={M29_PATH} />} />
+        <Route path={M30_PATH} element={<ModulePage moduleData={module30} backPath="/level-1" quizPath={M30_QUIZ} />} />
+        <Route path={M30_QUIZ} element={<QuizPage   moduleData={module30} backPath={M30_PATH} />} />
       </Routes>
     </BrowserRouter>
   )

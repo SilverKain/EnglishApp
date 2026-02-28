@@ -1,0 +1,262 @@
+export const module28 = {
+  id: 28,
+  levelId: 'level-1',
+  title: 'Глаголы движения',
+  words: '537–556',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 537–556 — глаголы движения, перемещения и направления.',
+      words: [
+        { num: 537, word: 'walk',      tr: '[wɔːk]',        ru: 'идти пешком; прогулка',           ex: 'She walks to work every morning — it takes twenty minutes.',                      exRu: 'Она каждое утро идёт на работу пешком — это занимает двадцать минут.' },
+        { num: 538, word: 'run',       tr: '[rʌn]',          ru: 'бежать; бегать',                  ex: 'He runs three times a week — early morning, before the city wakes up.',           exRu: 'Он бегает три раза в неделю — рано утром, до того как город просыпается.' },
+        { num: 539, word: 'drive',     tr: '[draɪv]',        ru: 'ехать на машине; вести машину',   ex: 'She drives to the office on rainy days — otherwise she takes the bus.',            exRu: 'В дождливые дни она едет в офис на машине — иначе берёт автобус.' },
+        { num: 540, word: 'ride',      tr: '[raɪd]',         ru: 'ехать (на велосипеде); поездка',  ex: 'He rides his bike to work in summer — it is faster than the bus.',                 exRu: 'Летом он ездит на велосипеде на работу — это быстрее автобуса.' },
+        { num: 541, word: 'fly',       tr: '[flaɪ]',         ru: 'лететь; летать',                  ex: 'She flew to Amsterdam for a conference — back the same evening.',                  exRu: 'Она полетела в Амстердам на конференцию — вернулась тем же вечером.' },
+        { num: 542, word: 'jump',      tr: '[dʒʌmp]',        ru: 'прыгать; прыжок',                 ex: 'He jumped over the puddle — and landed just next to it.',                         exRu: 'Он прыгнул через лужу — и приземлился прямо рядом с ней.' },
+        { num: 543, word: 'climb',     tr: '[klaɪm]',        ru: 'подниматься; карабкаться',        ex: 'She climbed the stairs slowly — four floors, heavy bag.',                          exRu: 'Она медленно поднялась по лестнице — четыре этажа, тяжёлая сумка.' },
+        { num: 544, word: 'fall',      tr: '[fɔːl]',         ru: 'падать; осень (AmE)',              ex: 'He slipped on the wet floor and nearly fell.',                                    exRu: 'Он поскользнулся на мокром полу и едва не упал.' },
+        { num: 545, word: 'turn',      tr: '[tɜːn]',         ru: 'поворачивать; очередь',           ex: 'She turned left at the corner and found the café immediately.',                   exRu: 'Она повернула налево на углу и сразу нашла кафе.' },
+        { num: 546, word: 'cross',     tr: '[krɒs]',         ru: 'переходить (дорогу); пересекать', ex: 'He crossed the street without looking — she grabbed his arm.',                    exRu: 'Он перешёл улицу, не глядя, — она схватила его за руку.' },
+        { num: 547, word: 'stop',      tr: '[stɒp]',         ru: 'останавливаться; остановка',      ex: 'She stopped in front of the shop window and looked for a long time.',              exRu: 'Она остановилась перед витриной и долго смотрела.' },
+        { num: 548, word: 'pass',      tr: '[pɑːs]',         ru: 'проходить мимо; передавать',      ex: 'He passed the bakery every morning — usually without stopping.',                   exRu: 'Каждое утро он проходил мимо булочной — обычно не останавливаясь.' },
+        { num: 549, word: 'follow',    tr: '[ˈfɒləʊ]',      ru: 'следовать; идти за',              ex: 'She followed the signs to the exit and found the car park easily.',                exRu: 'Она следовала указателям к выходу и легко нашла парковку.' },
+        { num: 550, word: 'reach',     tr: '[riːtʃ]',        ru: 'достигать; добираться до',        ex: 'He reached the station just as the train was leaving.',                            exRu: 'Он добрался до станции как раз в тот момент, когда поезд отходил.' },
+        { num: 551, word: 'enter',     tr: '[ˈentə]',        ru: 'входить; заходить',               ex: 'She entered the building, signed in and went straight to the lift.',               exRu: 'Она вошла в здание, отметилась на входе и сразу пошла к лифту.' },
+        { num: 552, word: 'step',      tr: '[step]',         ru: 'шагать; шаг',                     ex: 'He stepped back to let her through the door first.',                               exRu: 'Он отступил назад, пропуская её в дверь первой.' },
+        { num: 553, word: 'rush',      tr: '[rʌʃ]',          ru: 'мчаться; суета',                  ex: 'She rushed across the platform and caught the train with seconds to spare.',        exRu: 'Она пробежала через платформу и успела на поезд с секундами запаса.' },
+        { num: 554, word: 'approach',  tr: '[əˈprəʊtʃ]',   ru: 'приближаться; подходить',          ex: 'He saw her approaching from the other side of the square.',                        exRu: 'Он увидел, как она подходит с другой стороны площади.' },
+        { num: 555, word: 'move',      tr: '[muːv]',         ru: 'двигаться; переезжать',           ex: 'Could you move a little to the left? — I can\'t see the screen.',                 exRu: 'Не могли бы вы подвинуться немного влево? — Я не вижу экран.' },
+        { num: 556, word: 'direction', tr: '[dɪˈrekʃn]',    ru: 'направление',                     ex: 'She walked in the wrong direction for ten minutes before checking the map.',       exRu: 'Она шла не в ту сторону десять минут, прежде чем проверить карту.' },
+      ],
+      note: {
+        title: 'ride vs drive; fall — неправильная форма; предлоги движения',
+        lines: [
+          'ride — велосипед, мотоцикл, лошадь: ride a bike / ride a horse. Для машины — drive: drive a car. Пассажиром: I took a bus / I got a lift.',
+          'fall — неправильный глагол: fall → fell → fallen. He fell off his bike. / She has fallen asleep.',
+          'Предлоги движения уточняют направление: walk to (цель), walk through (маршрут), walk past (мимо), run away from (прочь), turn into (свернуть в), come out of (выйти из).',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'She walks everywhere in the city — she says it is the best way to know a place.',           ru: 'Она ходит везде по городу пешком — говорит, это лучший способ узнать место.', note: '' },
+        { num: 2,  en: 'He ran to catch the bus and missed it anyway — it pulled away just as he arrived.',          ru: 'Он бежал за автобусом и всё равно опоздал — тот отъехал как раз в момент его прихода.', note: 'pulled away — отъехал' },
+        { num: 3,  en: 'She drives carefully — never fast, always leaves extra time.',                               ru: 'Она водит осторожно — никогда не спешит, всегда выходит с запасом времени.', note: '' },
+        { num: 4,  en: 'He rides his bike through the park on weekends — thirty minutes each way.',                   ru: 'По выходным он ездит на велосипеде через парк — тридцать минут в каждую сторону.', note: 'each way — в каждую сторону' },
+        { num: 5,  en: 'They flew overnight and arrived tired but on time.',                                          ru: 'Они летели ночью и прилетели усталыми, но вовремя.', note: 'overnight — ночью; на протяжении ночи' },
+        { num: 6,  en: 'The cat jumped onto the table and knocked over her coffee.',                                  ru: 'Кошка прыгнула на стол и опрокинула её кофе.', note: 'knocked over — опрокинула' },
+        { num: 7,  en: 'She climbed the hill slowly — not because it was steep, but because she wanted to look around.', ru: 'Она поднималась на холм медленно — не потому что было круто, а потому что хотела оглядеться.', note: 'steep — крутой' },
+        { num: 8,  en: 'He slipped on the ice and fell — nothing broken, just embarrassed.',                          ru: 'Он поскользнулся на льду и упал — ничего не сломал, просто было неловко.', note: '' },
+        { num: 9,  en: 'Turn right at the traffic lights and then it is the second building on the left.',            ru: 'На светофоре поверните направо, а потом второе здание слева.', note: '' },
+        { num: 10, en: 'She crossed the bridge and stopped to look at the river below.',                              ru: 'Она перешла мост и остановилась, чтобы посмотреть на реку внизу.', note: '' },
+        { num: 11, en: 'He stopped walking, put down his bag and sat on a bench for a while.',                        ru: 'Он перестал идти, поставил сумку и некоторое время сидел на скамейке.', note: '' },
+        { num: 12, en: 'She passed the old library every day on her way to school for twelve years.',                 ru: 'Двенадцать лет она каждый день проходила мимо старой библиотеки по дороге в школу.', note: '' },
+        { num: 13, en: 'He followed the path through the forest until it came out by the lake.',                      ru: 'Он шёл по тропинке через лес, пока она не вывела его к озеру.', note: '' },
+        { num: 14, en: 'She reached the top of the stairs and had to stop to catch her breath.',                      ru: 'Она добралась до верха лестницы и должна была остановиться, чтобы перевести дух.', note: 'catch her breath — перевести дух' },
+        { num: 15, en: 'He stepped outside for a moment and felt the cold air on his face.',                          ru: 'Он вышел на минуту и почувствовал холодный воздух на лице.', note: '' },
+      ],
+      note: {
+        title: 'Предлоги движения',
+        lines: [
+          'walk to the station — идти до станции (цель)',
+          'walk through the park — идти через парк (маршрут)',
+          'walk past the café — проходить мимо кафе',
+          'run away from — убегать от',
+          'turn into — свернуть в (улицу)',
+          'come out of — выходить из',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'It was her first week in the city and Nina still got lost regularly. Not badly lost — just the small kind, where you walk in the wrong direction for five minutes before the street stops looking familiar.',
+        'That morning she left home early. She was walking to a new café she had found on the map — twenty minutes on foot, which seemed fine. The sun was out.',
+        'She crossed the first street, turned right at the corner and followed a wide road for several minutes. Then something felt wrong. She stopped, looked around and checked her phone.',
+        'She had turned the wrong way at the corner. She was heading away from the café, not towards it.',
+        'She turned back. Passed the same corner. Crossed the same street in the opposite direction. Started again.',
+        'She reached the café twelve minutes later. Not twenty. She had gone wrong earlier, but once she found the right direction she moved quickly.',
+        'She ordered a coffee, sat by the window and felt pleased with herself. She had been lost and found her way. In a new city, that counts for something.',
+      ],
+      translation: [
+        'Это была её первая неделя в городе, и Нина всё ещё регулярно плутала. Не серьёзно — просто в мелкую сторону: идёшь не туда пять минут, пока улица не перестаёт казаться знакомой.',
+        'В то утро она вышла рано. Шла в новое кафе, которое нашла на карте, — двадцать минут пешком, что казалось вполне нормально. Светило солнце.',
+        'Она перешла первую улицу, повернула направо на углу и несколько минут шла по широкой дороге. Потом что-то почувствовалось не так. Она остановилась, огляделась и проверила телефон.',
+        'На углу она повернула не туда. Она шла прочь от кафе, а не к нему.',
+        'Она вернулась. Прошла тот же угол. Перешла ту же улицу в обратную сторону. Начала снова.',
+        'Она дошла до кафе через двенадцать минут. Не через двадцать. Сначала свернула не туда, но как только нашла правильное направление — шла быстро.',
+        'Она заказала кофе, села у окна и осталась довольна собой. Она заблудилась и нашла дорогу. В новом городе это кое-чего стоит.',
+      ],
+      vocab: [
+        { word: 'regularly',          tr: '[ˈreɡjələlɪ]',   ru: 'регулярно' },
+        { word: 'familiar',           tr: '[fəˈmɪlɪə]',     ru: 'знакомый (на вид)' },
+        { word: 'on foot',            tr: '—',               ru: 'пешком' },
+        { word: 'heading',            tr: '[ˈhedɪŋ]',        ru: 'направляясь' },
+        { word: 'opposite direction', tr: '—',               ru: 'противоположное направление' },
+        { word: 'counts for something',tr: '—',              ru: 'кое-чего стоит' },
+        { word: 'pleased with herself',tr: '—',              ru: 'довольна собой' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Ключевые паттерны модуля.',
+      items: [
+        {
+          sentence:    'Turn left / right. Go straight on. Cross the street. Follow the road.',
+          schema:      'Даём направления.',
+          explanation: 'Turn left / right — Поверните налево / направо. Go straight on — Идите прямо. Take the first / second left / right — Свернуть на первом / втором ... налево / направо. Cross the street — Перейдите улицу. Pass the… — Пройдите мимо… Follow the road / path — Следуйте по дороге / тропинке. It is on your left / right — Это будет слева / справа. You can\'t miss it — Не пропустите.',
+          pattern:     'Команды: Turn / Go / Cross / Follow / Pass + [объект].',
+          examples:    ['Turn right at the traffic lights.', 'Go straight on until you reach the bridge.', 'You can\'t miss it — it is right on the corner.'],
+        },
+        {
+          sentence:    'run → ran → run; drive → drove → driven; fly → flew → flown; fall → fell → fallen',
+          schema:      'Неправильные глаголы движения.',
+          explanation: 'run → ran → run. drive → drove → driven. ride → rode → ridden. fly → flew → flown. fall → fell → fallen. come → came → come. Эти формы встречаются постоянно — запомни их.',
+          pattern:     'Инфинитив → Past Simple → Past Participle.',
+          examples:    ['She ran to catch the bus.', 'He drove to the airport in the rain.', 'The cat fell off the shelf.'],
+        },
+        {
+          sentence:    'She walked to the station. / He walked through the park. / She walked past the café.',
+          schema:      'Глаголы движения + предлоги.',
+          explanation: 'Глаголы движения почти всегда идут с предлогами: to (цель), through (маршрут), past (мимо), away from (прочь), into (внутрь), out of (наружу), towards (по направлению к), back (назад).',
+          pattern:     '[глагол движения] + [предлог] + [место].',
+          examples:    ['She walked towards the station.', 'He ran away from the dog.', 'They came out of the building.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'I usually get to work / school by…',
+            'The last time I got lost, I was…',
+            'I like / don\'t like walking because…',
+            'The longest distance I have ever walked was…',
+            'If I could fly anywhere tomorrow, I would go to…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'Why does Nina get lost in the city?',                         hint: 'Почему Нина плутает по городу?' },
+            { q: 'How far was the café and how was she planning to get there?',  hint: 'Как далеко было кафе и как она собиралась добраться?' },
+            { q: 'What mistake did she make at the corner?',                     hint: 'Какую ошибку она сделала на углу?' },
+            { q: 'How long did it actually take her to reach the café?',         hint: 'Сколько времени ей в итоге понадобилось?' },
+            { q: 'Why did she feel pleased at the end?',                         hint: 'Почему в конце она осталась довольна собой?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Он пробежал через парк и успел на поезд.',                                          en: 'He ran through the park and caught the train.' },
+            { ru: 'На светофоре она повернула не туда и оказалась в незнакомом месте.',               en: 'She turned the wrong way at the traffic lights and ended up in an unfamiliar place.' },
+            { ru: 'Он каждый день проходил мимо этого магазина, но никогда не заходил внутрь.',       en: 'He passed this shop every day but never went inside.' },
+            { ru: 'Она перешла улицу, поднялась по лестнице и вошла в здание.',                      en: 'She crossed the street, climbed the stairs and entered the building.' },
+            { ru: 'Я не знал, в каком направлении идти, поэтому остановился и проверил карту.',      en: 'I didn\'t know which direction to go, so I stopped and checked the map.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'She ___ to work every day — about twenty minutes on foot.',              answer: 'walks' },
+            { sentence: 'He slipped on the wet floor and nearly ___.',                            answer: 'fell' },
+            { sentence: '___ right at the corner and the café is the second building on the left.', answer: 'Turn' },
+            { sentence: 'She ___ the street carefully, looking both ways.',                       answer: 'crossed' },
+            { sentence: 'He ___ his bike to work in summer — it is faster than the bus.',        answer: 'rides' },
+            { sentence: 'She ___ the signs to the exit and found the car park without any problem.', answer: 'followed' },
+            { sentence: 'He ___ the station just as the train was pulling away.',                 answer: 'reached' },
+            { sentence: 'She ___ the library every morning on her way to the office.',           answer: 'passed' },
+            { sentence: 'He ___ into the building and went straight to the lift.',               answer: 'entered' },
+            { sentence: 'She walked in the wrong ___ for five minutes before checking her phone.', answer: 'direction' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'She got to the station just before the train left.',  rephrased: 'She reached the station just in time.' },
+            { original: 'He went into the café and sat down.',                 rephrased: 'He entered the café and sat down.' },
+            { original: 'She went climbing up the hill.',                      rephrased: 'She climbed the hill.' },
+            { original: 'He didn\'t stop — he kept walking past.',             rephrased: 'He passed without stopping.' },
+            { original: 'She didn\'t know which way to go.',                   rephrased: 'She didn\'t know which direction to go in.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'Jack always took the long way to the office. Not because he had to — the short route was faster by twelve minutes — but because he liked it.',
+            'The long way went through a small park. He entered from the south side, walked along the path by the pond and exited through the iron gate on the north side. Twelve minutes, roughly. In the short route he would have saved time but lost the park.',
+            'He walked slowly. He never ran in the morning — he thought running before work made you arrive too loud, too fast, before your thoughts had caught up.',
+            'He liked to pass the old church on the left. He liked to cross the stone bridge and look down at the water. He liked to follow the curve of the path and see the buildings come into view one by one.',
+            'He had done this walk for three years. He knew every turn, every bench, every tree that dropped leaves on the path in autumn. In winter he sometimes slipped on the frozen ground near the gate — he had learned to step carefully there.',
+            'He reached the office at eight-fifteen every morning. His colleagues asked him once how he always seemed calm. He said he walked to work.',
+            'They said: "We know, but how does that help?"',
+            'He thought about it. "I arrive going in the right direction," he said. "Mentally, I mean."',
+          ],
+          translation: [
+            'Джек всегда шёл в офис длинным путём. Не потому что был вынужден — короткий маршрут был быстрее на двенадцать минут — а потому что ему так нравилось.',
+            'Длинный путь пролегал через небольшой парк. Он входил с южной стороны, шёл по тропинке у пруда и выходил через железные ворота с северной стороны. Примерно двенадцать минут. По короткому маршруту он выиграл бы время, но потерял парк.',
+            'Он шёл медленно. По утрам он никогда не бегал — считал, что если прибежать на работу, то приходишь слишком шумным, слишком быстрым, ещё до того как мысли успевают за тобой.',
+            'Ему нравилось проходить мимо старой церкви слева. Нравилось переходить каменный мост и смотреть вниз на воду. Нравилось идти по изгибу тропинки и видеть, как здания появляются одно за другим.',
+            'Он ходил этим путём три года. Знал каждый поворот, каждую скамейку, каждое дерево, которое роняет листья на тропинку осенью. Зимой он иногда скользил на мёрзлой земле у ворот — научился осторожно ступать там.',
+            'В офис он приходил в восемь пятнадцать каждое утро. Коллеги однажды спросили, почему он всегда выглядит спокойным. Он сказал, что ходит на работу пешком.',
+            'Они сказали: «Мы знаем, но как это помогает?»',
+            'Он подумал. «Я прихожу, двигаясь в правильном направлении, — сказал он. — В голове, я имею в виду».',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      29,
+    title:   'Глаголы мышления и речи',
+    preview: ['think, know, understand, remember, forget', 'say, tell, ask, answer, explain, describe', 'suggest, believe, wonder, realise, decide, agree'],
+    tip:     'Попробуй описать маршрут от своего дома до ближайшего магазина по-английски — используй слова turn, cross, pass, follow, reach. Привяжи их к реальному месту.',
+  },
+}
