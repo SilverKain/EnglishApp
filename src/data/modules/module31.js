@@ -1,0 +1,256 @@
+export const module31 = {
+  id: 31,
+  levelId: 'level-1',
+  title: 'На работе',
+  words: '597–616',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 597–616 — работа, должности, офисная жизнь и карьера.',
+      words: [
+        { num: 597, word: 'work',       tr: '[wɜːk]',           ru: 'работа; работать',              ex: 'She loves her work — she would do it even if she wasn\'t paid.',                    exRu: 'Она любит свою работу — занималась бы ею, даже если бы ей не платили.' },
+        { num: 598, word: 'job',        tr: '[dʒɒb]',           ru: 'работа (должность); задание',   ex: 'He got a new job last month — same industry, better company.',                      exRu: 'В прошлом месяце он получил новую работу — та же отрасль, лучшая компания.' },
+        { num: 599, word: 'office',     tr: '[ˈɒfɪs]',          ru: 'офис; кабинет',                 ex: 'She works from the office three days a week — the rest from home.',                 exRu: 'Три дня в неделю она работает из офиса — остальное из дома.' },
+        { num: 600, word: 'meeting',    tr: '[ˈmiːtɪŋ]',        ru: 'встреча; совещание',            ex: 'He has four meetings today — he won\'t have time to do any actual work.',           exRu: 'Сегодня у него четыре совещания — на нормальную работу времени не останется.' },
+        { num: 601, word: 'colleague',  tr: '[ˈkɒliːɡ]',        ru: 'коллега',                       ex: 'She gets on well with most of her colleagues — the team is good.',                  exRu: 'Она хорошо ладит с большинством коллег — команда хорошая.' },
+        { num: 602, word: 'boss',       tr: '[bɒs]',            ru: 'начальник; босс',               ex: 'Her boss is direct — he says what he thinks and expects the same back.',            exRu: 'Её начальник прямолинеен — говорит то, что думает, и ожидает того же в ответ.' },
+        { num: 603, word: 'project',    tr: '[ˈprɒdʒekt]',      ru: 'проект',                        ex: 'They have been working on this project for six months — almost finished.',           exRu: 'Они работают над этим проектом уже шесть месяцев — почти закончили.' },
+        { num: 604, word: 'task',       tr: '[tɑːsk]',          ru: 'задача; задание',               ex: 'She writes a list of tasks every morning — it helps her focus.',                    exRu: 'Каждое утро она составляет список задач — это помогает ей сосредоточиться.' },
+        { num: 605, word: 'deadline',   tr: '[ˈdedlaɪn]',       ru: 'дедлайн; крайний срок',        ex: 'The deadline is Friday — they are not going to make it.',                          exRu: 'Дедлайн в пятницу — они не успевают.' },
+        { num: 606, word: 'report',     tr: '[rɪˈpɔːt]',        ru: 'отчёт; сообщать; доклад',      ex: 'She spent the whole afternoon writing the report — it took longer than expected.',  exRu: 'Она провела весь день, составляя отчёт — это заняло больше времени, чем ожидалось.' },
+        { num: 607, word: 'team',       tr: '[tiːm]',           ru: 'команда',                       ex: 'The team works well together — different skills, same goal.',                       exRu: 'Команда хорошо работает вместе — разные навыки, одна цель.' },
+        { num: 608, word: 'manage',     tr: '[ˈmænɪdʒ]',        ru: 'управлять; справляться',        ex: 'She manages a team of twelve people — not always easy, but she is good at it.',     exRu: 'Она руководит командой из двенадцати человек — не всегда легко, но у неё хорошо получается.' },
+        { num: 609, word: 'hire',       tr: '[haɪə]',           ru: 'нанимать; арендовать',          ex: 'They are hiring two developers — the job is posted online.',                        exRu: 'Они нанимают двух разработчиков — вакансия опубликована онлайн.' },
+        { num: 610, word: 'salary',     tr: '[ˈsæləri]',        ru: 'зарплата',                      ex: 'He accepted the offer — the salary was better than expected.',                     exRu: 'Он принял предложение — зарплата оказалась лучше, чем ожидал.' },
+        { num: 611, word: 'career',     tr: '[kəˈrɪə]',         ru: 'карьера',                       ex: 'She built her career slowly — one good decision at a time.',                       exRu: 'Она строила карьеру не спеша — одно верное решение за другим.' },
+        { num: 612, word: 'experience', tr: '[ɪkˈspɪərɪəns]',  ru: 'опыт; переживание',             ex: 'Three years of experience in the field is the minimum for this role.',             exRu: 'Для этой должности минимум — три года опыта в данной области.' },
+        { num: 613, word: 'skill',      tr: '[skɪl]',           ru: 'навык; умение',                 ex: 'The most valuable skill in his job is knowing how to listen.',                     exRu: 'Самый ценный навык в его работе — умение слушать.' },
+        { num: 614, word: 'apply',      tr: '[əˈplaɪ]',         ru: 'подавать заявку; применять',    ex: 'She applied for the position on Monday — heard back by Thursday.',                  exRu: 'В понедельник она подала заявку на вакансию — в четверг получила ответ.' },
+        { num: 615, word: 'interview',  tr: '[ˈɪntəvjuː]',      ru: 'собеседование; интервью',       ex: 'He had two interviews — the second one went much better than the first.',           exRu: 'У него было два собеседования — второе прошло намного лучше первого.' },
+        { num: 616, word: 'busy',       tr: '[ˈbɪzi]',          ru: 'занятой; загруженный',          ex: 'She is too busy to take on anything new this week.',                               exRu: 'На этой неделе она слишком занята, чтобы брать что-то новое.' },
+      ],
+      note: {
+        title: 'work vs job; experience — исчисляемое и нет; manage to do',
+        lines: [
+          'work — деятельность, процесс: She loves her work. / I have a lot of work today. Не считается как a work.',
+          'job — конкретная должность или место работы: He got a new job. / What is your job? Считается: a job, two jobs.',
+          'experience (неисч.) — накопленный опыт: She has a lot of experience. experience (исч.) — конкретное переживание: It was an amazing experience.',
+          'manage to + инфинитив = суметь, справиться: She managed to finish before the deadline. / Did you manage to find it?',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'She has been in the same job for eight years — she is good at it and the team respects her.',           ru: 'Она на одной и той же должности уже восемь лет — отлично справляется, и команда её уважает.', note: '' },
+        { num: 2,  en: 'The office is open-plan — thirty people, lots of noise, not great for concentration.',                   ru: 'Офис с открытой планировкой — тридцать человек, много шума, неудобно для концентрации.', note: 'open-plan — с открытой планировкой' },
+        { num: 3,  en: 'They have a team meeting every Monday at nine — fifteen minutes, no more.',                              ru: 'У них командное совещание каждый понедельник в девять — пятнадцать минут, не больше.', note: '' },
+        { num: 4,  en: 'She introduced herself to her new colleague on her first day — he showed her where everything was.',     ru: 'В первый день она представилась новому коллеге — он показал ей, где что находится.', note: '' },
+        { num: 5,  en: 'His boss gave him clear feedback — what was good, what needed to improve, what to do next.',            ru: 'Начальник дал ему чёткую обратную связь — что хорошо, что нужно улучшить, что делать дальше.', note: 'feedback — обратная связь' },
+        { num: 6,  en: 'The project was delayed by two weeks — the client was not happy, but understood.',                      ru: 'Проект задержался на две недели — клиент был недоволен, но понял.', note: '' },
+        { num: 7,  en: 'He completed every task on his list by four — rare, but it happens.',                                   ru: 'Он выполнил все задачи из своего списка к четырём — редко, но бывает.', note: '' },
+        { num: 8,  en: 'The deadline is tomorrow — she has been working on it since seven this morning.',                       ru: 'Дедлайн завтра — она работает над этим с семи утра.', note: '' },
+        { num: 9,  en: 'He submitted the report late but with a short explanation — his boss accepted it.',                     ru: 'Он сдал отчёт с опозданием, но с коротким объяснением — начальник принял его.', note: 'submitted — сдал, отправил' },
+        { num: 10, en: 'The team disagreed at first, but came to a decision together — that is how good teams work.',           ru: 'Поначалу команда не соглашалась, но вместе пришла к решению — именно так работают хорошие команды.', note: '' },
+        { num: 11, en: 'She manages the whole department — twenty people, multiple projects, constant pressure.',               ru: 'Она управляет всем отделом — двадцать человек, несколько проектов, постоянное давление.', note: 'constant pressure — постоянное давление' },
+        { num: 12, en: 'They hired someone with less experience but more energy — it turned out to be the right choice.',       ru: 'Они наняли человека с меньшим опытом, но большей энергией — это оказалось правильным выбором.', note: '' },
+        { num: 13, en: 'He asked about the salary at the end of the second interview — it was better than expected.',           ru: 'В конце второго собеседования он спросил о зарплате — оказалось лучше, чем ожидал.', note: '' },
+        { num: 14, en: 'She applied for three positions in one week — heard back from two of them.',                            ru: 'За одну неделю она подала заявки на три вакансии — ответили двое из трёх.', note: '' },
+        { num: 15, en: 'The interview lasted forty minutes — half technical questions, half about him as a person.',            ru: 'Собеседование длилось сорок минут — половина технических вопросов, половина о нём как о человеке.', note: '' },
+      ],
+      note: {
+        title: 'manage to do — усилие и результат',
+        lines: [
+          'manage to + инфинитив ≠ could: manage to подчёркивает усилие и результат.',
+          'She managed to finish before the deadline. — Она успела закончить до дедлайна.',
+          'Did you manage to find it? — Тебе удалось найти это?',
+          'He didn\'t manage to get a reply. — Ему не удалось получить ответ.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'On her first day, Elena arrived ten minutes early. She stood outside the building for a moment. Then she went in.',
+        'The office was larger than she had imagined from the interview. Open-plan, bright, already half-full at eight-fifty. Someone pointed her to her desk. It was by a window — she noted this as a good sign.',
+        'Her manager came over at nine. He was calm, organized, spoke clearly. He gave her a short tour of the office — the kitchen, the meeting rooms, the fire exits. He introduced her to her team — five people, all friendly, all busy.',
+        'Her first task was simple: read through the main project documents and write down any questions. She spent the morning doing this. She had eight questions by lunchtime.',
+        'At lunch she sat with two colleagues. She asked them what they wished they had known on their first day. One said: "Don\'t be afraid to ask." The other said: "Bring your own coffee. The office one is terrible."',
+        'She smiled. Both were useful.',
+        'By five o\'clock she had a clearer picture of the job. Not everything — but enough to know she could do it.',
+        'She sent her manager three of her eight questions by email that evening. He replied within the hour.',
+        'She decided to come back on day two.',
+      ],
+      translation: [
+        'В первый день Елена пришла на десять минут раньше. Она постояла снаружи здания несколько секунд. Потом вошла.',
+        'Офис оказался больше, чем она представляла по собеседованию. Открытая планировка, светло, уже наполовину занятый в без десяти девять. Кто-то указал ей на её стол. Он был у окна — она восприняла это как хороший знак.',
+        'В девять подошёл её менеджер. Спокойный, организованный, говорил чётко. Он провёл для неё короткую экскурсию по офису — кухня, переговорные комнаты, пожарные выходы. Познакомил с её командой — пятеро, все приветливые, все заняты.',
+        'Первое задание было простым: прочитать основные документы по проекту и записать любые вопросы. Утро она провела за этим. К обеду у неё было восемь вопросов.',
+        'На обеде она сидела с двумя коллегами. Спросила их, что они хотели бы знать в свой первый день. Один сказал: «Не бойся спрашивать». Второй сказал: «Приноси свой кофе. Офисный — ужасный».',
+        'Она улыбнулась. Оба совета были полезными.',
+        'К пяти часам у неё было более чёткое представление о работе. Не обо всём — но достаточно, чтобы понять: она справится.',
+        'Вечером она отправила менеджеру три из восьми вопросов по имейлу. Он ответил в течение часа.',
+        'Она решила вернуться на второй день.',
+      ],
+      vocab: [
+        { word: 'tour',          tr: '[tʊə]',           ru: 'экскурсия; обход' },
+        { word: 'fire exits',    tr: '—',               ru: 'пожарные выходы' },
+        { word: 'organized',     tr: '[ˈɔːɡənaɪzd]',   ru: 'организованный' },
+        { word: 'lunchtime',     tr: '[ˈlʌntʃtaɪm]',   ru: 'обеденное время' },
+        { word: 'clearer picture', tr: '—',             ru: 'более чёткое представление' },
+        { word: 'useful',        tr: '[ˈjuːsfəl]',      ru: 'полезный' },
+        { word: 'within the hour', tr: '—',             ru: 'в течение часа' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Ключевые паттерны модуля.',
+      items: [
+        {
+          sentence:    'apply for a job / get a job / leave a job / get promoted / work on a project / meet a deadline',
+          schema:      'Глагольные конструкции о работе.',
+          explanation: 'apply for a job — подать заявку на вакансию. get a job — получить работу. start a new job — выйти на новую работу. leave a job / quit — уволиться. get promoted — получить повышение. work on a project — работать над проектом. meet a deadline — уложиться в срок. miss a deadline — пропустить дедлайн. run a meeting — вести совещание. manage a team — руководить командой.',
+          pattern:     'Verb + [рабочий объект/ситуация].',
+          examples:    ['She applied for the position and got an interview the same week.', 'He missed the deadline again — his boss was not happy.', 'She manages a team of ten and runs the weekly meeting.'],
+        },
+        {
+          sentence:    'I have worked here for five years. / She has managed a team before.',
+          schema:      'Present Perfect в рабочем контексте.',
+          explanation: 'Present Perfect часто используют, когда говорят об опыте и карьере. for — продолжительность: for six months, for two years. since — начальная точка: since January, since I started here. have ever — когда-либо в опыте: Have you ever applied for a job abroad?',
+          pattern:     'have/has + V3 [for / since / ever / just / already].',
+          examples:    ['I have worked here for five years.', 'She has managed a team before — she knows what it takes.', 'Have you ever applied for a job abroad?', 'He has just finished the report.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'My current / last job involves / involved…',
+            'The skill I use most at work is…',
+            'The most difficult part of work for me is…',
+            'I think a good boss should…',
+            'The best / worst meeting I have ever had was…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'Why did Elena arrive early and what did she do before going in?',     hint: 'Почему Елена пришла рано и что сделала перед входом?' },
+            { q: 'What did her manager show her during the tour?',                      hint: 'Что показал ей менеджер во время экскурсии?' },
+            { q: 'What was her first task?',                                            hint: 'Каким было её первое задание?' },
+            { q: 'What advice did her colleagues give her at lunch?',                   hint: 'Какой совет дали ей коллеги на обеде?' },
+            { q: 'How did she end her first working day?',                              hint: 'Как она завершила первый рабочий день?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Она работает в этой компании уже три года и недавно получила повышение.',            en: 'She has worked at this company for three years and recently got promoted.' },
+            { ru: 'Он подал заявку на пять вакансий и получил приглашение на два собеседования.',       en: 'He applied for five positions and was invited to two interviews.' },
+            { ru: 'Дедлайн в пятницу, но команда уже почти закончила проект.',                         en: 'The deadline is Friday, but the team has almost finished the project.' },
+            { ru: 'Её начальник ясно объяснил задачу — она знала, что делать.',                        en: 'Her boss explained the task clearly — she knew what to do.' },
+            { ru: 'Самый ценный навык в любой работе — умение слушать.',                               en: 'The most valuable skill in any job is knowing how to listen.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'She has been in the same ___ for six years — she is very good at it.',                    answer: 'job' },
+            { sentence: 'He has four ___ today — his calendar is completely full.',                                answer: 'meetings' },
+            { sentence: 'The ___ is tomorrow — she has been working on it all week.',                             answer: 'deadline' },
+            { sentence: 'They hired someone with two years of ___ in marketing.',                                 answer: 'experience' },
+            { sentence: 'She applied for the ___ and was invited to an interview the next day.',                  answer: 'job' },
+            { sentence: 'His ___ is clear and direct — he never makes you guess what he thinks.',                 answer: 'boss' },
+            { sentence: 'The ___ works well together — everyone knows their role.',                               answer: 'team' },
+            { sentence: 'She ___ a team of eight people — it is a big responsibility.',                           answer: 'manages' },
+            { sentence: 'His ___ improved when he moved to a larger company.',                                    answer: 'salary' },
+            { sentence: 'The ___ lasted an hour — mostly technical questions.',                                   answer: 'interview' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'She got the position.',                          rephrased: 'She was hired.' },
+            { original: 'He couldn\'t finish the report on time.',        rephrased: 'He missed the deadline.' },
+            { original: 'They succeeded in completing the project.',      rephrased: 'They managed to finish the project.' },
+            { original: 'She has the skills needed for the role.',        rephrased: 'She is qualified for the role.' },
+            { original: 'He is responsible for a team of ten.',           rephrased: 'He manages a team of ten.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'Tom had applied for the job on a Thursday evening. He hadn\'t expected a reply. It was a senior role at a company he admired — bigger than anything he had tried for before. He sent the application and forgot about it.',
+            'On Monday he received an email: they wanted to meet him.',
+            'The interview was on Wednesday. He prepared carefully — researched the company, thought about his experience, wrote down the questions he wanted to ask. He read the job description again the night before.',
+            'He arrived five minutes early. The office was in the centre of the city, in a building he had passed many times without knowing what was inside.',
+            'The interview lasted fifty minutes. There were two people — his potential boss and a colleague from the team. They asked about his previous work, his skills, how he managed difficult situations. He answered as honestly as he could.',
+            'He walked out not knowing whether he had got the job. But he felt he had been himself, which was the most he could have hoped for.',
+            'They called him the next afternoon. He started three weeks later.',
+          ],
+          translation: [
+            'В четверг вечером Том подал заявку на вакансию. Он не ожидал ответа. Это была старшая должность в компании, которой он восхищался, — крупнее всего, на что он когда-либо претендовал. Он отправил заявку и забыл о ней.',
+            'В понедельник пришёл имейл: они хотели с ним встретиться.',
+            'Собеседование было в среду. Он тщательно подготовился — изучил компанию, подумал о своём опыте, записал вопросы, которые хотел задать. Накануне ночью он ещё раз перечитал описание вакансии.',
+            'Он пришёл за пять минут. Офис был в центре города, в здании, мимо которого он проходил много раз, не зная, что внутри.',
+            'Собеседование длилось пятьдесят минут. Было двое — его потенциальный начальник и коллега из команды. Они спрашивали о предыдущей работе, навыках, о том, как он справляется с трудными ситуациями. Он отвечал как можно честнее.',
+            'Он вышел, не зная, получил ли работу. Но чувствовал, что был собой — а это максимум, на что он мог рассчитывать.',
+            'На следующий день после обеда ему позвонили. Он вышел на работу через три недели.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      32,
+    title:   'Путешествие',
+    preview: ['travel, trip, journey, flight, ticket, passport', 'luggage, hotel, book, arrive, depart, border', 'customs, destination, tourist, local, abroad, guide'],
+    tip:     'Подумай о своей работе или учёбе и опиши один рабочий день по-английски: пять предложений, пять деталей. Используй слова task, meeting, colleague, deadline, manage.',
+  },
+}

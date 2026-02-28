@@ -1,0 +1,257 @@
+export const module34 = {
+  id: 34,
+  levelId: 'level-1',
+  title: 'Деньги и финансы',
+  words: '657–676',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 657–676 — деньги, расходы, сбережения и финансовые решения.',
+      words: [
+        { num: 657, word: 'money',     tr: '[ˈmʌni]',       ru: 'деньги',                         ex: 'She doesn\'t have a lot of money, but she manages well — she always knows where it goes.', exRu: 'У неё немного денег, но она справляется — всегда знает, куда они уходят.' },
+        { num: 658, word: 'pay',       tr: '[peɪ]',          ru: 'платить; оплата',                 ex: 'He paid for the meal — she said she would get the next one.',                           exRu: 'Он заплатил за ужин — она сказала, что возьмёт на себя следующий.' },
+        { num: 659, word: 'cost',      tr: '[kɒst]',         ru: 'стоить; стоимость',               ex: 'The repair cost more than the original price of the appliance.',                        exRu: 'Ремонт обошёлся дороже, чем стоил сам прибор изначально.' },
+        { num: 660, word: 'price',     tr: '[praɪs]',        ru: 'цена',                            ex: 'She checked the price three times before buying — old habit.',                          exRu: 'Перед покупкой она трижды проверила цену — старая привычка.' },
+        { num: 661, word: 'spend',     tr: '[spend]',        ru: 'тратить',                         ex: 'He spends more on coffee than on books — he is aware of this and unbothered.',           exRu: 'На кофе он тратит больше, чем на книги, — знает об этом и не переживает.' },
+        { num: 662, word: 'save',      tr: '[seɪv]',         ru: 'копить; экономить; сохранять',    ex: 'She saves a fixed amount every month — small, but consistent.',                         exRu: 'Каждый месяц она откладывает фиксированную сумму — небольшую, но стабильно.' },
+        { num: 663, word: 'earn',      tr: '[ɜːn]',          ru: 'зарабатывать',                    ex: 'He earns enough to live comfortably — not more, not less.',                             exRu: 'Он зарабатывает достаточно, чтобы жить нормально — не больше, не меньше.' },
+        { num: 664, word: 'afford',    tr: '[əˈfɔːd]',       ru: 'позволить себе',                  ex: 'She can\'t afford a new laptop right now — she is saving up.',                          exRu: 'Сейчас она не может позволить себе новый ноутбук — копит.' },
+        { num: 665, word: 'cheap',     tr: '[tʃiːp]',        ru: 'дешёвый; недорогой',              ex: 'The café is cheap and good — always full, always the same regulars.',                   exRu: 'Кафе дешёвое и хорошее — всегда полное, всегда одни и те же завсегдатаи.' },
+        { num: 666, word: 'expensive', tr: '[ɪkˈspensɪv]',  ru: 'дорогой',                         ex: 'The jacket was expensive but she bought it anyway — she had wanted it for two years.',   exRu: 'Куртка была дорогой, но она всё равно её купила — хотела её два года.' },
+        { num: 667, word: 'budget',    tr: '[ˈbʌdʒɪt]',      ru: 'бюджет; планировать расходы',    ex: 'He keeps a monthly budget — it takes ten minutes and saves arguments.',                  exRu: 'Он ведёт ежемесячный бюджет — это занимает десять минут и избавляет от споров.' },
+        { num: 668, word: 'bill',      tr: '[bɪl]',          ru: 'счёт; купюра; законопроект',      ex: 'The electricity bill was higher than usual — the heating was on all night.',             exRu: 'Счёт за электричество оказался выше обычного — отопление работало всю ночь.' },
+        { num: 669, word: 'bank',      tr: '[bæŋk]',         ru: 'банк; берег',                     ex: 'He went to the bank to sort out an issue with his account — it took forty minutes.',    exRu: 'Он пошёл в банк, чтобы разобраться с проблемой по счёту — это заняло сорок минут.' },
+        { num: 670, word: 'cash',      tr: '[kæʃ]',          ru: 'наличные',                        ex: 'She prefers to pay in cash — she says it makes her more aware of what she spends.',     exRu: 'Она предпочитает платить наличными — говорит, это помогает лучше следить за тратами.' },
+        { num: 671, word: 'borrow',    tr: '[ˈbɒrəʊ]',       ru: 'брать в долг; занимать',          ex: 'He borrowed two hundred pounds from his brother — paid it back within a month.',        exRu: 'Он занял двести фунтов у брата — вернул в течение месяца.' },
+        { num: 672, word: 'lend',      tr: '[lend]',         ru: 'давать в долг; одалживать',        ex: 'She never lends money to friends — not because she doesn\'t trust them, but because she has seen what happens.', exRu: 'Она никогда не одалживает деньги друзьям — не потому что не доверяет им, а потому что видела, чем это кончается.' },
+        { num: 673, word: 'debt',      tr: '[det]',          ru: 'долг',                            ex: 'He paid off his last debt in March — first time in seven years he owed nothing.',       exRu: 'В марте он выплатил последний долг — впервые за семь лет он никому ничего не должен.' },
+        { num: 674, word: 'worth',     tr: '[wɜːθ]',         ru: 'стоить; ценность',                ex: 'The course cost a lot, but it was worth every penny.',                                  exRu: 'Курс стоил дорого, но каждый пенни был потрачен не зря.' },
+        { num: 675, word: 'discount',  tr: '[ˈdɪskaʊnt]',   ru: 'скидка',                          ex: 'She asked for a discount — the shop was closing down anyway, so they agreed.',          exRu: 'Она попросила скидку — магазин всё равно закрывался, так что они согласились.' },
+        { num: 676, word: 'receipt',   tr: '[rɪˈsiːt]',      ru: 'чек; квитанция',                  ex: 'He keeps every receipt for a month — just in case.',                                    exRu: 'Он хранит каждый чек месяц — на всякий случай.' },
+      ],
+      note: {
+        title: 'cost vs price vs pay; borrow vs lend; worth + -ing',
+        lines: [
+          'price — цифра на ценнике (существительное): The price is fifty euros.',
+          'cost — сколько пришлось заплатить (глагол/сущ.): It cost fifty euros. / The cost was high. Неправильный: Past = cost (не costed!).',
+          'pay — действие оплаты (глагол): She paid fifty euros. / He paid for the ticket.',
+          'borrow (from) — брать у кого-то: Can I borrow your pen? / She borrowed money from her sister.',
+          'lend (to) — давать кому-то: Can you lend me your pen? / Her sister lent money to her.',
+          'worth + -ing (не to): It is worth doing it. / Is it worth visiting? Нельзя: It is worth to do it.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'She has never had a lot of money, but she has never worried about it either.',                    ru: 'У неё никогда не было много денег, но она никогда и не переживала из-за этого.', note: '' },
+        { num: 2,  en: 'He paid cash — there was a small discount for not using a card.',                                 ru: 'Он заплатил наличными — за оплату без карты была небольшая скидка.', note: '' },
+        { num: 3,  en: 'The repair cost twice what she expected — she should have got a second quote.',                   ru: 'Ремонт обошёлся вдвое дороже, чем она ожидала, — стоило поспрашивать ещё.', note: 'get a second quote — получить второе предложение по цене' },
+        { num: 4,  en: 'She checked the price online before going to the shop — it was cheaper there.',                   ru: 'Перед походом в магазин она проверила цену онлайн — там оказалось дешевле.', note: '' },
+        { num: 5,  en: 'He spends too much on things he doesn\'t need — he knows it, but doesn\'t stop.',                ru: 'Он тратит слишком много на ненужные вещи — знает об этом, но не останавливается.', note: '' },
+        { num: 6,  en: 'She saves twenty percent of her salary every month — it adds up faster than she expected.',       ru: 'Каждый месяц она откладывает двадцать процентов зарплаты — набегает быстрее, чем она ожидала.', note: '' },
+        { num: 7,  en: 'He earns well but spends more than he earns — the gap is the problem.',                           ru: 'Он неплохо зарабатывает, но тратит больше, чем зарабатывает, — в этом и проблема.', note: '' },
+        { num: 8,  en: 'She couldn\'t afford the flat by herself — so she found a flatmate.',                             ru: 'Квартира ей была не по карману в одиночку — она нашла сожительницу.', note: 'flatmate — сосед/ка по квартире' },
+        { num: 9,  en: 'The hotel was cheap for the area — small, but comfortable and well-located.',                     ru: 'Отель для этого района был дешёвым — небольшой, но удобный и с хорошим расположением.', note: '' },
+        { num: 10, en: 'The dinner was expensive — but it was a special occasion, and it was worth it.',                  ru: 'Ужин был дорогим — но это был особый случай, и оно того стоило.', note: '' },
+        { num: 11, en: 'He sets a monthly budget and checks it every Sunday — five minutes, no surprises.',               ru: 'Он составляет ежемесячный бюджет и проверяет его каждое воскресенье — пять минут, никаких сюрпризов.', note: '' },
+        { num: 12, en: 'The bill came to more than they expected — they split it evenly and didn\'t make a fuss.',        ru: 'Счёт оказался больше, чем они ожидали, — разделили поровну и не стали спорить.', note: 'split evenly — разделить поровну' },
+        { num: 13, en: 'He borrowed the money in January and paid it back by April — he hates being in debt.',            ru: 'В январе он занял деньги, а к апрелю вернул — он терпеть не может быть в долгу.', note: '' },
+        { num: 14, en: 'She would never lend money without a clear plan of when to get it back.',                         ru: 'Она никогда не одолжит деньги без чёткого понимания, когда их вернут.', note: '' },
+        { num: 15, en: 'She asked if there was a student discount — there was, and it saved her fifteen percent.',        ru: 'Она спросила, есть ли студенческая скидка, — оказалась, и она сэкономила ей пятнадцать процентов.', note: '' },
+      ],
+      note: {
+        title: 'Финансовые конструкции',
+        lines: [
+          'spend money on something — тратить деньги на что-то.',
+          'save up for something — копить на что-то.',
+          'pay back / pay off a debt — вернуть долг / выплатить долг полностью.',
+          'be in debt — быть в долгу. live within your means — жить по средствам. on a budget — с ограниченным бюджетом.',
+          'too much / too many / not enough: It costs too much. / She doesn\'t earn enough. / There are too many bills.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'When Tom started his first job, his father gave him one piece of advice: "Every time you get paid, move a hundred pounds somewhere you can\'t easily touch. Don\'t think about it. Just do it."',
+        'Tom didn\'t think much of it at the time. But he did it anyway.',
+        'For the first year, a hundred pounds a month felt significant. By the second year, it didn\'t feel like anything. By the fifth year, he had enough saved to take three months off without panic.',
+        'He didn\'t take three months off. But he liked knowing he could.',
+        'The thing he noticed was not the money itself — it was the feeling. Not having debt, not worrying about a car repair or a broken phone, not having to calculate whether he could afford a dentist appointment.',
+        'His colleague Sam earned more than him. Sam also spent more than Tom. Sam was always slightly stressed about money — nothing dramatic, just a low background tension that never quite went away.',
+        'Tom thought about his father\'s rule. Simple, consistent, not exciting. But after ten years, it had given him something money itself cannot buy: the ability to stop thinking about money.',
+        'He passed the rule on to his younger sister when she got her first job. She rolled her eyes. He smiled. She would figure it out.',
+      ],
+      translation: [
+        'Когда Том устроился на первую работу, отец дал ему один совет: «Каждый раз, когда получаешь зарплату, переводи сто фунтов туда, откуда тебе не так-то просто взять. Не думай об этом. Просто делай».',
+        'Тогда Том не придал этому особого значения. Но всё равно делал.',
+        'В первый год сто фунтов в месяц казались существенной суммой. На второй год это уже ничего не значило. К пятому году у него было накоплено достаточно, чтобы взять три месяца отпуска без паники.',
+        'Три месяца он не брал. Но ему нравилось знание, что может.',
+        'Он заметил, что дело было не в самих деньгах — а в ощущении. Никаких долгов, никаких переживаний из-за ремонта машины или сломанного телефона, никакой необходимости подсчитывать, можно ли себе позволить визит к стоматологу.',
+        'Его коллега Сэм зарабатывал больше него. Сэм и тратил больше. Сэм всегда немного нервничал из-за денег — ничего драматичного, просто лёгкое фоновое напряжение.',
+        'Том думал о правиле отца. Простое, последовательное, неброское. Но за десять лет оно дало ему то, что сами деньги купить не могут: способность перестать думать о деньгах.',
+        'Когда его младшая сестра устроилась на первую работу, он передал ей это правило. Она закатила глаза. Он улыбнулся. Разберётся.',
+      ],
+      vocab: [
+        { word: 'significant',  tr: '[sɪɡˈnɪfɪkənt]',  ru: 'значительный; существенный' },
+        { word: 'consistent',   tr: '[kənˈsɪstənt]',    ru: 'последовательный; стабильный' },
+        { word: 'dramatic',     tr: '[drəˈmætɪk]',      ru: 'драматичный; резкий' },
+        { word: 'tension',      tr: '[ˈtenʃən]',         ru: 'напряжение' },
+        { word: 'figure out',   tr: '—',                 ru: 'разобраться; понять' },
+        { word: 'rolled her eyes', tr: '—',              ru: 'закатила глаза' },
+        { word: 'pass on',      tr: '—',                 ru: 'передать (совет, правило)' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Ключевые паттерны модуля.',
+      items: [
+        {
+          sentence:    'spend money on / save up for / pay for / pay back / be in debt / can\'t afford to',
+          schema:      'Глагольные конструкции о деньгах.',
+          explanation: 'spend money on something — тратить деньги на что-то. save up for something — копить на что-то. pay for something — платить за что-то. pay back / pay off a debt — вернуть долг / выплатить долг. be in debt — быть в долгу. be worth it — стоить того. can\'t afford to do something — не мочь себе позволить. split the bill — разделить счёт. on a budget — с ограниченным бюджетом. live within your means — жить по средствам.',
+          pattern:     'Verb + предлог + [объект].',
+          examples:    ['She saves up for a holiday every year.', 'He paid off his debt in three years.', 'They split the bill equally — twenty euros each.'],
+        },
+        {
+          sentence:    'It costs too much. / She doesn\'t earn enough. / There are too many bills.',
+          schema:      'too much / too many / not enough.',
+          explanation: 'too much + неисчисляемое: too much money / too much time. too many + исчисляемое (мн.ч.): too many bills / too many costs. not enough — универсально: not enough money / not enough time / not enough rooms. Порядок: too much/many + существительное. not enough + существительное.',
+          pattern:     'too much/many + [noun] | not enough + [noun].',
+          examples:    ['He spends too much on eating out.', 'She doesn\'t earn enough to pay rent alone.', 'There are too many bills this month.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'I usually spend most of my money on…',
+            'The most expensive thing I have ever bought was…',
+            'I think the best way to save money is…',
+            'I would / wouldn\'t lend money to a friend because…',
+            'One thing I am saving up for is…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'What was Tom\'s father\'s advice, and how did Tom react at first?',                   hint: 'Каким был совет отца Тома и как Том отреагировал поначалу?' },
+            { q: 'How did Tom\'s attitude to saving change over time?',                                 hint: 'Как менялось отношение Тома к откладыванию со временем?' },
+            { q: 'What was the real benefit Tom noticed — not financial, but emotional?',               hint: 'Какую реальную пользу заметил Том — не финансовую, а эмоциональную?' },
+            { q: 'How did Sam\'s situation differ from Tom\'s, despite earning more?',                  hint: 'Чем ситуация Сэма отличалась от ситуации Тома, несмотря на более высокий заработок?' },
+            { q: 'What happened when Tom gave the advice to his sister?',                               hint: 'Что произошло, когда Том дал этот совет сестре?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Она не может позволить себе квартиру в центре — слишком дорого.',                     en: 'She can\'t afford a flat in the centre — it\'s too expensive.' },
+            { ru: 'Он занял деньги у коллеги и вернул их на следующей неделе.',                         en: 'He borrowed money from a colleague and paid it back the following week.' },
+            { ru: 'Курс стоил дорого, но каждая потраченная копейка того стоила.',                      en: 'The course was expensive, but every penny was worth it.' },
+            { ru: 'Она каждый месяц составляет бюджет — так гораздо меньше неожиданностей.',            en: 'She sets a budget every month — far fewer surprises at the end of it.' },
+            { ru: 'Он всегда просит чек — на случай, если что-то нужно будет вернуть.',                 en: 'He always asks for a receipt — just in case he needs to return something.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'She doesn\'t have much ___, but she manages to live well within her means.',    answer: 'money' },
+            { sentence: 'He ___ for the tickets in advance — cheaper that way.',                        answer: 'paid' },
+            { sentence: 'The repair ___ more than she expected — twice the original estimate.',          answer: 'cost' },
+            { sentence: 'She checked the ___ online and found it was lower in another shop.',            answer: 'price' },
+            { sentence: 'He ___ too much on things he doesn\'t need — a habit he is trying to break.',  answer: 'spends' },
+            { sentence: 'She ___ a small amount every month — it doesn\'t feel like anything, but it adds up.', answer: 'saves' },
+            { sentence: 'He can\'t ___ to take a holiday this year — money is tight.',                  answer: 'afford' },
+            { sentence: 'She asked if there was a student ___ — there was, and it was fifteen percent.', answer: 'discount' },
+            { sentence: 'He hates being in ___ — he always pays back what he owes as quickly as possible.', answer: 'debt' },
+            { sentence: 'She kept every ___ in a folder — useful when the washing machine had to go back.', answer: 'receipt' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'She doesn\'t have enough to buy it.',      rephrased: 'She can\'t afford it.' },
+            { original: 'He gave her his money temporarily.',       rephrased: 'He lent her the money.' },
+            { original: 'She took his money temporarily.',          rephrased: 'She borrowed money from him.' },
+            { original: 'The price was high, but it justified itself.', rephrased: 'It was expensive, but worth it.' },
+            { original: 'He paid back what he owed.',               rephrased: 'He paid off his debt.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'When Maya was eight, her grandmother gave her a glass jar and a rule: every time you receive money — birthday, pocket money, anything — put half in the jar.',
+            'Maya didn\'t understand why. But she did it.',
+            'By the time she was twelve she had enough to buy a second-hand bicycle. It was the best thing she had ever bought, not because of what it was, but because of how she got it.',
+            'When she started working at twenty-two, she moved the jar idea to a bank account. Same rule: half of any extra money goes straight in. Don\'t think about it.',
+            'She wasn\'t rich. She didn\'t earn a high salary. But she had no debt. She could afford to take a week off without panicking. When her phone broke, she bought a new one without putting it on credit.',
+            'One of her friends asked: "But don\'t you feel like you\'re missing out? All that money, just sitting there?"',
+            'Maya thought about it. "No," she said. "I feel like it\'s there if I need it. That\'s the whole point."',
+          ],
+          translation: [
+            'Когда Майе было восемь лет, бабушка подарила ей стеклянную банку и правило: каждый раз, когда получаешь деньги — на день рождения, карманные деньги, что угодно — клади половину в банку.',
+            'Майя не понимала зачем. Но делала это.',
+            'К двенадцати годам у неё в банке набралось достаточно, чтобы купить подержанный велосипед. Это была лучшая покупка в её жизни — не из-за того, что это был за велосипед, а из-за того, как она его получила.',
+            'Когда она начала работать в двадцать два года, она перенесла идею с банкой на банковский счёт. То же правило: половина любых дополнительных денег — сразу туда. Не думай об этом.',
+            'Она не была богатой. Зарплата была не высокой. Но у неё не было долгов. Она могла взять неделю отпуска без паники. Когда сломался телефон — купила новый без кредита.',
+            'Один из друзей спросил: «Но тебе не кажется, что ты что-то упускаешь? Столько денег просто лежат?»',
+            'Майя подумала. «Нет, — сказала она. — Я чувствую, что они есть, если понадобятся. В этом весь смысл».',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      35,
+    title:   'Интернет и технологии',
+    preview: ['internet, website, computer, phone, screen, app', 'search, download, upload, connect, share, post', 'password, network, device, online, digital, message'],
+    tip:     'Возьми свои расходы за последнюю неделю и опиши их по-английски в пяти предложениях. Используй: spend, cost, pay, afford, worth.',
+  },
+}

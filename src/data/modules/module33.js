@@ -1,0 +1,256 @@
+export const module33 = {
+  id: 33,
+  levelId: 'level-1',
+  title: 'Здоровье и самочувствие',
+  words: '637–656',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 637–656 — здоровье, симптомы, лечение и самочувствие.',
+      words: [
+        { num: 637, word: 'feel',         tr: '[fiːl]',           ru: 'чувствовать (себя); ощущать', ex: 'She doesn\'t feel well today — she is staying home and resting.',                  exRu: 'Сегодня она нехорошо себя чувствует — остаётся дома и отдыхает.' },
+        { num: 638, word: 'pain',         tr: '[peɪn]',           ru: 'боль; болезненность',          ex: 'He has had a pain in his back for a week — it gets worse when he sits too long.', exRu: 'У него болит спина уже неделю — хуже становится, когда он долго сидит.' },
+        { num: 639, word: 'hurt',         tr: '[hɜːt]',           ru: 'болеть; причинять боль; ранить', ex: 'Her ankle hurts when she walks — she probably twisted it on the stairs.',       exRu: 'Её лодыжка болит при ходьбе — похоже, она подвернула её на лестнице.' },
+        { num: 640, word: 'ill',          tr: '[ɪl]',             ru: 'больной; нездоровый',           ex: 'He was ill for two weeks — fever, cough, and a complete lack of energy.',         exRu: 'Он болел две недели — температура, кашель и полное отсутствие сил.' },
+        { num: 641, word: 'sick',         tr: '[sɪk]',            ru: 'тошнотворный; больной; тошнить', ex: 'She felt sick on the boat — she should have taken something before getting on.',  exRu: 'На лодке её тошнило — стоило принять что-нибудь заранее.' },
+        { num: 642, word: 'fever',        tr: '[ˈfiːvə]',         ru: 'температура; жар',              ex: 'He had a fever of thirty-nine — he stayed in bed and drank a lot of water.',      exRu: 'У него была температура тридцать девять — он лежал в постели и много пил воды.' },
+        { num: 643, word: 'cough',        tr: '[kɒf]',            ru: 'кашель; кашлять',               ex: 'She has had a cough for three days — it is getting better but still there.',       exRu: 'У неё кашель уже три дня — становится лучше, но ещё не прошёл.' },
+        { num: 644, word: 'cold',         tr: '[kəʊld]',          ru: 'простуда; холодный',            ex: 'He caught a cold after walking in the rain without a jacket.',                    exRu: 'Он простудился, пройдясь под дождём без куртки.' },
+        { num: 645, word: 'doctor',       tr: '[ˈdɒktə]',         ru: 'врач; доктор',                  ex: 'She called the doctor on Monday — got an appointment for Thursday.',              exRu: 'В понедельник она позвонила врачу — запись на четверг.' },
+        { num: 646, word: 'hospital',     tr: '[ˈhɒspɪtəl]',      ru: 'больница',                      ex: 'He spent two nights in hospital — tests, rest and a lot of questions from nurses.', exRu: 'Он провёл две ночи в больнице — анализы, отдых и много вопросов от медсестёр.' },
+        { num: 647, word: 'medicine',     tr: '[ˈmedɪsɪn]',       ru: 'лекарство; медицина',           ex: 'She takes her medicine every morning at breakfast — without exception.',            exRu: 'Каждое утро за завтраком она принимает лекарство — без исключений.' },
+        { num: 648, word: 'symptom',      tr: '[ˈsɪmptəm]',       ru: 'симптом',                       ex: 'The doctor asked about her symptoms — when they started, how they changed.',      exRu: 'Врач расспросил её о симптомах — когда начались, как менялись.' },
+        { num: 649, word: 'treatment',    tr: '[ˈtriːtmənt]',     ru: 'лечение; обращение',            ex: 'The treatment lasted six weeks — tiring, but it worked.',                         exRu: 'Лечение продолжалось шесть недель — изматывающее, но помогло.' },
+        { num: 650, word: 'recover',      tr: '[rɪˈkʌvə]',        ru: 'восстанавливаться; выздоравливать', ex: 'It took her a month to fully recover — she took it slowly and didn\'t rush back.', exRu: 'На полное восстановление у неё ушёл месяц — она не торопилась и давала себе время.' },
+        { num: 651, word: 'rest',         tr: '[rest]',            ru: 'отдых; отдыхать',               ex: 'The doctor told him to rest for at least a week — he lasted three days.',          exRu: 'Врач велел ему отдыхать не меньше недели — он продержался три дня.' },
+        { num: 652, word: 'healthy',      tr: '[ˈhelθi]',          ru: 'здоровый; полезный',            ex: 'She tries to eat healthy — mostly, with the occasional exception.',                exRu: 'Она старается питаться здорово — в основном, с редкими исключениями.' },
+        { num: 653, word: 'fit',          tr: '[fɪt]',             ru: 'в форме; подходящий; подходить', ex: 'He goes running three times a week to stay fit.',                               exRu: 'Он бегает три раза в неделю, чтобы оставаться в форме.' },
+        { num: 654, word: 'appointment',  tr: '[əˈpɔɪntmənt]',    ru: 'запись; приём; встреча',        ex: 'She made an appointment with the doctor for Friday afternoon.',                   exRu: 'Она записалась к врачу на пятницу, во второй половине дня.' },
+        { num: 655, word: 'prescription', tr: '[prɪˈskrɪpʃən]',   ru: 'рецепт (медицинский)',          ex: 'He picked up his prescription from the pharmacy on the way home.',                exRu: 'По дороге домой он забрал рецепт в аптеке.' },
+        { num: 656, word: 'serious',      tr: '[ˈsɪərɪəs]',        ru: 'серьёзный; тяжёлый',           ex: 'The injury was not serious — painful, but nothing broken.',                       exRu: 'Травма оказалась несерьёзной — больно, но ничего сломанного.' },
+      ],
+      note: {
+        title: 'ill vs sick; feel + прилагательное; have a cold / fever / cough',
+        lines: [
+          'ill (брит.) — общее недомогание: She is ill. / He has been ill for a week. sick (брит.) — тошнота: She felt sick on the boat. / He was sick. В американском — sick во всех значениях.',
+          'После feel как глагола-связки — прилагательное: She feels well / better / tired / ill. Не наречие!',
+          'feel like + -ing: I don\'t feel like going out. — Мне не хочется выходить.',
+          'Большинство болезней и симптомов вводятся через have: I have a cold / a fever / a headache / a cough. Нельзя: I am having a cold.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'She hasn\'t been feeling well all week — tired, a bit of a headache, nothing specific.',              ru: 'Всю неделю она чувствует себя нехорошо — устала, небольшая головная боль, ничего конкретного.', note: '' },
+        { num: 2,  en: 'He has a pain in his shoulder — it started after he moved the furniture on Saturday.',                ru: 'У него болит плечо — началось после того, как в субботу он двигал мебель.', note: '' },
+        { num: 3,  en: 'Her knee hurts when she runs — she is going to see a doctor about it.',                               ru: 'Когда она бегает, у неё болит колено — она собирается показаться врачу.', note: '' },
+        { num: 4,  en: 'He was so ill that he couldn\'t get out of bed for four days.',                                       ru: 'Он настолько заболел, что четыре дня не мог встать с кровати.', note: '' },
+        { num: 5,  en: 'She felt sick on the plane — it was turbulence for most of the flight.',                              ru: 'На самолёте её тошнило — большую часть полёта была турбулентность.', note: '' },
+        { num: 6,  en: 'The fever broke overnight — in the morning he felt much better.',                                     ru: 'За ночь температура спала — утром ему стало значительно лучше.', note: 'the fever broke — температура спала' },
+        { num: 7,  en: 'She still has a cough but it is just the end of a cold — nothing to worry about.',                    ru: 'У неё ещё кашель, но это просто хвост простуды — беспокоиться не о чем.', note: '' },
+        { num: 8,  en: 'He caught a cold on the trip and spent the last two days in the hotel room.',                         ru: 'В поездке он простудился и провёл последние два дня в номере отеля.', note: '' },
+        { num: 9,  en: 'She described her symptoms clearly — the doctor knew what to look for immediately.',                  ru: 'Она чётко описала симптомы — врач сразу понял, куда смотреть.', note: '' },
+        { num: 10, en: 'He was in hospital for three days — nothing serious, but they wanted to run some tests.',             ru: 'Он провёл три дня в больнице — ничего серьёзного, но врачи хотели провести несколько обследований.', note: 'run tests — провести анализы/обследования' },
+        { num: 11, en: 'She forgot to take her medicine two mornings in a row — and noticed the difference.',                 ru: 'Две утра подряд она забывала принять лекарство — и почувствовала разницу.', note: '' },
+        { num: 12, en: 'The treatment was harder than expected, but she recovered completely within two months.',              ru: 'Лечение оказалось тяжелее, чем ожидала, но в течение двух месяцев она полностью восстановилась.', note: '' },
+        { num: 13, en: 'His doctor told him to rest, eat well and stop working after eight — he is trying.',                  ru: 'Врач велел ему отдыхать, хорошо есть и заканчивать работу в восемь — он старается.', note: '' },
+        { num: 14, en: 'She eats healthy and exercises regularly — she hasn\'t been seriously ill in years.',                 ru: 'Она правильно питается и регулярно занимается — много лет не болела серьёзно.', note: '' },
+        { num: 15, en: 'He made an appointment for Monday and picked up his prescription on the way out.',                    ru: 'Он записался на понедельник и получил рецепт на выходе.', note: '' },
+      ],
+      note: {
+        title: 'Устойчивые выражения о здоровье',
+        lines: [
+          'feel under the weather — чувствовать себя нехорошо (мягко).',
+          'come down with a cold — подхватить простуду.',
+          'call in sick — позвонить и отпроситься по болезни.',
+          'be back on your feet — встать на ноги, оправиться: She was back on her feet in a week.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'On Sunday evening Nina noticed she was cold. Not the room — the room was warm. She was cold. She added another layer, drank some tea and went to bed early.',
+        'On Monday morning she woke up with a sore throat and a headache. She took her temperature: thirty-eight point two. Not high enough to panic, high enough to stay in bed.',
+        'She called in sick to work. Her colleague said she sounded terrible. She thanked him.',
+        'She spent Monday sleeping, mostly. She drank water, took her medicine, watched one episode of something and fell asleep halfway through. She didn\'t eat much — just some soup she made from what was in the fridge.',
+        'By Tuesday the fever had dropped. Her throat still hurt, but the headache was gone. She felt weak but human. She read for an hour. That felt like progress.',
+        'On Wednesday she got up, showered and ate a proper breakfast. She still had a slight cough. Her energy wasn\'t fully back, but it was enough.',
+        'She messaged her doctor to ask if she needed to come in. He replied: stay home one more day, rest, and come in Thursday if anything gets worse. Nothing got worse.',
+        'She went back to work on Friday. A colleague asked how she was. "Recovering," she said. It was the right word.',
+      ],
+      translation: [
+        'В воскресенье вечером Нина почувствовала, что ей холодно. Не комнате — комната была тёплой. Ей было холодно. Она надела ещё один слой одежды, выпила чаю и рано легла спать.',
+        'В понедельник утром она проснулась с болью в горле и головной болью. Измерила температуру: тридцать восемь и две. Не настолько высокая, чтобы паниковать, но достаточно, чтобы остаться в постели.',
+        'Она позвонила на работу и сказала, что заболела. Коллега сказал, что она ужасно звучит. Она поблагодарила его.',
+        'Понедельник она провела в основном во сне. Пила воду, принимала лекарство, посмотрела одну серию чего-то и заснула на полпути. Почти ничего не ела — только суп из того, что было в холодильнике.',
+        'К вторнику температура спала. Горло ещё болело, но головная боль прошла. Она чувствовала слабость, но уже была похожа на человека. Читала час. Это ощущалось как прогресс.',
+        'В среду она встала, приняла душ и нормально позавтракала. Небольшой кашель ещё оставался. Сил было не в полную меру, но достаточно.',
+        'Она написала своему врачу, спросила, нужно ли приходить. Он ответил: оставайтесь дома ещё день, отдыхайте, и приходите в четверг, если что-то ухудшится. Ничего не ухудшилось.',
+        'В пятницу она вернулась на работу. Коллега спросил, как она. «Выздоравливаю», — сказала она. Это было точное слово.',
+      ],
+      vocab: [
+        { word: 'sore throat',    tr: '—',               ru: 'боль в горле' },
+        { word: 'layer',          tr: '[ˈleɪə]',         ru: 'слой; слой одежды' },
+        { word: 'call in sick',   tr: '—',               ru: 'позвонить и сообщить о болезни' },
+        { word: 'slight',         tr: '[slaɪt]',         ru: 'лёгкий; незначительный' },
+        { word: 'proper',         tr: '[ˈprɒpə]',        ru: 'нормальный; полноценный' },
+        { word: 'episode',        tr: '[ˈepɪsəʊd]',      ru: 'серия (сериала); эпизод' },
+        { word: 'halfway through', tr: '—',              ru: 'на середине; на полпути' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Ключевые паттерны модуля.',
+      items: [
+        {
+          sentence:    'My head hurts. / I have a headache. / I feel dizzy / weak / nauseous.',
+          schema:      'Описываем симптом.',
+          explanation: 'My head / back / knee / throat hurts. — У меня болит голова / спина / колено / горло. I have a headache / stomachache / toothache. — У меня болит голова / живот / зуб. I have a cold / fever / cough. — У меня простуда / температура / кашель. I feel dizzy / weak / nauseous / exhausted. — Мне кружится голова / я слаб(а) / меня тошнит / я изможден(а). I\'ve been feeling off all week. — Всю неделю я не в своей тарелке.',
+          pattern:     'My [часть тела] hurts. / I have a [симптом]. / I feel [прилагательное].',
+          examples:    ['My throat has been hurting since yesterday.', 'I have a fever and a cough — I am staying home.', 'She feels dizzy when she stands up too fast.'],
+        },
+        {
+          sentence:    'make / book an appointment / get a prescription / recover from an illness',
+          schema:      'Медицинские конструкции.',
+          explanation: 'make / book an appointment — записаться к врачу. get a prescription — получить рецепт. recover from an illness — оправиться от болезни. take medicine / take a tablet — принять лекарство / таблетку. call in sick — позвонить и отпроситься. be back on your feet — встать на ноги. feel under the weather — чувствовать себя нехорошо.',
+          pattern:     'Устойчивые выражения для описания медицинских ситуаций.',
+          examples:    ['She booked an appointment for Thursday morning.', 'He is recovering from a bad cold — stayed home all week.', 'I called in sick — couldn\'t even get out of bed.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'The last time I was ill, I…',
+            'When I have a headache, I usually…',
+            'I think the best way to stay healthy is…',
+            'Going to the doctor is… for me because…',
+            'The last time I really needed to rest was…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'What were Nina\'s first symptoms on Monday morning?',                        hint: 'Какими были первые симптомы Нины в понедельник утром?' },
+            { q: 'What did she do during the day on Monday?',                                  hint: 'Что она делала в понедельник?' },
+            { q: 'How did she feel on Tuesday compared to Monday?',                            hint: 'Как она себя чувствовала во вторник по сравнению с понедельником?' },
+            { q: 'What did her doctor advise when she messaged him?',                          hint: 'Что посоветовал врач, когда она ему написала?' },
+            { q: 'What word did she use to describe herself on Friday, and why was it accurate?', hint: 'Какое слово она использовала в пятницу и почему оно было точным?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'У него была температура два дня, но к среде он уже чувствовал себя намного лучше.',        en: 'He had a fever for two days, but by Wednesday he felt much better.' },
+            { ru: 'Она записалась к врачу на пятницу и забрала рецепт после приёма.',                        en: 'She made an appointment with the doctor for Friday and picked up her prescription after the visit.' },
+            { ru: 'Врач сказал, что симптомы несерьёзные и он должен просто отдохнуть.',                     en: 'The doctor said the symptoms were not serious and he just needed to rest.' },
+            { ru: 'Она старается правильно питаться и быть в форме — и это заметно.',                        en: 'She tries to eat healthy and stay fit — and it shows.' },
+            { ru: 'На полное восстановление после операции у него ушло три месяца.',                         en: 'It took him three months to fully recover from the operation.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'She hasn\'t been ___ well all week — tired and a bit achey.',                          answer: 'feeling' },
+            { sentence: 'He has a ___ in his lower back — it is worse in the mornings.',                       answer: 'pain' },
+            { sentence: 'My throat ___ when I swallow — I think I am getting a cold.',                         answer: 'hurts' },
+            { sentence: 'He was ___ for a week — fever, sore throat, and no energy at all.',                   answer: 'ill' },
+            { sentence: 'She took her ___ twice a day — morning and evening.',                                 answer: 'medicine' },
+            { sentence: 'The doctor asked about her ___ — when they had started and how serious they were.',   answer: 'symptoms' },
+            { sentence: 'He needed six weeks of ___ before he could walk normally again.',                     answer: 'treatment' },
+            { sentence: 'She ___ from the illness faster than expected — back to work in two weeks.',          answer: 'recovered' },
+            { sentence: 'The injury turned out to be ___ — he had to go to hospital immediately.',             answer: 'serious' },
+            { sentence: 'She made an ___ for Thursday — there were no earlier slots available.',               answer: 'appointment' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'She is not well.',                       rephrased: 'She doesn\'t feel well.' },
+            { original: 'He is getting better.',                  rephrased: 'He is recovering from his illness.' },
+            { original: 'She needs a doctor\'s note to get medicine.', rephrased: 'She needs a prescription.' },
+            { original: 'He visited the doctor.',                 rephrased: 'He kept his appointment with the doctor.' },
+            { original: 'He is in good physical shape.',          rephrased: 'He is very fit.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'Paul had always been busy. Not just busy — constantly moving, always behind on something, always planning the next thing. He slept six hours, ate quickly, exercised occasionally and called it balance.',
+            'In January he got ill. Not seriously ill — just a bad cold that turned into something longer. His doctor told him to rest for two weeks.',
+            'He didn\'t know how to rest.',
+            'The first three days he replied to emails from bed. Then his phone ran out of battery and he didn\'t charge it for a while. Not on purpose — he just fell asleep.',
+            'On day four he woke up and stared at the ceiling for twenty minutes. Then he made tea. Then he sat by the window and watched the street.',
+            'His symptoms improved slowly. By the end of the second week he felt better — not just physically. He had slept eight hours every night. He had eaten proper meals at a table, not at a desk. He had read two books.',
+            'When he went back to work, his colleague said he looked different. Calmer.',
+            'He decided to go to bed earlier.',
+          ],
+          translation: [
+            'Пол всегда был занят. Не просто занят — постоянно в движении, всегда за что-то не успевал, всегда планировал следующее. Спал шесть часов, ел на ходу, изредка занимался спортом и называл это балансом.',
+            'В январе он заболел. Не тяжело — просто сильная простуда, затянувшаяся дольше обычного. Врач велел ему две недели отдыхать.',
+            'Он не знал, как отдыхать.',
+            'Первые три дня он отвечал на письма из постели. Потом телефон сел, и он не заряжал его некоторое время. Не специально — просто заснул.',
+            'На четвёртый день он проснулся и двадцать минут смотрел в потолок. Потом заварил чай. Потом сел у окна и смотрел на улицу.',
+            'Симптомы улучшались медленно. К концу второй недели он почувствовал себя лучше — не только физически. Он спал по восемь часов каждую ночь. Полноценно ел за столом, а не за рабочим местом. Прочитал две книги.',
+            'Когда он вернулся на работу, коллега сказал, что он выглядит иначе. Спокойнее.',
+            'Он решил ложиться спать пораньше.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      34,
+    title:   'Деньги и финансы',
+    preview: ['money, pay, cost, price, spend, save', 'earn, afford, cheap, expensive, budget, bill', 'borrow, lend, debt, worth, discount, receipt'],
+    tip:     'Опиши своё самочувствие прямо сейчас по-английски — одним абзацем. Используй хотя бы три слова из этого модуля: feel, healthy, tired, fit, rest.',
+  },
+}

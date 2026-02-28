@@ -35,6 +35,11 @@ import { module27 } from './data/modules/module27'
 import { module28 } from './data/modules/module28'
 import { module29 } from './data/modules/module29'
 import { module30 } from './data/modules/module30'
+import { module31 } from './data/modules/module31'
+import { module32 } from './data/modules/module32'
+import { module33 } from './data/modules/module33'
+import { module34 } from './data/modules/module34'
+import { module35 } from './data/modules/module35'
 
 const M1_PATH = '/level-1/module/1'
 const M1_QUIZ = '/level-1/module/1/quiz'
@@ -96,6 +101,16 @@ const M29_PATH = '/level-1/module/29'
 const M29_QUIZ = '/level-1/module/29/quiz'
 const M30_PATH = '/level-1/module/30'
 const M30_QUIZ = '/level-1/module/30/quiz'
+const M31_PATH = '/level-1/module/31'
+const M31_QUIZ = '/level-1/module/31/quiz'
+const M32_PATH = '/level-1/module/32'
+const M32_QUIZ = '/level-1/module/32/quiz'
+const M33_PATH = '/level-1/module/33'
+const M33_QUIZ = '/level-1/module/33/quiz'
+const M34_PATH = '/level-1/module/34'
+const M34_QUIZ = '/level-1/module/34/quiz'
+const M35_PATH = '/level-1/module/35'
+const M35_QUIZ = '/level-1/module/35/quiz'
 
 function App() {
   return (
@@ -167,6 +182,16 @@ function App() {
         <Route path={M29_QUIZ} element={<QuizPage   moduleData={module29} backPath={M29_PATH} />} />
         <Route path={M30_PATH} element={<ModulePage moduleData={module30} backPath="/level-1" quizPath={M30_QUIZ} />} />
         <Route path={M30_QUIZ} element={<QuizPage   moduleData={module30} backPath={M30_PATH} />} />
+        <Route path={M31_PATH} element={<ModulePage moduleData={module31} backPath="/level-1" quizPath={M31_QUIZ} />} />
+        <Route path={M31_QUIZ} element={<QuizPage   moduleData={module31} backPath={M31_PATH} />} />
+        <Route path={M32_PATH} element={<ModulePage moduleData={module32} backPath="/level-1" quizPath={M32_QUIZ} />} />
+        <Route path={M32_QUIZ} element={<QuizPage   moduleData={module32} backPath={M32_PATH} />} />
+        <Route path={M33_PATH} element={<ModulePage moduleData={module33} backPath="/level-1" quizPath={M33_QUIZ} />} />
+        <Route path={M33_QUIZ} element={<QuizPage   moduleData={module33} backPath={M33_PATH} />} />
+        <Route path={M34_PATH} element={<ModulePage moduleData={module34} backPath="/level-1" quizPath={M34_QUIZ} />} />
+        <Route path={M34_QUIZ} element={<QuizPage   moduleData={module34} backPath={M34_PATH} />} />
+        <Route path={M35_PATH} element={<ModulePage moduleData={module35} backPath="/level-1" quizPath={M35_QUIZ} />} />
+        <Route path={M35_QUIZ} element={<QuizPage   moduleData={module35} backPath={M35_PATH} />} />
       </Routes>
     </BrowserRouter>
   )
