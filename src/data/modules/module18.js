@@ -1,0 +1,261 @@
+export const module18 = {
+  id: 18,
+  levelId: 'level-1',
+  title: 'Вопросы и ответы',
+  words: '337–356',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 337–356 — вопросительные слова, общение и понимание.',
+      words: [
+        { num: 337, word: 'what',        tr: '[wɒt]',          ru: 'что; какой',                     ex: 'What do you want for dinner?',                            exRu: 'Что ты хочешь на ужин?' },
+        { num: 338, word: 'where',       tr: '[weə]',          ru: 'где; куда',                      ex: 'Where did you put the keys?',                            exRu: 'Куда ты положил ключи?' },
+        { num: 339, word: 'when',        tr: '[wen]',          ru: 'когда',                          ex: 'When does the train leave?',                             exRu: 'Когда отправляется поезд?' },
+        { num: 340, word: 'why',         tr: '[waɪ]',          ru: 'почему',                         ex: 'Why are you late?',                                      exRu: 'Почему ты опоздал?' },
+        { num: 341, word: 'who',         tr: '[huː]',           ru: 'кто',                            ex: 'Who called you this morning?',                           exRu: 'Кто звонил тебе утром?' },
+        { num: 342, word: 'which',       tr: '[wɪtʃ]',         ru: 'который; какой (из)',            ex: 'Which bag is yours — the blue one or the black one?',    exRu: 'Какая сумка твоя — синяя или чёрная?' },
+        { num: 343, word: 'how',         tr: '[haʊ]',           ru: 'как; каким образом',             ex: 'How do I get to the station from here?',                 exRu: 'Как мне добраться до вокзала отсюда?' },
+        { num: 344, word: 'ask',         tr: '[ɑːsk]',          ru: 'спрашивать; просить',            ex: 'She asked me where I was going.',                        exRu: 'Она спросила, куда я иду.' },
+        { num: 345, word: 'answer',      tr: '[ˈɑːnsə]',       ru: 'отвечать; ответ',               ex: "He didn't answer — maybe he was busy.",                 exRu: 'Он не ответил — может, был занят.' },
+        { num: 346, word: 'question',    tr: '[ˈkwestʃən]',    ru: 'вопрос',                         ex: "That is a good question — I am not sure.",               exRu: 'Это хороший вопрос — я не уверен.' },
+        { num: 347, word: 'explain',     tr: '[ɪkˈspleɪn]',   ru: 'объяснять',                      ex: 'Can you explain how this works?',                        exRu: 'Можешь объяснить, как это работает?' },
+        { num: 348, word: 'understand',  tr: '[ˌʌndəˈstænd]', ru: 'понимать',                       ex: "I don't understand — can you say that again?",           exRu: 'Я не понимаю — можешь повторить?' },
+        { num: 349, word: 'mean',        tr: '[miːn]',          ru: 'означать; иметь в виду',         ex: 'What does this word mean?',                              exRu: 'Что означает это слово?' },
+        { num: 350, word: 'reason',      tr: '[ˈriːzn]',       ru: 'причина; основание',             ex: 'What is the reason for the delay?',                      exRu: 'В чём причина задержки?' },
+        { num: 351, word: 'example',     tr: '[ɪɡˈzɑːmpl]',   ru: 'пример',                         ex: 'Can you give me an example?',                            exRu: 'Можешь привести пример?' },
+        { num: 352, word: 'idea',        tr: '[aɪˈdɪə]',       ru: 'идея; понятие',                  ex: 'I have no idea where he went.',                          exRu: 'Понятия не имею, куда он пошёл.' },
+        { num: 353, word: 'point',       tr: '[pɔɪnt]',         ru: 'смысл; суть; указывать',         ex: 'What is the point of waiting here?',                     exRu: 'Какой смысл ждать здесь?' },
+        { num: 354, word: 'sure',        tr: '[ʃʊə]',           ru: 'уверенный; конечно',             ex: 'Are you sure this is the right road?',                   exRu: 'Ты уверен, что это правильная дорога?' },
+        { num: 355, word: 'probably',    tr: '[ˈprɒbəbli]',    ru: 'вероятно; скорее всего',         ex: 'She is probably still at work — it is only six.',        exRu: 'Она, скорее всего, ещё на работе — всего шесть.' },
+        { num: 356, word: 'perhaps',     tr: '[pəˈhæps]',      ru: 'возможно; может быть',           ex: 'Perhaps we should ask someone.',                         exRu: 'Может быть, нам стоит кого-нибудь спросить.' },
+      ],
+      note: {
+        title: 'what vs which; mean — многозначное слово',
+        lines: [
+          'what — открытый выбор, вариантов много: What colour do you like?',
+          'which — выбор из конкретных вариантов: Which colour do you want — red or blue?',
+          'mean — означать: What does it mean? / иметь в виду: I didn\'t mean that. / злой (adj): Don\'t be mean.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'What time does the meeting start? I need to plan my morning.',                 ru: 'Во сколько начинается совещание? Мне нужно спланировать утро.', note: '' },
+        { num: 2,  en: 'Where are my glasses? I put them on the table ten minutes ago.',              ru: 'Где мои очки? Я положил их на стол десять минут назад.', note: 'glasses — [ˈɡlɑːsɪz] — очки' },
+        { num: 3,  en: 'When did you last see her? Nobody knows where she is.',                       ru: 'Когда ты последний раз её видел? Никто не знает, где она.', note: '' },
+        { num: 4,  en: "Why didn't you tell me earlier? I would have helped.",                       ru: 'Почему ты не сказал мне раньше? Я бы помог.', note: '' },
+        { num: 5,  en: 'Who made this cake? It is absolutely amazing.',                               ru: 'Кто сделал этот торт? Это просто потрясающе.', note: '' },
+        { num: 6,  en: 'Which road is faster — the motorway or the one through the village?',        ru: 'Какая дорога быстрее — шоссе или та, что через деревню?', note: 'motorway — [ˈməʊtəweɪ] — шоссе; village — деревня' },
+        { num: 7,  en: 'How long does it take to get there by train?',                               ru: 'Сколько времени нужно, чтобы добраться туда на поезде?', note: '' },
+        { num: 8,  en: "She asked me a question I didn't know how to answer.",                       ru: 'Она задала мне вопрос, на который я не знал, как ответить.', note: '' },
+        { num: 9,  en: "Can you explain this to me again? I still don't understand.",                ru: 'Можешь объяснить мне это ещё раз? Я всё ещё не понимаю.', note: '' },
+        { num: 10, en: "I don't understand what he means — his message is not clear.",               ru: 'Я не понимаю, что он имеет в виду — его сообщение непонятно.', note: '' },
+        { num: 11, en: 'What does "schedule" mean? I have never seen this word before.',             ru: 'Что означает «schedule»? Я никогда раньше не встречал это слово.', note: '' },
+        { num: 12, en: 'The reason she left early was that she had a train to catch.',               ru: 'Причина, по которой она ушла рано, — нужно было успеть на поезд.', note: 'catch a train — успеть на поезд' },
+        { num: 13, en: 'Can you give me an example? It is easier to understand with one.',          ru: 'Можешь привести пример? С ним проще понять.', note: '' },
+        { num: 14, en: 'I have no idea what to buy her — she already has everything.',              ru: 'Понятия не имею, что ей купить — у неё уже всё есть.', note: '' },
+        { num: 15, en: 'Are you sure? — Probably. But perhaps we should check first.',              ru: 'Ты уверен? — Скорее всего. Но, возможно, нам стоит сначала проверить.', note: '' },
+      ],
+      note: {
+        title: 'Косвенный вопрос — порядок слов меняется',
+        lines: [
+          'Where is he? → I don\'t know where he is.',
+          'What does it mean? → Can you tell me what it means?',
+          'Why did she leave? → I don\'t understand why she left.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'After class, a student came up to the teacher and asked a question.',
+        '"I don\'t understand something," he said. "You explained how the grammar works, and I understood the rules. But when I try to speak, I forget everything. Why does that happen?"',
+        'The teacher thought for a moment.',
+        '"That is a good question," she said. "And I think the reason is simple. Understanding a rule and using it are two different things. You understand it in your head, but your mouth hasn\'t practised yet."',
+        '"So what should I do?" the student asked.',
+        '"Speak more," she said. "Make mistakes. The point of practice is not to be perfect — it is to get used to it."',
+        '"How long does it take?"',
+        '"It depends. But probably faster than you think."',
+        'The student nodded. He wasn\'t sure he believed her. But perhaps she was right.',
+      ],
+      translation: [
+        'После урока студент подошёл к учителю и задал вопрос.',
+        '— Я кое-чего не понимаю, — сказал он. — Вы объяснили, как работает грамматика, и я понял правила. Но когда я пытаюсь говорить, я всё забываю. Почему так происходит?',
+        'Учитель на секунду задумалась.',
+        '— Это хороший вопрос, — сказала она. — И я думаю, причина простая. Понимать правило и использовать его — это две разные вещи. Ты понимаешь это в голове, но твой рот ещё не тренировался.',
+        '— И что мне делать? — спросил студент.',
+        '— Говори больше, — ответила она. — Делай ошибки. Смысл практики не в том, чтобы быть идеальным, — а в том, чтобы привыкнуть.',
+        '— Как долго это займёт?',
+        '— Зависит. Но, скорее всего, быстрее, чем ты думаешь.',
+        'Студент кивнул. Он не был уверен, что ей верит. Но, возможно, она была права.',
+      ],
+      vocab: [
+        { word: 'came up to',  tr: '—',             ru: 'подошёл к' },
+        { word: 'practised',   tr: '[ˈpræktɪst]',  ru: 'тренировался' },
+        { word: 'get used to', tr: '—',             ru: 'привыкнуть к' },
+        { word: 'depends',     tr: '[dɪˈpendz]',   ru: 'зависит' },
+        { word: 'nodded',      tr: '[ˈnɒdɪd]',     ru: 'кивнул' },
+        { word: 'probably',    tr: '[ˈprɒbəbli]',  ru: 'скорее всего' },
+        { word: 'perhaps',     tr: '[pəˈhæps]',    ru: 'возможно' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Три ключевых паттерна модуля.',
+      items: [
+        {
+          sentence:    'What happened? Where is she? Why did he leave?',
+          schema:      'Вопросительные слова: what / where / when / why / who / which / how.',
+          explanation: 'what — вещи/действия, where — место, when — время, why — причина, who — человек, which — выбор из вариантов, how — способ. how much / how many / how long — уточняют.',
+          pattern:     '[What / Where / When / Why / Who / Which / How] + [вспомогательный глагол] + [подлежащее]?',
+          examples:    ['What time does the shop close?', 'Where is the nearest station?', 'How long did it take?'],
+        },
+        {
+          sentence:    "I don't know where he is.",
+          schema:      'Косвенный вопрос: вопросительное слово + прямой порядок слов.',
+          explanation: 'В косвенном вопросе вспомогательный глагол убирается, порядок слов — как в обычном предложении. Where is he? → I don\'t know where he is.',
+          pattern:     "I don't know [where / why / what / when] + [Subject + Verb].",
+          examples:    ["I don't know where she is.", 'Can you tell me what it means?', 'I have no idea why he left.'],
+        },
+        {
+          sentence:    'Are you sure? — Probably. But perhaps not.',
+          schema:      'sure / probably / perhaps — степени уверенности.',
+          explanation: 'sure — полная уверенность, probably — скорее всего (высокая вероятность), perhaps/maybe — возможно (меньшая уверенность). I am sure. / Probably. / Perhaps.',
+          pattern:     'I am [sure / not sure]. / [Probably / Perhaps] + [предложение].',
+          examples:    ['Are you sure? — Yes, I am sure.', 'She is probably at home.', 'Perhaps we should wait.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'The last time I asked someone for help, I asked about…',
+            'One thing I still don\'t understand is…',
+            'I have no idea why…',
+            'I am sure that…',
+            'My question for someone who speaks English well would be…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'What did the student not understand?',                              hint: 'Что не понимал студент?' },
+            { q: 'What explanation did the teacher give?',                            hint: 'Какое объяснение дала учитель?' },
+            { q: 'What did the teacher say the point of practice is?',               hint: 'Каков, по словам учителя, смысл практики?' },
+            { q: 'Was the student completely convinced?',                             hint: 'Был ли студент полностью убеждён?' },
+            { q: 'What do "probably" and "perhaps" suggest about the student?',     hint: 'Что слова probably и perhaps говорят о чувствах студента?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Что означает это слово? Я никогда раньше его не видел.',          en: 'What does this word mean? I have never seen it before.' },
+            { ru: 'Можешь объяснить, почему это работает именно так?',               en: 'Can you explain why it works this way?' },
+            { ru: 'Я не знаю, где она сейчас — возможно, ещё в офисе.',             en: "I don't know where she is now — perhaps she is still at the office." },
+            { ru: 'Это хороший вопрос. Честно говоря, я не уверен.',                en: 'That is a good question. To be honest, I am not sure.' },
+            { ru: 'Скорее всего, она уже знает ответ.',                              en: 'She probably already knows the answer.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: '___ time does the shop close?',                              answer: 'What' },
+            { sentence: '___ is the nearest station?',                               answer: 'Where' },
+            { sentence: '___ did you start learning English?',                       answer: 'When' },
+            { sentence: '___ does this word mean?',                                  answer: 'What' },
+            { sentence: '___ road should I take — the left or the right?',          answer: 'Which' },
+            { sentence: 'She ___ me why I was sad.',                                 answer: 'asked' },
+            { sentence: "I don't know — that is a good ___.",                        answer: 'question' },
+            { sentence: "Can you ___ this rule? I don't understand it.",             answer: 'explain' },
+            { sentence: 'I have no ___ where he went.',                              answer: 'idea' },
+            { sentence: "Are you ___? I don't want to go the wrong way.",            answer: 'sure' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: "I don't know his location.",              rephrased: "I don't know where he is." },
+            { original: 'Tell me the reason.',                     rephrased: 'Tell me why you did it.' },
+            { original: 'Give me an example of this.',             rephrased: 'Can you give me an example?' },
+            { original: "I'm not certain.",                        rephrased: "I'm not sure." },
+            { original: 'She will most likely be late.',           rephrased: 'She will probably be late.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'Mark had been studying English for two years. He understood most of what he read and could write quite well. But speaking was still hard.',
+            'One evening he was at a café with a colleague from work — a woman from Canada called Sarah. She spoke only English. It was the first time Mark had to speak for a whole evening.',
+            'At first he was nervous. He didn\'t know which words to use, and he was afraid of making mistakes. He asked Sarah to be patient with him.',
+            '"Of course," she said. "Ask me if you don\'t understand something. And don\'t worry about mistakes — I make them too, in Russian."',
+            'That helped. They talked about their jobs, their families, the city. When Mark didn\'t know a word, he explained the idea in a different way. When he didn\'t understand something Sarah said, he asked her what she meant.',
+            'By the end of the evening he was surprised. He had spoken English for two hours and hadn\'t stopped once. It wasn\'t perfect. But it was real.',
+            'On the way home he thought: maybe the point is not to know every word — but to keep going anyway.',
+          ],
+          translation: [
+            'Марк изучал английский два года. Он понимал большую часть того, что читал, и мог писать довольно хорошо. Но говорить всё ещё было сложно.',
+            'Однажды вечером он был в кафе с коллегой по работе — женщиной из Канады по имени Сара. Она говорила только по-английски. Это был первый раз, когда Марку нужно было говорить целый вечер.',
+            'Поначалу он нервничал. Он не знал, какие слова использовать, и боялся делать ошибки. Он попросил Сару быть терпеливой.',
+            '— Конечно, — сказала она. — Спрашивай, если что-то не понимаешь. И не беспокойся об ошибках — я тоже их делаю, на русском.',
+            'Это помогло. Они говорили о работе, о семьях, о городе. Когда Марк не знал слова, он объяснял мысль другим способом. Когда он не понимал что-то из того, что говорила Сара, он спрашивал, что она имеет в виду.',
+            'К концу вечера он был удивлён. Он говорил по-английски два часа и ни разу не остановился. Не идеально. Но по-настоящему.',
+            'По дороге домой он думал: может, смысл не в том, чтобы знать каждое слово, — а в том, чтобы продолжать в любом случае.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      19,
+    title:   'Направления и место',
+    preview: ['above, below, between, behind, beside', 'through, across, along, near, far', 'inside, outside, front, back, top, bottom'],
+    tip:     'Возьми любой вопрос из модуля (What? Where? Why? How?) и задай его себе вслух. Ответь хотя бы одним предложением.',
+  },
+}

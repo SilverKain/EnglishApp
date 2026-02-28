@@ -1,0 +1,262 @@
+export const module19 = {
+  id: 19,
+  levelId: 'level-1',
+  title: 'Направления и место',
+  words: '357–376',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 357–376 — предлоги места и слова для описания пространства.',
+      words: [
+        { num: 357, word: 'above',     tr: '[əˈbʌv]',       ru: 'над; выше',                    ex: 'The flat is above the café — you can sometimes smell coffee.',   exRu: 'Квартира находится над кафе — иногда чувствуется запах кофе.' },
+        { num: 358, word: 'below',     tr: '[bɪˈləʊ]',      ru: 'под; ниже',                    ex: 'The temperature dropped below zero last night.',                 exRu: 'Ночью температура опустилась ниже нуля.' },
+        { num: 359, word: 'between',   tr: '[bɪˈtwiːn]',    ru: 'между',                        ex: 'The bank is between the post office and the bookshop.',          exRu: 'Банк находится между почтой и книжным магазином.' },
+        { num: 360, word: 'behind',    tr: '[bɪˈhaɪnd]',    ru: 'за; позади',                   ex: 'I left my bag behind the chair by mistake.',                     exRu: 'Я случайно оставил сумку за стулом.' },
+        { num: 361, word: 'beside',    tr: '[bɪˈsaɪd]',     ru: 'рядом с; возле',               ex: 'She sat beside me on the bus and we talked the whole way.',      exRu: 'Она сидела рядом со мной в автобусе, и мы разговаривали всю дорогу.' },
+        { num: 362, word: 'through',   tr: '[θruː]',          ru: 'через; сквозь',                ex: 'We drove through the tunnel for about ten minutes.',              exRu: 'Мы ехали через туннель около десяти минут.' },
+        { num: 363, word: 'across',    tr: '[əˈkrɒs]',      ru: 'через; поперёк; напротив',     ex: 'She walked across the square to reach the station.',             exRu: 'Она пересекла площадь, чтобы добраться до вокзала.' },
+        { num: 364, word: 'along',     tr: '[əˈlɒŋ]',       ru: 'вдоль; по',                    ex: 'We walked along the river for half an hour.',                    exRu: 'Мы шли вдоль реки полчаса.' },
+        { num: 365, word: 'near',      tr: '[nɪə]',           ru: 'близко; рядом; около',         ex: 'Is there a pharmacy near here?',                                 exRu: 'Здесь есть аптека поблизости?' },
+        { num: 366, word: 'far',       tr: '[fɑː]',           ru: 'далеко; далёкий',              ex: 'Is it far from here? — No, about five minutes.',                 exRu: 'Это далеко отсюда? — Нет, минут пять.' },
+        { num: 367, word: 'inside',    tr: '[ɪnˈsaɪd]',     ru: 'внутри; внутрь',               ex: 'It was raining, so we stayed inside.',                           exRu: 'Шёл дождь, поэтому мы остались внутри.' },
+        { num: 368, word: 'outside',   tr: '[ˈaʊtsaɪd]',    ru: 'снаружи; на улице',            ex: 'It is cold outside — take your coat.',                           exRu: 'На улице холодно — возьми пальто.' },
+        { num: 369, word: 'front',     tr: '[frʌnt]',         ru: 'перед; передний',              ex: 'I waited at the front of the building.',                         exRu: 'Я ждал у входа в здание.' },
+        { num: 370, word: 'back',      tr: '[bæk]',           ru: 'зад; задний; назад',           ex: 'The car park is at the back of the hotel.',                      exRu: 'Парковка находится позади гостиницы.' },
+        { num: 371, word: 'top',       tr: '[tɒp]',           ru: 'верх; вершина; верхний',       ex: 'The café is on the top floor — great view.',                     exRu: 'Кафе на верхнем этаже — отличный вид.' },
+        { num: 372, word: 'bottom',    tr: '[ˈbɒtəm]',      ru: 'низ; нижний; дно',             ex: 'The answer is at the bottom of the page.',                       exRu: 'Ответ находится внизу страницы.' },
+        { num: 373, word: 'place',     tr: '[pleɪs]',         ru: 'место',                        ex: 'This is my favourite place in the whole city.',                  exRu: 'Это моё любимое место во всём городе.' },
+        { num: 374, word: 'area',      tr: '[ˈeəriə]',       ru: 'район; зона; область',         ex: 'They live in a quiet area outside the city.',                    exRu: 'Они живут в тихом районе за городом.' },
+        { num: 375, word: 'side',      tr: '[saɪd]',          ru: 'сторона; бок',                 ex: 'Sit on this side — the view is better.',                         exRu: 'Сиди на этой стороне — вид лучше.' },
+        { num: 376, word: 'direction', tr: '[dɪˈrekʃn]',    ru: 'направление; сторона',         ex: 'He walked in the wrong direction for twenty minutes.',            exRu: 'Он шёл в неправильном направлении двадцать минут.' },
+      ],
+      note: {
+        title: 'Предлоги места и движения; beside vs besides',
+        lines: [
+          'Многие предлоги работают и как место (где?), и как движение (куда?): She is inside. / She went inside.',
+          'beside [bɪˈsaɪd] — рядом с (место): Sit beside me.',
+          'besides [bɪˈsaɪdz] — кроме того: Besides English, she speaks French. Одна буква — большая разница.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'There is a small balcony above the entrance — I can see the whole street from there.',   ru: 'Над входом есть небольшой балкон — оттуда виден весь переулок.', note: 'entrance — [ˈentrəns] — вход' },
+        { num: 2,  en: 'The temperature here is rarely below ten degrees, even in winter.',                      ru: 'Здесь температура редко бывает ниже десяти градусов, даже зимой.', note: '' },
+        { num: 3,  en: "I sat between two people I didn't know — it was a long and quiet flight.",              ru: 'Я сидел между двумя незнакомыми людьми — это был долгий и тихий перелёт.', note: '' },
+        { num: 4,  en: 'She left her phone behind on the train. The next station was forty minutes away.',       ru: 'Она забыла телефон в поезде. Следующая станция была в сорока минутах.', note: '' },
+        { num: 5,  en: 'He fell asleep beside the window and missed his stop.',                                  ru: 'Он уснул у окна и проехал свою остановку.', note: 'fell asleep — заснул; missed his stop — проехал остановку' },
+        { num: 6,  en: 'We went through a small village before reaching the main road.',                         ru: 'Мы проехали через небольшую деревню, прежде чем выехать на главную дорогу.', note: '' },
+        { num: 7,  en: 'The post office is just across the road — it takes one minute to walk.',                ru: 'Почта прямо напротив — одна минута пешком.', note: '' },
+        { num: 8,  en: 'We walked along the seafront for an hour, watching the waves.',                         ru: 'Мы шли вдоль набережной час, наблюдая за волнами.', note: 'seafront — [ˈsiːfrʌnt] — набережная; waves — волны' },
+        { num: 9,  en: 'Is there a supermarket near the hotel? I need to buy a few things.',                    ru: 'Рядом с гостиницей есть супермаркет? Мне нужно купить несколько вещей.', note: '' },
+        { num: 10, en: 'The office is not far — about a fifteen-minute walk from the centre.',                  ru: 'Офис недалеко — примерно пятнадцать минут пешком от центра.', note: '' },
+        { num: 11, en: "It is too cold to sit outside — let's go inside.",                                      ru: 'На улице слишком холодно — давай зайдём внутрь.', note: '' },
+        { num: 12, en: 'I always sit at the front of the bus — I like to see where I am going.',               ru: 'Я всегда сижу в передней части автобуса — люблю видеть, куда еду.', note: '' },
+        { num: 13, en: 'There is a little garden at the back of the house — very quiet.',                       ru: 'За домом есть небольшой сад — очень тихо.', note: '' },
+        { num: 14, en: 'This is a safe area — people live here for twenty, thirty years.',                      ru: 'Это безопасный район — люди живут здесь по двадцать, тридцать лет.', note: '' },
+        { num: 15, en: 'I was walking in the wrong direction for ten minutes before I realised.',               ru: 'Я десять минут шёл в неправильном направлении, прежде чем понял это.', note: '' },
+      ],
+      note: {
+        title: 'in front of vs in the front',
+        lines: [
+          'in front of something — перед чем-то (снаружи): She stood in front of the building.',
+          'in the front (of something) — в передней части (внутри): He sat in the front of the car.',
+          'around the corner — за углом (очень близко). Полезное разговорное выражение.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'My grandmother lives in a small town between two larger cities. It is about forty minutes by train from either direction. Not too far, not too near — in between.',
+        'Her house is at the end of a quiet street, with a garden at the back and a small wooden gate at the front. Inside, it smells of old wood and baking. The kitchen is at the bottom of the stairs. The best room is at the top — a small study with a window above the rooftops.',
+        'I visit when I can. The town is not on many maps and most people drive through it without stopping. But I love it.',
+        'There is a market in the central square — between the church and the old town hall. You can buy vegetables, bread, cheese and, in summer, flowers from a woman who always sits beside the fountain.',
+        'On my last visit I arrived late. I walked along the main road from the station, turned behind the school and reached her gate just before dark. She was standing outside, waiting. She smiled when she saw me.',
+        '"You took the long way," she said.',
+        '"I wanted to see the town," I said.',
+        'She laughed. "You always say that."',
+      ],
+      translation: [
+        'Моя бабушка живёт в небольшом городке между двумя крупными городами. На поезде — около сорока минут в любую сторону. Не слишком далеко, не слишком близко — посередине.',
+        'Её дом в конце тихой улицы: сзади сад, спереди небольшая деревянная калитка. Внутри пахнет старым деревом и выпечкой. Кухня внизу, у лестницы. Лучшая комната наверху — небольшой кабинет с окном, выходящим над крышами.',
+        'Я приезжаю когда могу. Городок не на многих картах, и большинство людей проезжают через него, не останавливаясь. Но я его люблю.',
+        'На центральной площади — между церковью и старой ратушей — есть рынок. Там продают овощи, хлеб, сыр, а летом — цветы, которые продаёт женщина, всегда сидящая у фонтана.',
+        'В последний визит я приехал поздно. Я шёл по главной дороге от вокзала, свернул за школой и дошёл до её калитки уже в сумерках. Она стояла снаружи и ждала. Увидев меня, улыбнулась.',
+        '— Ты шёл длинной дорогой, — сказала она.',
+        '— Мне хотелось посмотреть на город, — ответил я.',
+        'Она засмеялась. — Ты всегда так говоришь.',
+      ],
+      vocab: [
+        { word: 'either direction', tr: '—',               ru: 'в любую сторону' },
+        { word: 'wooden gate',      tr: '—',               ru: 'деревянная калитка' },
+        { word: 'baking',           tr: '[ˈbeɪkɪŋ]',      ru: 'выпечка' },
+        { word: 'rooftops',         tr: '[ˈruːftɒps]',    ru: 'крыши' },
+        { word: 'town hall',        tr: '—',               ru: 'ратуша' },
+        { word: 'church',           tr: '[tʃɜːtʃ]',       ru: 'церковь' },
+        { word: 'at the end of',    tr: '—',               ru: 'в конце чего-либо' },
+        { word: 'in between',       tr: '—',               ru: 'посередине, между' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Три ключевых паттерна модуля.',
+      items: [
+        {
+          sentence:    'The bank is between the post office and the bookshop.',
+          schema:      'Предлоги места: above / below / between / behind / beside / through / across / along.',
+          explanation: 'Предлоги описывают, где что-то находится или как двигаться. above — над, below — под, between — между, behind — за, beside — рядом с, through — через (сквозь), across — через (поперёк), along — вдоль.',
+          pattern:     'It is [above / below / between / behind / beside] + [место].',
+          examples:    ['above the door — над дверью', 'between the buildings — между зданиями', 'beside the river — рядом с рекой'],
+        },
+        {
+          sentence:    'It is next to the park.',
+          schema:      'Описываем, где что-то находится.',
+          explanation: 'It is next to / beside the park. It is between the bank and the café. It is across the road from the hotel. It is at the top / bottom of the hill. Just around the corner — прямо за углом.',
+          pattern:     'It is [next to / between / across / at the top of] + [место].',
+          examples:    ['It is next to the station.', 'It is across the road.', 'It is at the bottom of the page.'],
+        },
+        {
+          sentence:    "It is too cold outside — let's go inside.",
+          schema:      'inside / outside / front / back / top / bottom — как наречия и как часть фраз.',
+          explanation: 'Эти слова работают и как наречия (Stay inside. Go outside.), и в составных фразах: at the front — спереди/у входа, at the back — сзади, at the top — вверху, at the bottom — внизу.',
+          pattern:     'at the [front / back / top / bottom] of + [место].',
+          examples:    ['at the back of the house', 'at the top floor', 'go inside / stay outside'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'The place I feel most comfortable is…',
+            'My home is near / far from…',
+            'When I go for a walk, I usually walk along…',
+            'My favourite area of the city is… because…',
+            'Inside my bag right now, there is…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'Where exactly does the grandmother live?',                  hint: 'Где именно живёт бабушка?' },
+            { q: "What is at the back of her house?",                         hint: 'Что находится позади её дома?' },
+            { q: 'What can you buy at the market?',                           hint: 'Что можно купить на рынке?' },
+            { q: 'Why did the narrator arrive late?',                         hint: 'Почему рассказчик приехал поздно?' },
+            { q: 'What did the grandmother mean by "you always say that"?',   hint: 'Что имела в виду бабушка?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Банк находится между почтой и аптекой.',               en: 'The bank is between the post office and the pharmacy.' },
+            { ru: 'Мы шли вдоль реки около часа.',                        en: 'We walked along the river for about an hour.' },
+            { ru: 'На улице слишком холодно — давай зайдём внутрь.',      en: "It is too cold outside — let's go inside." },
+            { ru: 'Кафе прямо напротив вокзала.',                          en: 'The café is just across from the station.' },
+            { ru: 'Я не уверен, в каком направлении идти.',               en: 'I am not sure which direction to go.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'The car park is at the ___ of the building.',                  answer: 'back' },
+            { sentence: 'She sat ___ me and we talked all evening.',                    answer: 'beside' },
+            { sentence: 'We drove ___ a long tunnel in the mountains.',                 answer: 'through' },
+            { sentence: 'The café is just ___ the road — you can see it from here.',   answer: 'across' },
+            { sentence: 'The best view is from the ___ floor.',                         answer: 'top' },
+            { sentence: 'Is there a pharmacy ___ here?',                               answer: 'near' },
+            { sentence: 'The instructions are at the ___ of the page.',                answer: 'bottom' },
+            { sentence: 'He walked in the wrong ___ for ten minutes.',                 answer: 'direction' },
+            { sentence: 'I love this ___ — it is so quiet and green.',                 answer: 'area' },
+            { sentence: 'We walked ___ the river to the old bridge.',                  answer: 'along' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'The shop is on the opposite side of the road.',     rephrased: 'The shop is across the road.' },
+            { original: 'It is not far at all.',                             rephrased: 'It is very near / close.' },
+            { original: 'She was waiting outside the building.',             rephrased: 'She was waiting in front of the building.' },
+            { original: 'The garden is at the rear of the house.',           rephrased: 'The garden is at the back of the house.' },
+            { original: 'Go through the park to reach the station.',        rephrased: 'Walk through the park to reach the station.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            "Lena moved into her new flat on a Saturday. It was on the top floor of an old building in a quiet area near the centre — not too far from work, not too close. Just right.",
+            "The flat was small but well-placed. There was a large window above the desk — perfect for working in the morning light. The kitchen was at the back, beside a narrow balcony where she could just fit a chair and a small table.",
+            'Below her lived an older man called Peter. She had met him briefly in the hallway. He smiled and said: "Welcome. I am quiet. I hope you are too."',
+            'She laughed. She was.',
+            "Outside the building, across the road, there was a small park. Trees, benches, a path along a stream. She decided to explore it on her first morning.",
+            "She walked through the gate, along the path, and sat beside the water. The city was around her — she could hear it — but from inside the park it felt far away. She sat there for a while, doing nothing.",
+            "Between the trees she could see the top of her building. The window of her new flat. The light was on.",
+            "She felt, for the first time in months, that she was in exactly the right place.",
+          ],
+          translation: [
+            'Лена въехала в новую квартиру в субботу. Она была на верхнем этаже старого здания в тихом районе недалеко от центра — не слишком далеко от работы, не слишком близко. В самый раз.',
+            'Квартира была маленькой, но удачно расположенной. Над столом — большое окно, идеально для работы в утреннем свете. Кухня была в задней части квартиры, рядом с узким балконом, куда едва помещались стул и маленький столик.',
+            'Этажом ниже жил пожилой мужчина по имени Питер. Она успела коротко познакомиться с ним в коридоре. Он улыбнулся и сказал: «Добро пожаловать. Я тихий. Надеюсь, вы тоже».',
+            'Она засмеялась. Так и было.',
+            'Выйдя из здания, прямо через дорогу, она увидела небольшой парк. Деревья, скамейки, тропинка вдоль ручья. Она решила исследовать его утром первого дня.',
+            'Она прошла через ворота, вдоль тропинки и села у воды. Город был вокруг — она его слышала, — но из глубины парка он казался далёким. Она просидела там некоторое время, ничего не делая.',
+            'Между деревьями она видела верхушку своего дома. Окно новой квартиры. Свет горел.',
+            'Впервые за несколько месяцев она почувствовала, что находится именно там, где нужно.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      20,
+    title:   'Повседневные глаголы',
+    preview: ['open, close, turn, move, carry', 'remember, forget, find, lose, keep', 'choose, decide, agree, allow, try'],
+    tip:     'Возьми три предлога из модуля (above, between, along) и опиши ими реальные места рядом с тобой прямо сейчас.',
+  },
+}

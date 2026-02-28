@@ -1,0 +1,263 @@
+export const module11 = {
+  id: 11,
+  levelId: 'level-1',
+  title: 'Тело человека',
+  words: '197–216',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 197–216 — части тела и самочувствие.',
+      words: [
+        { num: 197, word: 'head',         tr: '[hed]',          ru: 'голова',                   ex: 'My head hurts after a long day.',             exRu: 'После долгого дня у меня болит голова.' },
+        { num: 198, word: 'face',         tr: '[feɪs]',         ru: 'лицо',                     ex: 'She washed her face and felt better.',        exRu: 'Она умылась и почувствовала себя лучше.' },
+        { num: 199, word: 'eye',          tr: '[aɪ]',           ru: 'глаз',                     ex: 'He has green eyes and dark hair.',            exRu: 'У него зелёные глаза и тёмные волосы.' },
+        { num: 200, word: 'ear',          tr: '[ɪə]',           ru: 'ухо',                      ex: 'My left ear hurts — maybe I have an infection.', exRu: 'У меня болит левое ухо — наверное, воспаление.' },
+        { num: 201, word: 'nose',         tr: '[nəʊz]',         ru: 'нос',                      ex: 'In winter my nose is always cold.',           exRu: 'Зимой у меня всегда холодный нос.' },
+        { num: 202, word: 'mouth',        tr: '[maʊθ]',         ru: 'рот',                      ex: 'Open your mouth and say "Ah".',               exRu: 'Откройте рот и скажите «А».' },
+        { num: 203, word: 'tooth / teeth',tr: '[tuːθ / tiːθ]', ru: 'зуб / зубы',               ex: 'I brush my teeth twice a day.',               exRu: 'Я чищу зубы два раза в день.' },
+        { num: 204, word: 'hair',         tr: '[heə]',          ru: 'волосы',                   ex: 'She cut her hair short last week.',           exRu: 'На прошлой неделе она коротко постриглась.' },
+        { num: 205, word: 'neck',         tr: '[nek]',          ru: 'шея',                      ex: 'My neck is stiff after sleeping badly.',      exRu: 'После плохого сна у меня затекла шея.' },
+        { num: 206, word: 'shoulder',     tr: '[ˈʃəʊldə]',      ru: 'плечо',                    ex: 'He tapped me on the shoulder.',               exRu: 'Он похлопал меня по плечу.' },
+        { num: 207, word: 'arm',          tr: '[ɑːm]',          ru: 'рука (от плеча)',           ex: 'She broke her arm playing sport.',            exRu: 'Она сломала руку, занимаясь спортом.' },
+        { num: 208, word: 'hand',         tr: '[hænd]',         ru: 'рука (кисть)',              ex: 'Wash your hands before you eat.',             exRu: 'Помой руки перед едой.' },
+        { num: 209, word: 'finger',       tr: '[ˈfɪŋɡə]',       ru: 'палец (на руке)',           ex: 'I cut my finger while cooking.',             exRu: 'Я порезал палец во время готовки.' },
+        { num: 210, word: 'back',         tr: '[bæk]',          ru: 'спина; назад',             ex: 'My back hurts from sitting all day.',         exRu: 'От целодневного сидения у меня болит спина.' },
+        { num: 211, word: 'leg',          tr: '[leɡ]',          ru: 'нога (от бедра)',           ex: 'His right leg is still weak after the injury.', exRu: 'После травмы его правая нога ещё слабая.' },
+        { num: 212, word: 'foot / feet',  tr: '[fʊt / fiːt]',  ru: 'ступня / ступни',          ex: 'My feet are tired after the long walk.',     exRu: 'После долгой прогулки у меня устали ноги.' },
+        { num: 213, word: 'heart',        tr: '[hɑːt]',         ru: 'сердце',                   ex: 'Exercise is good for your heart.',            exRu: 'Физические упражнения полезны для сердца.' },
+        { num: 214, word: 'hurt',         tr: '[hɜːt]',         ru: 'болеть; причинять боль',   ex: 'My knee hurts when I run.',                  exRu: 'Когда я бегу, у меня болит колено.' },
+        { num: 215, word: 'feel',         tr: '[fiːl]',         ru: 'чувствовать(ся)',          ex: 'I feel much better today, thank you.',        exRu: 'Сегодня я чувствую себя намного лучше, спасибо.' },
+        { num: 216, word: 'healthy',      tr: '[ˈhelθi]',       ru: 'здоровый',                 ex: 'She eats well and looks very healthy.',       exRu: 'Она хорошо питается и выглядит очень здоровой.' },
+      ],
+      note: {
+        title: 'Нерегулярное мн. ч. и значения слов',
+        lines: [
+          'tooth → teeth, foot → feet (и ещё: man → men, child → children).',
+          'back — два значения: «спина» (My back hurts) и «назад/обратно» (I\'ll be back).',
+          'arm — вся рука до запястья; hand — кисть. Аналогично: leg vs foot.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'I have a headache — I need to lie down.',                                          ru: 'У меня болит голова — мне нужно лечь.',                               note: 'headache — головная боль; lie down — лечь' },
+        { num: 2,  en: 'She has a kind face — when she smiles, everyone feels welcome.',                   ru: 'У неё доброе лицо — когда она улыбается, всем становится уютно.',     note: 'feels welcome — чувствует себя желанным' },
+        { num: 3,  en: 'He closed his eyes and took a deep breath.',                                       ru: 'Он закрыл глаза и сделал глубокий вдох.',                             note: 'deep breath — глубокий вдох' },
+        { num: 4,  en: 'Turn off the music — my ears are ringing.',                                       ru: 'Выключи музыку — у меня звенит в ушах.',                              note: 'ringing — звенит' },
+        { num: 5,  en: 'My nose is running — I think I am getting a cold.',                               ru: 'У меня течёт нос — кажется, я простужаюсь.',                          note: 'running nose — насморк' },
+        { num: 6,  en: "Don't talk with food in your mouth, please.",                                     ru: 'Пожалуйста, не разговаривай с едой во рту.',                          note: '' },
+        { num: 7,  en: 'I need to go to the dentist — one of my teeth hurts.',                            ru: 'Мне нужно к дантисту — у меня болит один зуб.',                       note: 'dentist — стоматолог' },
+        { num: 8,  en: 'She has long dark hair and always wears it in a ponytail.',                       ru: 'У неё длинные тёмные волосы, и она всегда собирает их в хвост.',     note: 'ponytail — хвост (причёска)' },
+        { num: 9,  en: 'I slept in a bad position and now my neck is very stiff.',                        ru: 'Я спал в неудобной позе, и теперь у меня очень затекла шея.',         note: 'stiff — затёкший' },
+        { num: 10, en: 'He put his hand on my shoulder and said everything would be fine.',               ru: 'Он положил руку мне на плечо и сказал, что всё будет хорошо.',       note: '' },
+        { num: 11, en: 'I burnt my hand on the stove — not badly, but it hurts.',                        ru: 'Я обжёг руку о плиту — несильно, но больно.',                         note: 'burnt — обжёг; stove — плита' },
+        { num: 12, en: 'My back hurts after eight hours at the desk.',                                    ru: 'После восьми часов за столом у меня болит спина.',                    note: '' },
+        { num: 13, en: 'She twisted her leg at the park and had to sit down.',                            ru: 'Она подвернула ногу в парке и вынуждена была сесть.',                 note: 'twisted — подвернула' },
+        { num: 14, en: 'After the long walk, my feet are killing me.',                                    ru: 'После долгой прогулки у меня страшно болят ноги.',                   note: 'my feet are killing me — разг.: ноги страшно болят' },
+        { num: 15, en: 'A healthy heart needs exercise, good food and enough sleep.',                      ru: 'Здоровому сердцу нужны физическая активность, хорошее питание и достаточный сон.', note: '' },
+      ],
+      note: {
+        title: 'Как говорить о боли',
+        lines: [
+          'My [часть тела] hurts — самый простой шаблон: My head hurts.',
+          'Мн. ч. → hurt без -s: My feet hurt.',
+          'I have a headache / stomachache / toothache — устойчивые выражения.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'I woke up this morning and knew right away it was going to be a difficult day.',
+        'My neck hurt — I must have slept in a bad position. My eyes were tired and a little red. My head felt heavy. I went to the bathroom, washed my face with cold water and looked in the mirror.',
+        'I had a cup of coffee and tried to wake up. My back started hurting after just an hour at the desk. I stood up, walked to the window and stretched my arms and shoulders. It helped a little.',
+        'By noon my nose was running. I felt cold. I thought: "No. Not now. I\'m too busy to be sick."',
+        'But the body doesn\'t care how busy you are. I finished work early, came home and went straight to bed. I slept for two hours. When I woke up, I felt a little better.',
+        'I made some hot tea, put a blanket on my shoulders and sat on the sofa. My feet were warm. My head still hurt, but less. My heart felt calm.',
+        'Sometimes the best thing you can do for your body is just stop.',
+      ],
+      translation: [
+        'Сегодня утром я проснулся и сразу понял, что день будет тяжёлым.',
+        'Болела шея — наверное, я спал в неудобной позе. Глаза устали и немного покраснели. Голова казалась тяжёлой. Я пошёл в ванную, умылся холодной водой и посмотрел в зеркало.',
+        'Я выпил кофе и попытался взбодриться. Уже через час работы за столом начала болеть спина. Я встал, подошёл к окну и потянул руки и плечи. Немного полегчало.',
+        'К полудню потёк нос. Я почувствовал озноб. Подумал: «Нет. Только не сейчас. Я слишком занят, чтобы болеть».',
+        'Но телу всё равно, насколько ты занят. Я закончил работу пораньше, пришёл домой и сразу лёг в кровать. Проспал два часа. Когда проснулся — стало немного лучше.',
+        'Я заварил горячий чай, накинул плед на плечи и сел на диван. Ноги были тёплыми. Голова всё ещё болела, но меньше. На сердце было спокойно.',
+        'Иногда лучшее, что можно сделать для своего тела — это просто остановиться.',
+      ],
+      vocab: [
+        { word: 'right away',      tr: '—',           ru: 'сразу же' },
+        { word: 'stretched',       tr: '[stretʃt]',   ru: 'потянул, растянул' },
+        { word: 'blanket',         tr: '[ˈblæŋkɪt]',  ru: 'плед, одеяло' },
+        { word: 'straight to bed', tr: '—',           ru: 'прямо в кровать' },
+        { word: 'less',            tr: '[les]',        ru: 'меньше' },
+        { word: 'calm',            tr: '[kɑːm]',       ru: 'спокойный' },
+        { word: 'must have slept', tr: '—',           ru: 'наверное, спал (вывод о прошлом)' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Три ключевых паттерна модуля.',
+      items: [
+        {
+          sentence:    'My back hurts.',
+          schema:      'My [body part] hurts.',
+          explanation: 'Простейший способ сказать о боли: притяжательное местоимение + часть тела + hurts. Во мн. ч. — hurt (без -s): My feet hurt.',
+          pattern:     'My [часть тела] hurts / hurt.',
+          examples:    ['My head hurts.', 'My feet hurt.', 'Her shoulder hurts.'],
+        },
+        {
+          sentence:    'I feel much better today.',
+          schema:      'I feel + adjective.',
+          explanation: 'feel + прилагательное описывает общее самочувствие. feel sick / tired / better / fine / cold.',
+          pattern:     'I feel + [прилагательное].',
+          examples:    ['I feel good.', 'I feel sick.', 'She feels tired.'],
+        },
+        {
+          sentence:    'I have a headache.',
+          schema:      'I have a [noun-ache].',
+          explanation: 'Устойчивые выражения с -ache: headache, stomachache, toothache, backache. Также: I have a cold.',
+          pattern:     'I have a [headache / toothache / cold].',
+          examples:    ['I have a toothache.', 'I have a stomachache.', 'I have a cold.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'When I feel sick, I usually…',
+            'My … hurts when I…',
+            'To stay healthy, I try to…',
+            'Yesterday I felt… because…',
+            'I think the most important part of the body is… because…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'Why did the person\'s neck hurt?',           hint: 'Почему болела шея?' },
+            { q: 'What did he do to try to wake up?',         hint: 'Что он сделал, чтобы взбодриться?' },
+            { q: 'What did he do when his back started hurting?', hint: 'Что он сделал, когда заболела спина?' },
+            { q: 'What did he do when he came home?',         hint: 'Что он сделал, придя домой?' },
+            { q: 'What is the main idea of the last sentence?', hint: 'Какова главная мысль последнего предложения?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'У меня болит голова, и я чувствую себя усталым.',               en: 'My head hurts and I feel tired.' },
+            { ru: 'Помой руки перед едой.',                                          en: 'Wash your hands before you eat.' },
+            { ru: 'После долгой прогулки у меня болят ноги.',                        en: 'My feet hurt after the long walk.' },
+            { ru: 'Она выглядит здоровой — она хорошо ест и много спит.',            en: 'She looks healthy — she eats well and sleeps a lot.' },
+            { ru: 'У него болит спина, поэтому он лёг.',                             en: 'His back hurts, so he lay down.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'My ___ hurts — I need some water and rest.',                     answer: 'head' },
+            { sentence: 'She has blue ___ and short blonde hair.',                          answer: 'eyes' },
+            { sentence: 'Brush your ___ twice a day.',                                     answer: 'teeth' },
+            { sentence: 'I cut my ___ while cooking dinner.',                              answer: 'finger' },
+            { sentence: 'He broke his ___ playing football.',                              answer: 'leg' },
+            { sentence: 'Wash your ___ before you eat.',                                   answer: 'hands' },
+            { sentence: 'My ___ is stiff after sleeping on the sofa.',                    answer: 'neck' },
+            { sentence: 'Exercise is very good for your ___.',                             answer: 'heart' },
+            { sentence: 'I feel much better — not sick ___ today.',                       answer: 'anymore' },
+            { sentence: 'She looks very ___ — she runs every morning.',                   answer: 'healthy' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'I have pain in my back.',                    rephrased: 'My back hurts.' },
+            { original: "I don't feel well today.",                   rephrased: 'I feel sick today.' },
+            { original: 'She has a pain in one of her teeth.',       rephrased: 'One of her teeth hurts.' },
+            { original: "He can't move his right arm well.",          rephrased: "His right arm doesn't work well." },
+            { original: 'I went to the doctor because my stomach was painful.', rephrased: 'I went to the doctor because my stomach hurt.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            "Last Tuesday I went to see a doctor. I had not been feeling well for three days.",
+            "I sat in the waiting room for about twenty minutes. Then the doctor called me in. She was young — maybe thirty — with short dark hair and kind eyes.",
+            '"What seems to be the problem?" she asked.',
+            '"My throat hurts," I said. "My head hurts too. And I feel very tired."',
+            'She looked in my mouth, checked my ears and felt my neck. "Open wide," she said. I opened my mouth. She looked at my throat.',
+            '"You have a mild infection," she said. "Nothing serious. Rest, drink warm water and take these tablets." She wrote something on a piece of paper and gave it to me.',
+            '"How long will it take?" I asked.',
+            '"Three to five days," she said. "Sleep well, eat light food and don\'t sit at your desk for too long. Your body needs rest."',
+            'I went home, made some soup, took a tablet and went to bed early. The next morning, I felt a little better. My throat still hurt, but my head was clearer. By Thursday I was almost fine.',
+            'Sometimes the best medicine is simple: sleep, soup, and stopping.',
+          ],
+          translation: [
+            'В прошлый вторник я пошёл к врачу. Три дня я чувствовал себя нехорошо.',
+            'Я сидел в приёмной около двадцати минут. Потом врач позвала меня. Она была молодая — лет тридцати — с короткими тёмными волосами и добрыми глазами.',
+            '— В чём проблема? — спросила она.',
+            '— Болит горло, — сказал я. — Голова тоже болит. И я себя очень устало чувствую.',
+            'Она посмотрела мне в рот, проверила уши и ощупала шею. «Откройте рот пошире», — сказала она. Я открыл рот. Она осмотрела горло.',
+            '— У вас лёгкая инфекция, — сказала она. — Ничего серьёзного. Отдыхайте, пейте тёплую воду и принимайте эти таблетки.',
+            '— Сколько это продлится? — спросил я.',
+            '— Три-пять дней. Хорошо спите, ешьте лёгкую пищу и не сидите слишком долго за столом. Вашему телу нужен отдых.',
+            'Я пришёл домой, сварил суп, принял таблетку и лёг спать пораньше. На следующее утро стало немного лучше. Горло всё ещё болело, но голова соображала яснее. К четвергу я был почти здоров.',
+            'Иногда лучшее лекарство простое: сон, суп и остановка.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      12,
+    title:   'Одежда и внешность',
+    preview: ['shirt, trousers, dress, jacket', 'wear, put on, take off', 'size, fit, style'],
+    tip:     'Опиши своё самочувствие на этой неделе по-английски: I feel..., My ... hurts.',
+  },
+}

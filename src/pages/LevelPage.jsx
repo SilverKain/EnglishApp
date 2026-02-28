@@ -8,11 +8,21 @@ import styles from './LevelPage.module.css'
 
 // Module paths (for levels with available content)
 const MODULE_PATHS = {
-  1: '/level-1/module/1',
-  2: '/level-1/module/2',
-  3: '/level-1/module/3',
-  4: '/level-1/module/4',
-  5: '/level-1/module/5',
+  1:  '/level-1/module/1',
+  2:  '/level-1/module/2',
+  3:  '/level-1/module/3',
+  4:  '/level-1/module/4',
+  5:  '/level-1/module/5',
+  6:  '/level-1/module/6',
+  7:  '/level-1/module/7',
+  8:  '/level-1/module/8',
+  9:  '/level-1/module/9',
+  10: '/level-1/module/10',
+  11: '/level-1/module/11',
+  12: '/level-1/module/12',
+  13: '/level-1/module/13',
+  14: '/level-1/module/14',
+  15: '/level-1/module/15',
 }
 
 function quizPctColor(pct) {

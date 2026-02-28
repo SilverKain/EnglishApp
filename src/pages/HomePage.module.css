@@ -224,6 +224,23 @@
   transform: translateX(4px);
 }
 
+/* Vocabulary badge */
+.vocabBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 7px;
+  background: #fbbf24;
+  color: #000;
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-right: -4px;
+}
+
 /* Footer */
 .footer {
   text-align: center;

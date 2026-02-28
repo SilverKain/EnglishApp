@@ -1,0 +1,262 @@
+export const module20 = {
+  id: 20,
+  levelId: 'level-1',
+  title: 'Повседневные глаголы',
+  words: '377–396',
+  wordCount: 20,
+  totalWords: 3000,
+
+  blocks: [
+    // ── БЛОК 1 ── СПИСОК СЛОВ ──────────────────────────────────────────────
+    {
+      id: 'words',
+      type: 'word-list',
+      title: 'Блок 1 — Список слов',
+      intro: 'Слова 377–396 — глаголы повседневных действий.',
+      words: [
+        { num: 377, word: 'open',     tr: '[ˈəʊpən]',     ru: 'открывать; открытый',             ex: 'Can you open the window? It is hot in here.',                exRu: 'Можешь открыть окно? Здесь жарко.' },
+        { num: 378, word: 'close',    tr: '[kləʊz]',      ru: 'закрывать; закрытый',             ex: 'Please close the door — it is noisy outside.',               exRu: 'Пожалуйста, закрой дверь — снаружи шумно.' },
+        { num: 379, word: 'turn',     tr: '[tɜːn]',       ru: 'поворачивать; включать/выключать', ex: 'Can you turn off the light? I want to sleep.',               exRu: 'Можешь выключить свет? Я хочу спать.' },
+        { num: 380, word: 'move',     tr: '[muːv]',       ru: 'двигать; двигаться; переезжать',  ex: 'Can you move your bag? I need to sit down.',                 exRu: 'Можешь убрать сумку? Мне нужно сесть.' },
+        { num: 381, word: 'carry',    tr: '[ˈkæri]',      ru: 'нести; носить',                   ex: 'She was carrying two heavy bags from the market.',           exRu: 'Она несла две тяжёлые сумки с рынка.' },
+        { num: 382, word: 'bring',    tr: '[brɪŋ]',       ru: 'приносить; привозить',            ex: 'Can you bring me a glass of water, please?',                 exRu: 'Можешь принести мне стакан воды, пожалуйста?' },
+        { num: 383, word: 'send',     tr: '[send]',       ru: 'отправлять; посылать',            ex: 'I will send you the address by message.',                    exRu: 'Я отправлю тебе адрес сообщением.' },
+        { num: 384, word: 'wait',     tr: '[weɪt]',       ru: 'ждать; ожидать',                  ex: 'Wait here — I will be back in five minutes.',               exRu: 'Подожди здесь — я вернусь через пять минут.' },
+        { num: 385, word: 'remember', tr: '[rɪˈmembə]',  ru: 'помнить; вспоминать',             ex: "I don't remember her name — we met only once.",             exRu: 'Я не помню её имени — мы виделись лишь однажды.' },
+        { num: 386, word: 'forget',   tr: '[fəˈɡet]',    ru: 'забывать',                        ex: "Don't forget to lock the door when you leave.",             exRu: 'Не забудь запереть дверь, когда уходишь.' },
+        { num: 387, word: 'find',     tr: '[faɪnd]',      ru: 'находить; обнаруживать',          ex: "I can't find my keys — have you seen them?",                exRu: 'Не могу найти ключи — ты их не видел?' },
+        { num: 388, word: 'lose',     tr: '[luːz]',       ru: 'терять; проигрывать',             ex: 'He loses things all the time — wallet, phone, keys.',       exRu: 'Он постоянно теряет вещи — кошелёк, телефон, ключи.' },
+        { num: 389, word: 'keep',     tr: '[kiːp]',       ru: 'хранить; держать; продолжать',    ex: 'Keep the receipt — you may need it later.',                  exRu: 'Сохрани чек — он может пригодиться.' },
+        { num: 390, word: 'change',   tr: '[tʃeɪndʒ]',   ru: 'менять; меняться; изменение',     ex: 'Things change — you just have to accept it.',               exRu: 'Всё меняется — просто нужно принять это.' },
+        { num: 391, word: 'use',      tr: '[juːz]',       ru: 'использовать; пользоваться',      ex: "You can use my umbrella — I don't need it today.",          exRu: 'Можешь взять мой зонт — он мне сегодня не нужен.' },
+        { num: 392, word: 'try',      tr: '[traɪ]',       ru: 'пробовать; стараться',            ex: 'Try this cake — it is really good.',                         exRu: 'Попробуй этот торт — он очень вкусный.' },
+        { num: 393, word: 'choose',   tr: '[tʃuːz]',     ru: 'выбирать',                        ex: 'She took a long time to choose — she is always careful.',   exRu: 'Она долго выбирала — она всегда осторожна.' },
+        { num: 394, word: 'decide',   tr: '[dɪˈsaɪd]',  ru: 'решать; принимать решение',       ex: "He couldn't decide what to eat and stood there for a minute.", exRu: 'Он не мог решить, что поесть, и простоял там минуту.' },
+        { num: 395, word: 'agree',    tr: '[əˈɡriː]',    ru: 'соглашаться; договариваться',     ex: 'We agreed to meet at seven outside the café.',             exRu: 'Мы договорились встретиться в семь у кафе.' },
+        { num: 396, word: 'allow',    tr: '[əˈlaʊ]',     ru: 'разрешать; позволять',            ex: 'Pets are not allowed in this building.',                     exRu: 'В этом здании нельзя держать животных.' },
+      ],
+      note: {
+        title: 'keep + -ing; try to do vs try + -ing',
+        lines: [
+          'keep + -ing — продолжать/постоянно повторять: He keeps losing things. Keep going! — Продолжай!',
+          'try + to do — пытаться (есть усилие): I tried to open the jar, but couldn\'t.',
+          'try + -ing — попробовать как эксперимент: Try drinking more water — it might help.',
+        ],
+      },
+    },
+
+    // ── БЛОК 2 ── ЖИВЫЕ ПРЕДЛОЖЕНИЯ ───────────────────────────────────────
+    {
+      id: 'sentences',
+      type: 'sentences',
+      title: 'Блок 2 — Живые предложения',
+      intro: 'Примеры из реальной речи — читай и запоминай контекст.',
+      items: [
+        { num: 1,  en: 'Open your book to page fifteen and read the first paragraph out loud.',          ru: 'Открой книгу на пятнадцатой странице и прочитай первый абзац вслух.', note: 'paragraph — абзац; out loud — вслух' },
+        { num: 2,  en: 'Please close the fridge — the door has been open for ten minutes.',             ru: 'Пожалуйста, закрой холодильник — дверь открыта уже десять минут.', note: '' },
+        { num: 3,  en: "Turn off the TV and come to dinner — it's ready.",                              ru: 'Выключи телевизор и иди ужинать — всё готово.', note: 'turn off — выключить; turn on — включить' },
+        { num: 4,  en: 'They decided to move to a bigger flat — their old one was too small for two people.', ru: 'Они решили переехать в квартиру побольше — старая была слишком мала для двоих.', note: '' },
+        { num: 5,  en: "I can't carry all these bags alone — can you take some?",                       ru: 'Я не могу нести все эти сумки один — можешь взять несколько?', note: '' },
+        { num: 6,  en: 'He brought flowers and a bottle of wine — a very good guest.',                  ru: 'Он принёс цветы и бутылку вина — очень хороший гость.', note: '' },
+        { num: 7,  en: 'She sent me a long message explaining everything that had happened.',            ru: 'Она отправила мне длинное сообщение, объясняя всё, что произошло.', note: '' },
+        { num: 8,  en: 'We waited for the bus for half an hour in the cold — it never came.',          ru: 'Мы полчаса ждали автобуса на холоде — он так и не приехал.', note: '' },
+        { num: 9,  en: 'Do you remember the name of that café we went to last summer?',                ru: 'Ты помнишь название того кафе, куда мы ходили прошлым летом?', note: '' },
+        { num: 10, en: 'I forgot my phone at home and felt strange all day — like something was missing.', ru: 'Я забыл телефон дома и весь день чувствовал себя странно — будто чего-то не хватало.', note: 'missing — отсутствующий, не хватающий' },
+        { num: 11, en: 'I finally found the keys — they were in my coat pocket the whole time.',       ru: 'Я наконец нашёл ключи — они всё это время лежали в кармане пальто.', note: '' },
+        { num: 12, en: 'She lost her phone on the train and spent the whole afternoon trying to get it back.', ru: 'Она потеряла телефон в поезде и провела весь день, пытаясь его вернуть.', note: '' },
+        { num: 13, en: 'Keep going — you are almost there. Just a few more minutes.',                   ru: 'Не останавливайся — ты уже почти у цели. Ещё несколько минут.', note: '' },
+        { num: 14, en: 'He changed his mind three times before finally choosing the jacket.',          ru: 'Он трижды менял решение, прежде чем наконец выбрал куртку.', note: '' },
+        { num: 15, en: 'They agreed to split the bill — it was easier than arguing about who pays.',   ru: 'Они договорились разделить счёт — так проще, чем спорить, кто платит.', note: 'split the bill — разделить счёт; arguing — спорить' },
+      ],
+      note: {
+        title: 'bring vs take',
+        lines: [
+          'bring — принести к говорящему / сюда: Bring me a coffee. Bring a coat when you come.',
+          'take — унести от говорящего / в другое место: Take this to the kitchen. Take an umbrella with you.',
+          'Простое правило: bring = сюда, take = туда.',
+        ],
+      },
+    },
+
+    // ── БЛОК 3 ── МИНИ-ТЕКСТ ──────────────────────────────────────────────
+    {
+      id: 'text',
+      type: 'mini-text',
+      title: 'Блок 3 — Мини-текст',
+      intro: 'Читай оригинал, потом проверяй себя по переводу.',
+      original: [
+        'Paul had been thinking about leaving his job for three months. He had found a new offer — better money, a smaller company, more interesting work. But he couldn\'t decide.',
+        'One evening he sat at his desk and opened a new notebook. He would write it all down. The reasons to go. The reasons to stay.',
+        'He tried to remember what had first made him think about leaving. It was a meeting — a long, pointless meeting where no one listened and nothing changed. He wrote that down.',
+        'Then he tried to think of reasons to stay. His colleagues were good. He knew the work. He didn\'t have to explain everything from the beginning.',
+        'He kept writing for about twenty minutes. When he stopped and read what he had written, the answer was already there. He had been choosing for weeks — he just hadn\'t allowed himself to see it.',
+        'He opened his email, found the contact, and typed a short message: "I would like to move forward with the offer. Let me know the next steps."',
+        'He read it twice. He changed one word — "would like" to "am ready."',
+        'Then he sent it.',
+        'He closed the laptop. He didn\'t feel excited. He felt something quieter — a small, clean feeling that comes when a decision stops being a decision and starts being a fact.',
+      ],
+      translation: [
+        'Пол уже три месяца думал о том, чтобы уйти с работы. Он нашёл новое предложение — деньги лучше, компания меньше, работа интереснее. Но он не мог решиться.',
+        'Однажды вечером он сел за стол и открыл новый блокнот. Он запишет всё. Причины уйти. Причины остаться.',
+        'Он попробовал вспомнить, что первым заставило его задуматься об уходе. Это было совещание — долгое, бессмысленное, на котором никто не слушал и ничего не менялось. Он записал это.',
+        'Потом он попробовал придумать причины остаться. Коллеги хорошие. Работу он знает. Не нужно объяснять всё с самого начала.',
+        'Он продолжал писать около двадцати минут. Когда он остановился и перечитал написанное, ответ уже был там. Он выбирал уже несколько недель — просто не позволял себе это увидеть.',
+        '— Я готов двигаться дальше с этим предложением. Сообщите о следующих шагах.',
+        'Прочитал его дважды. Изменил одно слово — «хотел бы» на «готов».',
+        'Потом отправил.',
+        'Закрыл ноутбук. Он не чувствовал возбуждения. Что-то более тихое — маленькое, чистое ощущение, которое приходит, когда решение перестаёт быть решением и становится фактом.',
+      ],
+      vocab: [
+        { word: 'offer',          tr: '[ˈɒfə]',          ru: 'предложение (о работе)' },
+        { word: 'pointless',      tr: '[ˈpɔɪntləs]',    ru: 'бессмысленный' },
+        { word: 'typed',          tr: '[taɪpt]',          ru: 'напечатал' },
+        { word: 'move forward',   tr: '—',               ru: 'двигаться вперёд, перейти к следующему шагу' },
+        { word: 'steps',          tr: '[steps]',          ru: 'шаги' },
+        { word: 'excited',        tr: '[ɪkˈsaɪtɪd]',    ru: 'взволнованный, в возбуждении' },
+        { word: 'allowed himself', tr: '—',              ru: 'позволил себе' },
+        { word: 'contact',        tr: '[ˈkɒntækt]',      ru: 'контакт, адресат' },
+      ],
+    },
+
+    // ── БЛОК 4 ── ПОНИМАНИЕ СТРУКТУРЫ ─────────────────────────────────────
+    {
+      id: 'structure',
+      type: 'structure',
+      title: 'Блок 4 — Понимание структуры',
+      intro: 'Три ключевых паттерна модуля.',
+      items: [
+        {
+          sentence:    'She keeps forgetting her keys.',
+          schema:      'keep + -ing — продолжать / повторять снова и снова.',
+          explanation: 'keep + -ing означает, что действие повторяется постоянно или продолжается без остановки: He keeps losing things. She kept calling. Keep going! — Продолжай!',
+          pattern:     '[Subject] keeps / kept + [verb-ing].',
+          examples:    ['She keeps forgetting her keys.', 'He kept moving around the room.', 'Keep trying — you will get it.'],
+        },
+        {
+          sentence:    'I tried to open the jar. Try sleeping earlier.',
+          schema:      'try + to do (усилие) vs try + -ing (эксперимент).',
+          explanation: 'try + to do — пытаться выполнить цель (может не получиться). try + -ing — попробовать что-то как эксперимент, посмотреть что будет.',
+          pattern:     'try to [do] / try [doing].',
+          examples:    ["I tried to open the jar, but couldn't.", 'Try sleeping earlier.', 'Try using a different word.'],
+        },
+        {
+          sentence:    'She decided to move. They agreed to wait.',
+          schema:      'decide / agree / choose / allow + to do.',
+          explanation: 'После глаголов decide, agree, choose стоит инфинитив (to + глагол). allow кого-то to do — разрешать кому-то. be allowed to do — иметь разрешение.',
+          pattern:     '[decide / agree / choose] + to [do]. allow sb to [do].',
+          examples:    ['She decided to change jobs.', 'We agreed to meet later.', 'You are not allowed to park here.'],
+        },
+      ],
+    },
+
+    // ── БЛОК 5 ── МЫСЛИМ НА АНГЛИЙСКОМ ───────────────────────────────────
+    {
+      id: 'thinking',
+      type: 'thinking',
+      title: 'Блок 5 — Мыслим на английском',
+      intro: 'Упражнения для активного использования языка.',
+      sections: [
+        {
+          type:   'continue',
+          title:  '5.1. Продолжи фразу',
+          prompt: 'Закончи предложение своими словами на английском:',
+          items: [
+            'I always forget…',
+            'The hardest decision I ever made was…',
+            'I keep… (что-то, что ты постоянно делаешь)',
+            'I am not allowed to… at work / at home.',
+            'When I can\'t find something, I usually…',
+          ],
+        },
+        {
+          type:   'questions',
+          title:  '5.2. Ответь на вопросы по тексту',
+          items: [
+            { q: 'Why was Paul thinking about leaving his job?',            hint: 'Почему Пол думал об уходе с работы?' },
+            { q: 'What did he decide to do one evening?',                   hint: 'Что он решил сделать однажды вечером?' },
+            { q: 'What first made him think about leaving?',                hint: 'Что первым заставило его задуматься об уходе?' },
+            { q: 'What did he change in his message and why?',              hint: 'Что он изменил в сообщении и почему?' },
+            { q: 'How did he feel after sending the email?',                hint: 'Как он себя почувствовал после отправки письма?' },
+          ],
+        },
+        {
+          type:   'translate',
+          title:  '5.3. Переведи с русского на английский',
+          items: [
+            { ru: 'Не забудь отправить ей сообщение — она ждёт ответа.',    en: "Don't forget to send her a message — she is waiting for a reply." },
+            { ru: 'Я не могу выбрать: слишком много вариантов.',             en: "I can't choose — there are too many options." },
+            { ru: 'Он всё время теряет ключи — уже третий раз за месяц.',   en: 'He keeps losing his keys — it is the third time this month.' },
+            { ru: 'Они договорились встретиться в понедельник и всё обсудить.', en: 'They agreed to meet on Monday and discuss everything.' },
+            { ru: 'Попробуй открыть это окно — в комнате слишком жарко.',   en: 'Try opening this window — it is too hot in the room.' },
+          ],
+        },
+      ],
+    },
+
+    // ── БЛОК 6 ── МИНИ-ПОВТОРЕНИЕ ─────────────────────────────────────────
+    {
+      id: 'review',
+      type: 'review',
+      title: 'Блок 6 — Мини-повторение',
+      intro: 'Закрепляем пройденное.',
+      sections: [
+        {
+          type:  'fill',
+          title: '6.1. Вставь пропущенное слово',
+          items: [
+            { sentence: 'Can you ___ the window? It is really hot in here.',                             answer: 'open' },
+            { sentence: "Don't ___ to bring your passport — you will need it.",                          answer: 'forget' },
+            { sentence: "I can't ___ my glasses — where did I put them?",                               answer: 'find' },
+            { sentence: 'She ___ her phone on the bus and had to call the transport company.',          answer: 'lost' },
+            { sentence: 'Can you ___ this bag to the kitchen for me?',                                  answer: 'carry' },
+            { sentence: 'He ___ to send the email three times but kept stopping.',                      answer: 'tried' },
+            { sentence: "They couldn't ___ where to go — the café or the restaurant.",                  answer: 'decide' },
+            { sentence: '___ your ticket — the inspector checks them at the exit.',                     answer: 'Keep' },
+            { sentence: 'Smoking is not ___ inside the building.',                                      answer: 'allowed' },
+            { sentence: 'She ___ her mind at the last minute and stayed home.',                         answer: 'changed' },
+          ],
+        },
+        {
+          type:  'rephrase',
+          title: '6.2. Перефразируй предложение',
+          items: [
+            { original: 'He is always losing things.',          rephrased: 'He keeps losing things.' },
+            { original: 'She made the decision to leave.',      rephrased: 'She decided to leave.' },
+            { original: 'They said yes to the plan.',           rephrased: 'They agreed to the plan.' },
+            { original: "You are not permitted to use your phone here.", rephrased: 'You are not allowed to use your phone here.' },
+            { original: 'I took his pen without asking — it was on the desk.', rephrased: 'I used his pen — it was on the desk.' },
+          ],
+        },
+        {
+          type:    'reading',
+          title:   '6.3. Мини-текст для чтения',
+          passage: [
+            'On Tuesday morning, Nina forgot her keys. She remembered this only when she was standing outside her building, bag on her shoulder, door closed behind her.',
+            'She tried to open the door — locked. She tried to call her flatmate — no answer. She stood there for a moment, thinking about what to do.',
+            'She decided to use the time. She found a café around the corner, brought her bag inside, ordered coffee and opened her notebook. She had been trying to write something for weeks — a short letter to an old friend she had lost touch with. She had never found the right moment.',
+            'Now she had one.',
+            "She wrote for forty minutes. She didn't try to make it perfect — she just kept writing. She remembered things she had forgotten: a walk they had taken together, a joke that had made them laugh for ten minutes, a quiet afternoon in someone's kitchen.",
+            'When her flatmate finally called back, Nina had already sent the letter. She closed her notebook, finished her coffee, and moved back towards the building.',
+            'She had lost her keys and found something she had been looking for much longer.',
+          ],
+          translation: [
+            'В утро вторника Нина забыла ключи. Она вспомнила об этом, только стоя снаружи у своего дома — сумка на плече, дверь закрыта за спиной.',
+            'Она попробовала открыть дверь — заперто. Позвонила соседке по квартире — нет ответа. Она постояла секунду, обдумывая, что делать.',
+            'Она решила использовать это время. Нашла кафе за углом, занесла сумку внутрь, заказала кофе и открыла блокнот. Уже несколько недель она пыталась написать кое-что — короткое письмо старой подруге, с которой они потеряли связь. Она так и не находила подходящего момента.',
+            'Теперь он нашёлся.',
+            'Она писала сорок минут. Не старалась сделать письмо идеальным — просто продолжала писать. Она вспоминала то, что успела забыть: прогулка, которую они совершили вместе, шутка, от которой они смеялись минут десять, тихий вечер на чьей-то кухне.',
+            'Когда соседка наконец перезвонила, Нина уже отправила письмо. Она закрыла блокнот, допила кофе и пошла обратно к дому.',
+            'Она потеряла ключи — и нашла то, что искала гораздо дольше.',
+          ],
+        },
+      ],
+    },
+  ],
+
+  next: {
+    id:      21,
+    title:   'Учёба и школа',
+    preview: ['school, lesson, class, study, learn', 'read, write, test, homework, library', 'understand, explain, correct, repeat'],
+    tip:     'Возьми три глагола из модуля — decide, try, keep — и составь по одному предложению о своей прошлой неделе.',
+  },
+}

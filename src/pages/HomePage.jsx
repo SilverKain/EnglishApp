@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { levels } from '../data/courseData'
+import { useVocabulary } from '../hooks/useVocabulary'
 import styles from './HomePage.module.css'
 
 const navCards = [
@@ -24,6 +25,7 @@ const navCards = [
 ]
 
 function HomePage() {
+  const { vocabulary } = useVocabulary()
   return (
     <div className={styles.page}>
       {/* Header */}
@@ -90,6 +92,31 @@ function HomePage() {
                 <span className={styles.cardArrow}>→</span>
               </Link>
             ))}
+
+            {/* Vocabulary card */}
+            <Link
+              to="/vocabulary"
+              className={styles.card}
+              style={{
+                '--card-accent': 'rgba(251,191,36,0.1)',
+                '--card-border': 'rgba(251,191,36,0.35)',
+                '--card-color': '#fbbf24',
+              }}
+            >
+              <span className={styles.cardIcon}>📚</span>
+              <div className={styles.cardBody}>
+                <span className={styles.cardLabel}>Словарь</span>
+                <span className={styles.cardDesc}>
+                  {vocabulary.length > 0
+                    ? `${vocabulary.length} слов для повторения`
+                    : 'Слова с ошибками в тестах'}
+                </span>
+              </div>
+              {vocabulary.length > 0 && (
+                <span className={styles.vocabBadge}>{vocabulary.length}</span>
+              )}
+              <span className={styles.cardArrow}>→</span>
+            </Link>
           </div>
         </div>
       </section>

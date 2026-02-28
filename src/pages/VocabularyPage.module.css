@@ -1,0 +1,588 @@
+/* ── Wrapper ────────────────────────────────────────────────────────────────── */
+.wrap {
+  max-width: 660px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* ── Empty state ─────────────────────────────────────────────────────────────── */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.emptyIcon {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.emptyTitle {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.emptySub {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+/* ── List screen ─────────────────────────────────────────────────────────────── */
+.listScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 8px 0 0;
+}
+
+.listHeader {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.listIcon {
+  font-size: 52px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.listTitle {
+  font-size: clamp(24px, 6vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.listSub {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* Word table */
+.wordTable {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.wordTableHead {
+  display: grid;
+  grid-template-columns: 36px 1fr 1fr 1fr;
+  gap: 0;
+  padding: 10px 16px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid var(--border);
+}
+
+.wordRow {
+  display: grid;
+  grid-template-columns: 36px 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  transition: background 0.1s;
+}
+
+.wordRow:last-child {
+  border-bottom: none;
+}
+
+.wordRow:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.wordNum {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.wordEn {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.wordTr {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.wordRu {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Actions */
+.listActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.startBtn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+
+.startBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.startBtn:active {
+  transform: translateY(0);
+}
+
+.clearBtn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 22px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+
+.clearBtn:hover {
+  color: #f87171;
+  border-color: #f87171;
+}
+
+.confirmRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.confirmText {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.confirmYes {
+  background: #f87171;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.12s;
+}
+
+.confirmYes:hover {
+  opacity: 0.85;
+}
+
+.confirmNo {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.12s;
+}
+
+.confirmNo:hover {
+  border-color: var(--accent);
+}
+
+/* ── Quiz: Question ──────────────────────────────────────────────────────────── */
+.questionWrap {
+  padding: 8px 0;
+}
+
+.qProgress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.qProgressBar {
+  flex: 1;
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.qProgressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.qProgressLabel {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 44px;
+  text-align: right;
+}
+
+.qType {
+  margin-bottom: 12px;
+}
+
+.qTypeBadge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.qBody {
+  margin-bottom: 20px;
+}
+
+.qPrompt {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.qWordCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 20px;
+  gap: 6px;
+}
+
+.qWord {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--text);
+}
+
+.qTr {
+  font-size: 15px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.qContextCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.qContextRu {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.option {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.option:hover:not(.optCorrect):not(.optWrong):not(.optDim) {
+  border-color: var(--accent);
+  background: #6366f11a;
+}
+
+.optCorrect {
+  border-color: #4ade80 !important;
+  background: #4ade8018 !important;
+  color: #4ade80 !important;
+}
+
+.optWrong {
+  border-color: #f87171 !important;
+  background: #f8717118 !important;
+  color: #f87171 !important;
+}
+
+.optDim {
+  opacity: 0.35;
+}
+
+.feedback {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.feedbackOk {
+  background: #4ade8018;
+  border: 1px solid #4ade8040;
+  color: #4ade80;
+}
+
+.feedbackBad {
+  background: #f8717118;
+  border: 1px solid #f8717140;
+  color: #f87171;
+}
+
+.feedbackHint {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.nextBtn {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.nextBtn:hover {
+  opacity: 0.88;
+}
+
+/* ── Quiz: Results ───────────────────────────────────────────────────────────── */
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0 0;
+  text-align: center;
+}
+
+.resBigPct {
+  font-size: clamp(64px, 18vw, 96px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.resSubtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.resAnswers {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.resRemovedBadge {
+  background: #4ade8018;
+  border: 1px solid #4ade8040;
+  color: #4ade80;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.resTable {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.resTableHead {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 0;
+  padding: 10px 16px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.resTableHead > span:first-child {
+  text-align: left;
+}
+
+.resRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  padding: 9px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  transition: background 0.1s;
+  text-align: center;
+}
+
+.resRow:last-child {
+  border-bottom: none;
+}
+
+.resRowOk {
+  background: #4ade8006;
+}
+
+.resRowBad {
+  background: transparent;
+}
+
+.resWord {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.resMark {
+  font-size: 16px;
+}
+
+.resActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.retakeBtn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.retakeBtn:hover {
+  opacity: 0.88;
+}
+
+.backBtn {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.12s;
+}
+
+.backBtn:hover {
+  border-color: var(--accent);
+}
+
+/* ── Mobile ──────────────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .wordTableHead,
+  .wordRow {
+    grid-template-columns: 30px 1fr 1fr;
+    font-size: 13px;
+  }
+
+  .wordTr {
+    display: none;
+  }
+
+  .wordTableHead > span:nth-child(3) {
+    display: none;
+  }
+
+  .qWord {
+    font-size: 28px;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    padding: 14px 12px;
+  }
+
+  .resTableHead,
+  .resRow {
+    grid-template-columns: 1fr 32px 32px 32px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .resActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .retakeBtn,
+  .backBtn {
+    width: 100%;
+    text-align: center;
+  }
+}

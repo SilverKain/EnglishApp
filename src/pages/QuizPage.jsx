@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/PageLayout'
 import { generateQuiz, calcMastery } from '../utils/quizGenerator'
 import { useQuizResults } from '../hooks/useQuizResults'
+import { useVocabulary } from '../hooks/useVocabulary'
 import styles from './QuizPage.module.css'
 
 // ─── Intro screen ─────────────────────────────────────────────────────────────
@@ -228,6 +229,7 @@ function ResultsScreen({ words, answers, moduleData, onRetake, onBack }) {
 function QuizPage({ moduleData, backPath }) {
   const navigate = useNavigate()
   const { results, saveResult } = useQuizResults()
+  const { addWordsToVocab } = useVocabulary()
 
   const words = moduleData.blocks.find((b) => b.type === 'word-list')?.words || []
   const prevResult = results[moduleData.id] || null
@@ -255,6 +257,13 @@ function QuizPage({ moduleData, backPath }) {
       // Save results & show results screen
       setPhase('results')
       setAnswers((prev) => {
+        // Add words that were NOT mastered to personal vocabulary
+        const unmasteredWords = words.filter(
+          (w) => prev[`${w.num}-en-ru`] !== true || prev[`${w.num}-context`] !== true
+        )
+        if (unmasteredWords.length > 0) {
+          addWordsToVocab(unmasteredWords)
+        }
         const { masteredCount, totalWords, percent } = calcMastery(words, prev)
         const correctAnswers = Object.values(prev).filter(Boolean).length
         saveResult(moduleData.id, {
@@ -268,7 +277,7 @@ function QuizPage({ moduleData, backPath }) {
         return prev
       })
     }
-  }, [currentIdx, questions.length, words, moduleData.id, saveResult])
+  }, [currentIdx, questions.length, words, moduleData.id, saveResult, addWordsToVocab])
 
   const handleRetake = useCallback(() => {
     startQuiz()
