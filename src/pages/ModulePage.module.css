@@ -178,7 +178,9 @@
 .wordCards {
   display: none;
 }
-
+.vocabCards {
+  display: none;
+}
 @media (max-width: 640px) {
   .wordTableOuter {
     display: none;
@@ -246,6 +248,51 @@
     color: var(--text-muted);
     font-style: italic;
     font-size: 12px;
+  }
+
+  /* Vocab карточки (Блок 3) */
+  .vocabTableOuter {
+    display: none;
+  }
+
+  .vocabCards {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .vocabCard {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 9px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .vocabCardTop {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .vocabCardWord {
+    font-weight: 700;
+    font-size: 14px;
+    color: #a5b4fc;
+  }
+
+  .vocabCardTr {
+    font-size: 12px;
+    color: #6ee7b7;
+    font-family: 'Fira Code', monospace;
+  }
+
+  .vocabCardRu {
+    font-size: 13px;
+    color: var(--text-muted);
   }
 }
 

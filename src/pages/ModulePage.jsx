@@ -137,7 +137,9 @@ function MiniTextBlock({ block }) {
 
       <div className={styles.vocabSection}>
         <p className={styles.vocabTitle}>Слова из текста, которые могут быть незнакомы:</p>
-        <div className={styles.tableOuter}>
+
+        {/* Desktop: таблица */}
+        <div className={`${styles.tableOuter} ${styles.vocabTableOuter}`}>
           <table className={styles.vocabTable}>
             <thead>
               <tr><th>Слово</th><th>Транскрипция</th><th>Перевод</th></tr>
@@ -152,6 +154,19 @@ function MiniTextBlock({ block }) {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Mobile: карточки */}
+        <div className={styles.vocabCards}>
+          {block.vocab.map((v, i) => (
+            <div key={i} className={styles.vocabCard}>
+              <div className={styles.vocabCardTop}>
+                <span className={styles.vocabCardWord}>{v.word}</span>
+                <span className={styles.vocabCardTr}>{v.tr}</span>
+              </div>
+              <div className={styles.vocabCardRu}>{v.ru}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
