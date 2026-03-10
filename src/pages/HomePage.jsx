@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { levels } from '../data/courseData'
 import { useVocabulary } from '../hooks/useVocabulary'
+import Header from '../components/Header'
 import styles from './HomePage.module.css'
 
 const navCards = [
@@ -28,13 +29,7 @@ function HomePage() {
   const { vocabulary } = useVocabulary()
   return (
     <div className={styles.page}>
-      {/* Header */}
-      <header className={styles.header}>
-        <div className={styles.logoWrap}>
-          <span className={styles.logoEn}>EN</span>
-          <span className={styles.logoTitle}>English 3000</span>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className={styles.hero}>
@@ -69,7 +64,7 @@ function HomePage() {
       </section>
 
       {/* Navigation cards */}
-      <section className={styles.nav}>
+      <section id="contents" className={styles.nav}>
         <div className={styles.navInner}>
           <p className={styles.navHint}>Выбери раздел</p>
           <div className={styles.cards}>

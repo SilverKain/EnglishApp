@@ -1,8 +1,11 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
+import { doc, onSnapshot, setDoc } from 'firebase/firestore'
+import { useAuth } from '../context/AuthContext'
+import { db } from '../firebase/config'
 
 const VOCAB_KEY = 'english3000_vocabulary'
 
-function loadVocab() {
+function loadFromLS() {
   try {
     return JSON.parse(localStorage.getItem(VOCAB_KEY)) || []
   } catch {
@@ -10,8 +13,8 @@ function loadVocab() {
   }
 }
 
-function persistVocab(words) {
-  localStorage.setItem(VOCAB_KEY, JSON.stringify(words))
+function saveToLS(words) {
+  try { localStorage.setItem(VOCAB_KEY, JSON.stringify(words)) } catch {}
 }
 
 /**
@@ -25,7 +28,26 @@ function persistVocab(words) {
  * }
  */
 export function useVocabulary() {
-  const [vocabulary, setVocabulary] = useState(loadVocab)
+  const { user } = useAuth()
+  const userRef = useRef(user)
+  useEffect(() => { userRef.current = user }, [user])
+
+  const [vocabulary, setVocabulary] = useState(loadFromLS)
+
+  useEffect(() => {
+    if (!user) {
+      setVocabulary(loadFromLS())
+      return
+    }
+    const ref = doc(db, 'users', user.uid)
+    const unsub = onSnapshot(ref, (snap) => {
+      if (snap.exists()) {
+        const data = snap.data()
+        setVocabulary(data.vocabulary || [])
+      }
+    })
+    return unsub
+  }, [user])
 
   const addWordsToVocab = useCallback((newWords) => {
     setVocabulary((prev) => {
@@ -33,7 +55,12 @@ export function useVocabulary() {
       const toAdd = newWords.filter((w) => !existingNums.has(w.num))
       if (toAdd.length === 0) return prev
       const updated = [...prev, ...toAdd]
-      persistVocab(updated)
+      const u = userRef.current
+      if (u) {
+        setDoc(doc(db, 'users', u.uid), { vocabulary: updated }, { merge: true })
+      } else {
+        saveToLS(updated)
+      }
       return updated
     })
   }, [])
@@ -42,7 +69,12 @@ export function useVocabulary() {
     const numsSet = new Set(nums)
     setVocabulary((prev) => {
       const updated = prev.filter((w) => !numsSet.has(w.num))
-      persistVocab(updated)
+      const u = userRef.current
+      if (u) {
+        setDoc(doc(db, 'users', u.uid), { vocabulary: updated }, { merge: true })
+      } else {
+        saveToLS(updated)
+      }
       return updated
     })
   }, [])

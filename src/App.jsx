@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
 import HomePage from './pages/HomePage'
 import ConceptPage from './pages/ConceptPage'
 import LevelPage from './pages/LevelPage'
@@ -40,6 +41,21 @@ import { module32 } from './data/modules/module32'
 import { module33 } from './data/modules/module33'
 import { module34 } from './data/modules/module34'
 import { module35 } from './data/modules/module35'
+import { module36 } from './data/modules/module36'
+import { module37 } from './data/modules/module37'
+import { module38 } from './data/modules/module38'
+import { module39 } from './data/modules/module39'
+import { module40 } from './data/modules/module40'
+import { module41 } from './data/modules/module41'
+import { module42 } from './data/modules/module42'
+import { module43 } from './data/modules/module43'
+import { module44 } from './data/modules/module44'
+import { module45 } from './data/modules/module45'
+import { module46 } from './data/modules/module46'
+import { module47 } from './data/modules/module47'
+import { module48 } from './data/modules/module48'
+import { module49 } from './data/modules/module49'
+import { module50 } from './data/modules/module50'
 
 const M1_PATH = '/level-1/module/1'
 const M1_QUIZ = '/level-1/module/1/quiz'
@@ -111,10 +127,41 @@ const M34_PATH = '/level-1/module/34'
 const M34_QUIZ = '/level-1/module/34/quiz'
 const M35_PATH = '/level-1/module/35'
 const M35_QUIZ = '/level-1/module/35/quiz'
+const M36_PATH = '/level-1/module/36'
+const M36_QUIZ = '/level-1/module/36/quiz'
+const M37_PATH = '/level-1/module/37'
+const M37_QUIZ = '/level-1/module/37/quiz'
+const M38_PATH = '/level-1/module/38'
+const M38_QUIZ = '/level-1/module/38/quiz'
+const M39_PATH = '/level-1/module/39'
+const M39_QUIZ = '/level-1/module/39/quiz'
+const M40_PATH = '/level-1/module/40'
+const M40_QUIZ = '/level-1/module/40/quiz'
+const M41_PATH = '/level-1/module/41'
+const M41_QUIZ = '/level-1/module/41/quiz'
+const M42_PATH = '/level-1/module/42'
+const M42_QUIZ = '/level-1/module/42/quiz'
+const M43_PATH = '/level-1/module/43'
+const M43_QUIZ = '/level-1/module/43/quiz'
+const M44_PATH = '/level-1/module/44'
+const M44_QUIZ = '/level-1/module/44/quiz'
+const M45_PATH = '/level-1/module/45'
+const M45_QUIZ = '/level-1/module/45/quiz'
+const M46_PATH = '/level-1/module/46'
+const M46_QUIZ = '/level-1/module/46/quiz'
+const M47_PATH = '/level-1/module/47'
+const M47_QUIZ = '/level-1/module/47/quiz'
+const M48_PATH = '/level-1/module/48'
+const M48_QUIZ = '/level-1/module/48/quiz'
+const M49_PATH = '/level-1/module/49'
+const M49_QUIZ = '/level-1/module/49/quiz'
+const M50_PATH = '/level-1/module/50'
+const M50_QUIZ = '/level-1/module/50/quiz'
 
 function App() {
   return (
-    <BrowserRouter basename="/EnglishApp">
+    <AuthProvider>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/concept" element={<ConceptPage />} />
@@ -192,8 +239,39 @@ function App() {
         <Route path={M34_QUIZ} element={<QuizPage   moduleData={module34} backPath={M34_PATH} />} />
         <Route path={M35_PATH} element={<ModulePage moduleData={module35} backPath="/level-1" quizPath={M35_QUIZ} />} />
         <Route path={M35_QUIZ} element={<QuizPage   moduleData={module35} backPath={M35_PATH} />} />
+        <Route path={M36_PATH} element={<ModulePage moduleData={module36} backPath="/level-1" quizPath={M36_QUIZ} />} />
+        <Route path={M36_QUIZ} element={<QuizPage   moduleData={module36} backPath={M36_PATH} />} />
+        <Route path={M37_PATH} element={<ModulePage moduleData={module37} backPath="/level-1" quizPath={M37_QUIZ} />} />
+        <Route path={M37_QUIZ} element={<QuizPage   moduleData={module37} backPath={M37_PATH} />} />
+        <Route path={M38_PATH} element={<ModulePage moduleData={module38} backPath="/level-1" quizPath={M38_QUIZ} />} />
+        <Route path={M38_QUIZ} element={<QuizPage   moduleData={module38} backPath={M38_PATH} />} />
+        <Route path={M39_PATH} element={<ModulePage moduleData={module39} backPath="/level-1" quizPath={M39_QUIZ} />} />
+        <Route path={M39_QUIZ} element={<QuizPage   moduleData={module39} backPath={M39_PATH} />} />
+        <Route path={M40_PATH} element={<ModulePage moduleData={module40} backPath="/level-1" quizPath={M40_QUIZ} />} />
+        <Route path={M40_QUIZ} element={<QuizPage   moduleData={module40} backPath={M40_PATH} />} />
+        <Route path={M41_PATH} element={<ModulePage moduleData={module41} backPath="/level-1" quizPath={M41_QUIZ} />} />
+        <Route path={M41_QUIZ} element={<QuizPage   moduleData={module41} backPath={M41_PATH} />} />
+        <Route path={M42_PATH} element={<ModulePage moduleData={module42} backPath="/level-1" quizPath={M42_QUIZ} />} />
+        <Route path={M42_QUIZ} element={<QuizPage   moduleData={module42} backPath={M42_PATH} />} />
+        <Route path={M43_PATH} element={<ModulePage moduleData={module43} backPath="/level-1" quizPath={M43_QUIZ} />} />
+        <Route path={M43_QUIZ} element={<QuizPage   moduleData={module43} backPath={M43_PATH} />} />
+        <Route path={M44_PATH} element={<ModulePage moduleData={module44} backPath="/level-1" quizPath={M44_QUIZ} />} />
+        <Route path={M44_QUIZ} element={<QuizPage   moduleData={module44} backPath={M44_PATH} />} />
+        <Route path={M45_PATH} element={<ModulePage moduleData={module45} backPath="/level-1" quizPath={M45_QUIZ} />} />
+        <Route path={M45_QUIZ} element={<QuizPage   moduleData={module45} backPath={M45_PATH} />} />
+        <Route path={M46_PATH} element={<ModulePage moduleData={module46} backPath="/level-1" quizPath={M46_QUIZ} />} />
+        <Route path={M46_QUIZ} element={<QuizPage   moduleData={module46} backPath={M46_PATH} />} />
+        <Route path={M47_PATH} element={<ModulePage moduleData={module47} backPath="/level-1" quizPath={M47_QUIZ} />} />
+        <Route path={M47_QUIZ} element={<QuizPage   moduleData={module47} backPath={M47_PATH} />} />
+        <Route path={M48_PATH} element={<ModulePage moduleData={module48} backPath="/level-1" quizPath={M48_QUIZ} />} />
+        <Route path={M48_QUIZ} element={<QuizPage   moduleData={module48} backPath={M48_PATH} />} />
+        <Route path={M49_PATH} element={<ModulePage moduleData={module49} backPath="/level-1" quizPath={M49_QUIZ} />} />
+        <Route path={M49_QUIZ} element={<QuizPage   moduleData={module49} backPath={M49_PATH} />} />
+        <Route path={M50_PATH} element={<ModulePage moduleData={module50} backPath="/level-1" quizPath={M50_QUIZ} />} />
+        <Route path={M50_QUIZ} element={<QuizPage   moduleData={module50} backPath={M50_PATH} />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    </AuthProvider>
   )
 }
 

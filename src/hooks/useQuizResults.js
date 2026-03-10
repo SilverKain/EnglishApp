@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { doc, onSnapshot, setDoc } from 'firebase/firestore'
+import { useAuth } from '../context/AuthContext'
+import { db } from '../firebase/config'
 
-const KEY = 'english3000_quiz'
+const LS_KEY = 'english3000_quiz'
 
-function load() {
-  try { return JSON.parse(localStorage.getItem(KEY)) || {} }
+function loadFromLS() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY)) || {} }
   catch { return {} }
 }
 
-function save(data) {
-  localStorage.setItem(KEY, JSON.stringify(data))
+function saveToLS(data) {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(data)) } catch {}
 }
 
 /**
@@ -19,7 +22,26 @@ function save(data) {
  * }
  */
 export function useQuizResults() {
-  const [results, setResults] = useState(load)
+  const { user } = useAuth()
+  const userRef = useRef(user)
+  useEffect(() => { userRef.current = user }, [user])
+
+  const [results, setResults] = useState(loadFromLS)
+
+  useEffect(() => {
+    if (!user) {
+      setResults(loadFromLS())
+      return
+    }
+    const ref = doc(db, 'users', user.uid)
+    const unsub = onSnapshot(ref, (snap) => {
+      if (snap.exists()) {
+        const data = snap.data()
+        setResults(data.quizResults || {})
+      }
+    })
+    return unsub
+  }, [user])
 
   const saveResult = (moduleId, payload) => {
     const updated = {
@@ -31,7 +53,12 @@ export function useQuizResults() {
       },
     }
     setResults(updated)
-    save(updated)
+    const u = userRef.current
+    if (u) {
+      setDoc(doc(db, 'users', u.uid), { quizResults: updated }, { merge: true })
+    } else {
+      saveToLS(updated)
+    }
   }
 
   return { results, saveResult }

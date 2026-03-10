@@ -56,9 +56,9 @@ function ConceptPage() {
   return (
     <PageLayout backLabel="← На главную">
       <div className={styles.pageHeader}>
-        <span className={styles.badge}>Часть 1</span>
-        <h1 className={styles.title}>Концепция курса</h1>
-        <p className={styles.subtitle}>Что лежит в основе этого курса и как он устроен</p>
+        <span className={styles.badge}>Концепция</span>
+        <h1 className={styles.title}>Как устроен этот курс</h1>
+        <p className={styles.subtitle}>Философия, метод и структура — всё, что нужно знать перед стартом</p>
       </div>
 
       <div className={styles.parts}>

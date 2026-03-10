@@ -186,7 +186,7 @@ function StructureBlock({ block }) {
               <span className={styles.structureArrow}>{item.schema}</span>
             </div>
             <ul className={styles.structureExpl}>
-              {item.explanation.map((e, j) => <li key={j}>{e}</li>)}
+              {(Array.isArray(item.explanation) ? item.explanation : [item.explanation]).map((e, j) => <li key={j}>{e}</li>)}
             </ul>
             {item.pattern && (
               <div className={styles.structurePattern}><code>{item.pattern}</code></div>
@@ -222,8 +222,8 @@ function ThinkingBlock({ block }) {
       <h2 className={styles.blockTitle}>{block.title}</h2>
       {block.sections.map((sec, si) => (
         <div key={si} className={styles.thinkSection}>
-          <h3 className={styles.thinkSubtitle}>{sec.subtitle}</h3>
-          {sec.hint && <p className={styles.intro}>{sec.hint}</p>}
+          <h3 className={styles.thinkSubtitle}>{sec.subtitle || sec.title}</h3>
+          {(sec.hint || sec.prompt || sec.intro) && <p className={styles.intro}>{sec.hint || sec.prompt || sec.intro}</p>}
 
           {sec.type === 'continue' && (
             <ol className={styles.continueList}>
@@ -268,8 +268,8 @@ function ReviewBlock({ block }) {
       <h2 className={styles.blockTitle}>{block.title}</h2>
       {block.sections.map((sec, si) => (
         <div key={si} className={styles.thinkSection}>
-          <h3 className={styles.thinkSubtitle}>{sec.subtitle}</h3>
-          {sec.hint && <p className={styles.intro}>{sec.hint}</p>}
+          <h3 className={styles.thinkSubtitle}>{sec.subtitle || sec.title}</h3>
+          {(sec.hint || sec.intro) && <p className={styles.intro}>{sec.hint || sec.intro}</p>}
 
           {sec.type === 'fill' && (
             <div className={styles.fillList}>
@@ -277,7 +277,7 @@ function ReviewBlock({ block }) {
                 <RevealItem key={i} answer={item.answer}>
                   <span className={styles.tNum}>{i + 1}.</span>{' '}
                   {item.sentence}{' '}
-                  <span className={styles.fillOptions}>({item.options})</span>
+                  {item.options && <span className={styles.fillOptions}>({item.options})</span>}
                 </RevealItem>
               ))}
             </div>
@@ -286,8 +286,8 @@ function ReviewBlock({ block }) {
           {sec.type === 'rephrase' && (
             <div className={styles.rephraseList}>
               {sec.items.map((item, i) => (
-                <RevealItem key={i} answer={item.answer}>
-                  <span className={styles.tNum}>{i + 1}.</span> {item.task}
+                <RevealItem key={i} answer={item.answer || item.rephrased}>
+                  <span className={styles.tNum}>{i + 1}.</span> {item.task || item.original}
                 </RevealItem>
               ))}
             </div>
@@ -308,7 +308,7 @@ function MiniReadingBlock({ sec }) {
     <>
       <div className={styles.textCard}>
         <p className={styles.textLabel}>{sec.textTitle}</p>
-        {sec.original.map((p, i) => <p key={i} className={styles.textPara}>{p}</p>)}
+        {(sec.original || sec.passage || []).map((p, i) => <p key={i} className={styles.textPara}>{p}</p>)}
       </div>
       <button className={styles.revealBtn} onClick={() => setShowTr((v) => !v)}>
         {showTr ? 'Скрыть перевод' : 'Показать перевод'}

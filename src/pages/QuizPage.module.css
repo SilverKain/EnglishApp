@@ -161,18 +161,23 @@
   background: transparent;
   color: #fb923c;
   border: 1.5px solid #fb923c55;
-  border-radius: 10px;
-  padding: 11px 28px;
-  font-size: 14px;
-  font-weight: 600;
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
-  letter-spacing: 0.01em;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  letter-spacing: 0.02em;
 }
 
 .errorsOnlyBtn:hover {
   background: #fb923c18;
   border-color: #fb923c;
+  transform: translateY(-1px);
+}
+
+.errorsOnlyBtn:active {
+  transform: translateY(0);
 }
 
 /* ── Question ───────────────────────────────────────────────────────────────── */
